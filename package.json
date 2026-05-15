@@ -5,12 +5,14 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "refs": "node scripts/build-references.mjs"
   },
   "dependencies": {
     "@slidev/cli": "^52.15.2",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
+    "citation-js": "^0.7.22",
     "vue": "^3.5.33"
   }
 }

@@ -183,9 +183,22 @@ code {
     monospace;
 }
 /* ───────────────── LINKS ──────────────────── */
-a {
-  color: var(--rf-primary);
-  text-decoration: none;
+a,
+a:visited {
+  color: #63d3a1 !important;
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  opacity: 1 !important;
+
+  transition:
+    opacity 0.2s ease,
+    color 0.2s ease;
+}
+
+a:hover {
+  color: #e2f81b !important;
+  opacity: 1 !important;
 }
 /* ───────────────── BLOCKQUOTE ─────────────── */
 blockquote {
@@ -353,4 +366,18 @@ li {
   grid-template-columns:
     repeat(3, minmax(0,1fr));
   gap: 1rem;
+}
+.rf-cursor {
+  display: inline-block;
+  margin-left: 0.2rem;
+  color: #35996e;
+
+  animation:
+    rf-blink 1s infinite;
+}
+
+@keyframes rf-blink {
+  50% {
+    opacity: 0;
+  }
 }

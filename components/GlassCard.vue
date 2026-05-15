@@ -24,7 +24,6 @@ defineProps<{
 </template>
 
 <style scoped>
-
 .rf-card {
   width: 100%;
   align-self: start;

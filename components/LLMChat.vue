@@ -43,8 +43,15 @@ const modelLabel =
         {{ modelLabel }}
       </div>
       <div class="rf-response-content">
-        <slot />
-      </div>
+  <slot />
+
+  <span
+    v-if="streaming"
+    class="rf-cursor"
+  >
+    ▋
+  </span>
+</div>
     </div>
   </div>
 </template>

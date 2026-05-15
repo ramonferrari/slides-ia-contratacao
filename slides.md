@@ -148,6 +148,7 @@ incorretas sem grounding.
 
 
 ---
+
 # Teste métrica 2 (pulando espaço)
 
 <Spacer :h="98"/>
@@ -323,6 +324,219 @@ Creating:
 
 ---
 
+# Colocando imagens
+
+<ImagePanel
+  src="/rag.png"
+  position="center"
+  caption="RAG Pipeline"
+/>
+
+---
+
+# Imagem pequena
+Tem que ver por que nao está centralizada. Não é a primeira assim. 
+<ImagePanel
+  src="/rag.png"
+  position="center"
+  width="55%"
+  fit="contain"
+  caption="Executive AI dashboard"
+/>
+
+---
+
+# AI Operations Center (ver isso de invadir)
+
+<ImagePanel
+  src="/rag.png"
+  position="full"
+  fit="cover"
+/>
+
+---
+
+# AI Adoption
+
+<ProgressiveReveal :step="1">
+
+## Problem
+
+</ProgressiveReveal>
+
+<ProgressiveReveal :step="2">
+
+## AI Layer
+
+</ProgressiveReveal>
+
+<ProgressiveReveal :step="3">
+
+## Governance
+
+</ProgressiveReveal>
+
+---
+
+# Decision Flow (consertar tamanho e ver centralização)
+
+<DecisionFlow
+  :steps="[
+    'Sensitive data?',
+    'External LLM allowed?',
+    'Grounding available?',
+    'Human validation required',
+    'Release answer'
+  ]"
+/>
+
+<Spacer :h="12" />
+
+---
+
+# Cade o document viewer?
+
+---
+
+# Warnings (separar)
+<Callout type="warning">
+
+LLMs may generate plausible
+but incorrect outputs.
+
+</Callout>
+
+<Callout type="danger">
+
+LLMs may generate plausible
+but incorrect outputs.
+
+</Callout>
+
+---
+
+# Cadê o timeline?
+
+---
+
+# Cadê o highlight?
+
+---
+
+# Cadê o human-in-the-loop?
+
+---
+
+# Cadê o prompt block?
+
+---
+
+# Cadê o contract clause?
+
+---
+
+# Cadê o architecture layer?
+
+---
+
+# LLMs com streaming!!!!!!
+
+<StreamingLLM model="GPT-5.5">
+
+Analyzing procurement clauses...
+
+Checking compliance requirements...
+
+Evaluating contractual risks...
+
+Generating grounded response...
+
+</StreamingLLM>
+
+---
+
+# Opções LLM (Não vi diferença no streaming)
+<LLMChat
+  prompt="Analyze contractual risk."
+  model="GPT-5.5"
+  streaming
+>
+
+Analyzing procurement clauses...
+
+Checking compliance requirements...
+
+Evaluating legal ambiguity...
+
+Generating grounded response...
+
+</LLMChat>
+
+
+---
+
+# Links? Cadê
+
+Vai no [Chat](http://www.chatgpt.com)
+
+---
+
+# Referências (verificar essa primeira linha!)
+
+This aligns with findings from <CitationInline keyId="wang_accuracy_1996" />.
+
+LLMs still present information quality risks <Citation keyId="wang_accuracy_1996"/>.
+
+This aligns with findings from <CitationInline keyId="wang_accuracy_1996" />.
+
+Oi?
+
+---
+
+# Citation Test
+
+We adopted governance ideas from <CitationSite keyId="martastelmaszak_think_2025" />.
+
+---
+
+# Colocando imagens (esquerda)
+
+<ImagePanel
+  src="/rag.png"
+  position="left"
+  caption="Retrieval-Augmented Generation pipeline"
+>
+
+### Contextual AI systems
+
+- embeddings
+- vector search
+- grounded answers
+- external knowledge
+
+</ImagePanel>
+
+---
+
+# à direita
+
+<ImagePanel
+  src="/rag.png"
+  position="right"
+  caption="AI-assisted procurement workflow"
+>
+
+### Contract intelligence
+
+- clause extraction
+- OCR
+- semantic search
+- risk identification
+
+</ImagePanel>
+
+---
+
 # Um novo aqui
 Testando
 
@@ -339,51 +553,6 @@ Testando
 
 ---
 
-# Testando 2
-## what
-### is happening
-
-<Spacer :h="" />
-
-<div class="grid grid-cols-3 gap-6">
-
-<GlassCard
-  subtitle="Communication"
-  title="Executive presentations"
->
-
-- Workshops
-- Talks
-- Strategy
-
-</GlassCard>
-
-<GlassCard
-  subtitle="AI"
-  title="Technical systems"
->
-
-- RAG
-- LLMs
-- Agents
-
-</GlassCard>
-
-<GlassCard
-  subtitle="Research"
-  title="Decision systems"
->
-
-- Delphi
-- Governance
-- Uncertainty
-
-</GlassCard>
-
-</div>
-
-
----
 
 # The next maturity level
 
@@ -503,6 +672,37 @@ graph LR
 A[Data] --> B[Embeddings]
 B --> C[Vector DB]
 C --> D[LLM]
+```
+
+---
+
+# RQ
+
+```mermaid
+flowchart LR
+    A([👨‍💻 O computador lê\num documento]):::llm
+    A --> B[Dá uma resposta\npronta para o especialista]:::output
+    B --> C([🧑‍⚕️ O especialista\nacredita sem questionar]):::human
+
+    C --> D[❌ Isso é perigoso!\nE se o documento\ntinha um erro escondido?]:::risk
+
+    D --> E[💡 E se o computador\navisasse o especialista\nquando encontra algo estranho?]:::structure
+
+    E --> F[Condição A\n😴 Resposta pronta\nsem aviso]:::output
+    E --> G[Condição B\n🔔 Aviso!\nAlgo parece errado aqui...]:::model
+
+    F --> H([🧑‍⚕️ Especialista\nnão percebe o erro]):::human
+    G --> I([🧑‍⚕️ Especialista\npensa com mais cuidado?]):::human
+
+    I --> J[🤔 Pergunta da pesquisa:\nO aviso faz o especialista\npensar de verdade?\nOu ele ignora mesmo assim?]:::decision
+
+    classDef human fill:#F1A968,stroke:#c07830,color:#000
+    classDef llm fill:#E0496C,stroke:#a02040,color:#fff
+    classDef output fill:#ABDB2A,stroke:#7aaa00,color:#000
+    classDef decision fill:#F9DE59,stroke:#c0a800,color:#000
+    classDef model fill:#9678E8,stroke:#6040b0,color:#fff
+    classDef risk fill:#EC635E,stroke:#b03030,color:#fff
+    classDef structure fill:#35996e,stroke:#1a6040,color:#fff
 ```
 
 ---
