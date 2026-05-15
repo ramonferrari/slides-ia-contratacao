@@ -3,7 +3,6 @@ import BottomBar from "../components/BottomBar.vue"
 const props = defineProps({
   title: {
     type: String,
-    default: "AI SYSTEMS"
   }
 })
 </script>

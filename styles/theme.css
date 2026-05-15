@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap');
-@import "./mermaid.css";
 /* ─────────────────────────────────────────────
    RAMON FERRARI — SLIDEV THEME
 ───────────────────────────────────────────── */
@@ -160,6 +159,12 @@ li {
     "JetBrains Mono",
     monospace;
 }
+html.light .tag {
+  background: rgba(47, 141, 100, 0.256);
+  border-color: rgba(47, 141, 101, 0.256);
+  color: #2f8d65;
+  font-weight: 600;
+}
 /* ───────────────── CODE ───────────────────── */
 pre {
   background:
@@ -299,87 +304,6 @@ ul {
 li {
   margin: 0.4rem 0;
 }
-.slidev-mermaid {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-}
-.slidev-mermaid svg {
-  max-width: 920px;
-  height: auto;
-}
-.slidev-mermaid .node rect,
-.slidev-mermaid .node polygon,
-.slidev-mermaid .node circle {
-  fill: rgba(255,255,255,0.04) !important;
-  stroke: rgba(53,153,110,0.45) !important;
-  stroke-width: 1.5px !important;
-  rx: 18px !important;
-}
-.slidev-mermaid .label {
-  color: white !important;
-  fill: white !important;
-  font-family: "Space Grotesk", sans-serif !important;
-}
-.slidev-mermaid .edgePath path {
-  stroke: rgba(53,153,110,0.55) !important;
-  stroke-width: 2px !important;
-  filter:
-    drop-shadow(0 0 10px rgba(53,153,110,0.22));
-}
 .slidev-layout h1 {
-  color: #35996e !important;
-}
-svg[id^="mermaid-"],
-svg.flowchart {
-  overflow: visible;
-}
-/* nodes */
-svg.flowchart .node rect,
-svg.flowchart .node circle,
-svg.flowchart .node ellipse,
-svg.flowchart .node polygon,
-svg.flowchart .node path {
-  fill: rgba(255,255,255,0.04) !important;
-  stroke: rgba(53,153,110,0.45) !important;
-  stroke-width: 1.5px !important;
-  filter:
-    drop-shadow(0 0 16px rgba(53,153,110,0.12));
-}
-/* text */
-svg.flowchart .label,
-svg.flowchart text,
-svg.flowchart span,
-svg.flowchart p {
-  fill: white !important;
-  color: white !important;
-  font-family:
-    "Space Grotesk",
-    sans-serif !important;
-}
-/* arrows */
-svg.flowchart .edgePath .path,
-svg.flowchart .flowchart-link {
-  stroke:
-    rgba(53,153,110,0.55) !important;
-  stroke-width:
-    2px !important;
-  filter:
-    drop-shadow(0 0 10px rgba(53,153,110,0.22));
-}
-/* arrowheads */
-svg.flowchart .marker,
-svg.flowchart .arrowMarkerPath,
-svg.flowchart marker path {
-  fill:
-    rgba(53,153,110,0.8) !important;
-  stroke:
-    rgba(53,153,110,0.8) !important;
-}
-.mermaid svg {
-  filter:
-    drop-shadow(0 0 24px rgba(53,153,110,0.14));
-}
-.mermaid .node rect {
-  rx: 18px;
+  color: var(--rf-primary) !important;
 }

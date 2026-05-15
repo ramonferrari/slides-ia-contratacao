@@ -3,26 +3,12 @@ theme: seriph
 colorSchema: both
 themeConfig:
   appearance: dark
+  shortTitle: "IA na Gestão de Contratos"
 background: false
 fonts:
   sans: Space Grotesk
   mono: JetBrains Mono
 class: text-left
-mermaid:
- theme: base
- themeVariables:
-   primaryColor: "#11161d"
-   primaryTextColor: "#ffffff"
-   primaryBorderColor: "#35996e"
-   lineColor: "#35996e"
-   secondaryColor: "#11161d"
-   tertiaryColor: "#11161d"
-   mainBkg: "#11161d"
-   nodeBorder: "#35996e"
-   clusterBkg: "#11161d"
-   clusterBorder: "#35996e"
-   edgeLabelBackground: "#11161d"
-   fontFamily: "Space Grotesk"
 ---
 
 # AI Governance
@@ -132,10 +118,23 @@ And the slide already gets:
 # Mermaid Test
 
 ```mermaid
-graph LR
-A[Data] --> B[Embeddings]
-B --> C[Vector DB]
-C --> D[LLM]
+flowchart LR
+      P1([User Question])
+      P1 --> P2[Query Embedding]
+      P2 --> P3[Similarity Search]
+      DB[(Vector Store)]
+      DB -.-> P3
+      P3 --> P4[Context Assembly]
+      P4 --> P5[LLM]
+      P5 --> P6([Grounded Answer])
+
+      style P1  fill:#1e2220,stroke:#A8B5A0,color:#dfe7e2
+      style P2  fill:#2e1a1f,stroke:#E0496C,color:#dfe7e2
+      style P3  fill:#221a35,stroke:#9678E8,color:#dfe7e2
+      style DB  fill:#1a3235,stroke:#7DD5DB,color:#dfe7e2
+      style P4  fill:#251e2e,stroke:#C8A4D4,color:#dfe7e2
+      style P5  fill:#2e1a1f,stroke:#E0496C,color:#dfe7e2
+      style P6  fill:#1e2a10,stroke:#ABDB2A,color:#dfe7e2
 ```
 ---
 
