@@ -8,9 +8,13 @@ defineProps<{
     <div class="rf-bottom-left">
       {{ title || $slidev.configs.themeConfig?.shortTitle || 'AI SYSTEMS' }}
     </div>
-    <div class="rf-bottom-right">
+    <a
+      class="rf-bottom-right"
+      href="https://ramonferrari.dev"
+      target="_blank"
+    >
       ramonferrari.dev
-    </div>
+    </a>
   </footer>
 </template>
 <style scoped>

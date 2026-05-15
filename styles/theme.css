@@ -307,3 +307,50 @@ li {
 .slidev-layout h1 {
   color: var(--rf-primary) !important;
 }
+.rf-bottom-right,
+.rf-bottom-right:link,
+.rf-bottom-right:visited,
+.rf-bottom-right:hover,
+.rf-bottom-right:active,
+.rf-bottom-right:focus {
+  color: #35996e;
+  text-decoration: none !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.rf-bottom-right {
+  font-weight: 600;
+  letter-spacing: 0.16em;
+
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.rf-bottom-right:hover {
+  color: #e2f81b !important;
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.rf-metrics-2 {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0,1fr));
+  gap: 1.5rem;
+}
+
+.rf-metrics-4 {
+  display: grid;
+  grid-template-columns:
+    repeat(4, minmax(0,1fr));
+  gap: 1rem;
+}
+.rf-metrics-3 {
+  display: grid;
+  grid-template-columns:
+    repeat(3, minmax(0,1fr));
+  gap: 1rem;
+}

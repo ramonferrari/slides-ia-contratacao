@@ -106,13 +106,162 @@ And the slide already gets:
 * typography
 * spacing
 * palette
-* glow
-* visual consistency
 
 </div>
 
 ---
 
+# Teste antes-depois
+
+<BeforeAfter>
+
+<template #before>
+
+- leitura manual
+- busca textual
+- revisão demorada
+
+</template>
+
+<template #after>
+
+- RAG
+- busca semântica
+- análise contextual
+
+</template>
+
+</BeforeAfter>
+
+---
+# Teste cartao risco
+
+<RiskCard
+  level="high"
+  title="Hallucination Risk"
+>
+
+LLMs podem gerar interpretações
+incorretas sem grounding.
+
+</RiskCard>
+
+
+---
+# Teste métrica 2 (pulando espaço)
+
+<Spacer :h="98"/>
+
+<div class="rf-metrics-2">
+
+<MetricCard
+  value="78%"
+  label="redução do tempo"
+/>
+
+<MetricCard
+  value="4h → 18min"
+  label="triagem contratual"
+/>
+
+</div>
+
+---
+
+# Teste métrica 3 (regular)
+
+
+<div class="rf-metrics-3">
+
+<MetricCard
+  value="78%"
+  label="redução do tempo"
+/>
+
+<MetricCard
+  value="4h → 18min"
+  label="triagem"
+/>
+
+<MetricCard
+  value="92%"
+  label="consenso dos especialistas"
+/>
+
+</div>
+
+
+---
+
+# Teste métrica 3 (destaque)
+
+<div class="rf-metrics-2">
+
+<MetricCard
+  value="78%"
+  label="redução do tempo"
+/>
+
+<MetricCard
+  value="4h → 18min"
+  label="triagem"
+/>
+
+</div>
+
+<div class="mt-6">
+
+<MetricCard
+  value="92%"
+  label="consenso dos especialistas"
+/>
+
+</div>
+
+
+---
+
+# Teste métrica 4
+<div class="rf-metrics-4">
+
+<MetricCard
+  value="78%"
+  label="tempo"
+/>
+
+<MetricCard
+  value="18"
+  label="especialistas"
+/>
+
+<MetricCard
+  value="3"
+  label="rodadas"
+/>
+
+<MetricCard
+  value="92%"
+  label="consenso"
+/>
+
+</div>
+
+---
+# Teste arquitetura
+<ArchitectureFlow>
+
+```mermaid
+graph LR
+A[Contrato]
+--> B[OCR]
+B --> C[Embeddings]
+C --> D[Vector DB]
+D --> E[LLM]
+```
+</ArchitectureFlow>
+
+
+---
 
 
 # Mermaid Test
@@ -128,13 +277,13 @@ flowchart LR
       P4 --> P5[LLM]
       P5 --> P6([Grounded Answer])
 
-      style P1  fill:#1e2220,stroke:#A8B5A0,color:#dfe7e2
-      style P2  fill:#2e1a1f,stroke:#E0496C,color:#dfe7e2
-      style P3  fill:#221a35,stroke:#9678E8,color:#dfe7e2
-      style DB  fill:#1a3235,stroke:#7DD5DB,color:#dfe7e2
-      style P4  fill:#251e2e,stroke:#C8A4D4,color:#dfe7e2
-      style P5  fill:#2e1a1f,stroke:#E0496C,color:#dfe7e2
-      style P6  fill:#1e2a10,stroke:#ABDB2A,color:#dfe7e2
+      style P1  fill: #1e2220,stroke: #A8B5A0,color: #dfe7e2
+      style P2  fill: #2e1a1f,stroke: #E0496C,color: #dfe7e2
+      style P3  fill: #221a35,stroke: #9678E8,color: #dfe7e2
+      style DB  fill: #1a3235,stroke: #7DD5DB,color: #dfe7e2
+      style P4  fill: #251e2e,stroke: #C8A4D4,color: #dfe7e2
+      style P5  fill: #2e1a1f,stroke: #E0496C,color: #dfe7e2
+      style P6  fill: #1e2a10,stroke: #ABDB2A,color: #dfe7e2
 ```
 ---
 
@@ -171,6 +320,68 @@ Creating:
 </div>
 
 </div>
+
+---
+
+# Um novo aqui
+Testando
+
+<GlassCard
+  subtitle="Technical"
+  title="Technical content"
+>
+
+- Mermaid
+- Architecture flows
+- AI systems
+
+</GlassCard>
+
+---
+
+# Testando 2
+## what
+### is happening
+
+<Spacer :h="" />
+
+<div class="grid grid-cols-3 gap-6">
+
+<GlassCard
+  subtitle="Communication"
+  title="Executive presentations"
+>
+
+- Workshops
+- Talks
+- Strategy
+
+</GlassCard>
+
+<GlassCard
+  subtitle="AI"
+  title="Technical systems"
+>
+
+- RAG
+- LLMs
+- Agents
+
+</GlassCard>
+
+<GlassCard
+  subtitle="Research"
+  title="Decision systems"
+>
+
+- Delphi
+- Governance
+- Uncertainty
+
+</GlassCard>
+
+</div>
+
 
 ---
 
