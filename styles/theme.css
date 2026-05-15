@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;600&display=swap');
+@import "./mermaid.css";
+/* ─────────────────────────────────────────────
+   RAMON FERRARI — SLIDEV THEME
+───────────────────────────────────────────── */
+:root {
+  --rf-bg: #0b0f14;
+  --rf-surface:
+    rgba(255,255,255,0.04);
+  --rf-surface-2:
+    rgba(255,255,255,0.06);
+  --rf-border:
+    rgba(255,255,255,0.08);
+  --rf-text:
+    rgba(255,255,255,0.92);
+  --rf-muted:
+    rgba(255,255,255,0.62);
+  --rf-primary:
+    #35996e;
+  --rf-glow:
+    rgba(53,153,110,0.28);
+  --rf-radius:
+    28px;
+  --rf-shadow:
+    0 20px 60px rgba(0,0,0,0.35);
+  --slidev-theme-primary:
+    var(--rf-primary);
+}
+/* ───────────────── LIGHT MODE ─────────────── */
+html.light {
+  --rf-bg: #f5f7fa;
+  --rf-surface:
+    rgba(255,255,255,0.72);
+  --rf-surface-2:
+    rgba(255,255,255,0.92);
+  --rf-border:
+    rgba(15,23,42,0.08);
+  --rf-text:
+    #111827;
+  --rf-muted:
+    rgba(17,24,39,0.62);
+  --rf-primary:
+    #2f8d65;
+  --rf-glow:
+    rgba(53,153,110,0.12);
+}
+/* ───────────────── GLOBAL ─────────────────── */
+html,
+body,
+#slidev {
+  background: var(--rf-bg);
+  color: var(--rf-text);
+  font-family:
+    "Space Grotesk",
+    sans-serif;
+}
+/* ambient glow */
+#slidev::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(53,153,110,0.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(53,153,110,0.06),
+      transparent 40%
+    );
+  filter: blur(80px);
+  z-index: -1;
+}
+/* subtle noise */
+#slidev::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.025;
+  background-image:
+    radial-gradient(
+      rgba(255,255,255,0.16) 0.5px,
+      transparent 0.5px
+    );
+  background-size: 8px 8px;
+  z-index: -1;
+}
+/* ───────────────── TYPOGRAPHY ─────────────── */
+h1 {
+  font-size:
+    clamp(2.8rem, 7vw, 5rem);
+  line-height: 1.0;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size:
+    clamp(1.8rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+  margin-bottom: 1rem;
+}
+p,
+li {
+  color: var(--rf-muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+/* ───────────────── GLASS CARDS ────────────── */
+.glass {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.05),
+      rgba(255,255,255,0.03)
+    );
+  border:
+    1px solid var(--rf-border);
+  border-radius:
+    var(--rf-radius);
+  backdrop-filter:
+    blur(20px);
+  box-shadow:
+    var(--rf-shadow);
+  padding:
+    2rem;
+  transition:
+  transform 0.25s ease,
+  border-color 0.25s ease,
+  box-shadow 0.25s ease;
+}
+.glass:hover {
+  transform: translateY(-2px);
+  border-color:
+    rgba(53,153,110,0.18);
+  box-shadow:
+    0 24px 60px rgba(0,0,0,0.35);
+}
+/* ───────────────── TAGS ───────────────────── */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding:
+    0.4rem 0.9rem;
+  border-radius: 999px;
+  background:
+    rgba(53,153,110,0.12);
+  border:
+    1px solid rgba(53,153,110,0.24);
+  color:
+    rgba(220,235,228,0.92);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family:
+    "JetBrains Mono",
+    monospace;
+}
+/* ───────────────── CODE ───────────────────── */
+pre {
+  background:
+    rgba(255,255,255,0.04) !important;
+  border:
+    1px solid rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 1.2rem !important;
+  overflow: hidden;
+  box-shadow:
+    0 10px 40px rgba(0,0,0,0.25);
+}
+code {
+  font-family:
+    "JetBrains Mono",
+    monospace;
+}
+/* ───────────────── LINKS ──────────────────── */
+a {
+  color: var(--rf-primary);
+  text-decoration: none;
+}
+/* ───────────────── BLOCKQUOTE ─────────────── */
+blockquote {
+  border-left:
+    3px solid var(--rf-primary);
+  padding-left:
+    1.2rem;
+  color:
+    var(--rf-text);
+  font-size:
+    1.2rem;
+}
+/* ───────────────── PDF EXPORT ─────────────── */
+@media print {
+  .glass {
+    backdrop-filter: none;
+    box-shadow: none;
+  }
+  #slidev::before,
+  #slidev::after {
+    display: none;
+  }
+}
+.rf-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.rf-grid-2 {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+/* LISTS */
+ul {
+  list-style-type: disc;
+  padding-left: 1.4rem;
+  margin-top: 1rem;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 1.4rem;
+  margin-top: 1rem;
+}
+li {
+  margin-bottom: 0.45rem;
+}
+/* SIMPLE UTILITIES */
+.mt-6 {
+  margin-top: 1.5rem;
+}
+.mt-8 {
+  margin-top: 2rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
+.mt-12 {
+  margin-top: 3rem;
+}
+.mt-16 {
+  margin-top: 4rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.p-5 {
+  padding: 1.25rem;
+}
+.p-6 {
+  padding: 1.5rem;
+}
+.p-8 {
+  padding: 2rem;
+}
+.p-10 {
+  padding: 2.5rem;
+}
+.gap-3 {
+  gap: 0.75rem;
+}
+.gap-5 {
+  gap: 1.25rem;
+}
+.gap-6 {
+  gap: 1.5rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.text-center {
+  text-align: center;
+}
+.opacity-70 {
+  opacity: 0.7;
+}
+.slidev-layout {
+  max-width: 100% !important;
+}
+ul {
+  list-style: disc;
+  padding-left: 1.4rem;
+}
+li {
+  margin: 0.4rem 0;
+}
+.slidev-mermaid {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.slidev-mermaid svg {
+  max-width: 920px;
+  height: auto;
+}
+.slidev-mermaid .node rect,
+.slidev-mermaid .node polygon,
+.slidev-mermaid .node circle {
+  fill: rgba(255,255,255,0.04) !important;
+  stroke: rgba(53,153,110,0.45) !important;
+  stroke-width: 1.5px !important;
+  rx: 18px !important;
+}
+.slidev-mermaid .label {
+  color: white !important;
+  fill: white !important;
+  font-family: "Space Grotesk", sans-serif !important;
+}
+.slidev-mermaid .edgePath path {
+  stroke: rgba(53,153,110,0.55) !important;
+  stroke-width: 2px !important;
+  filter:
+    drop-shadow(0 0 10px rgba(53,153,110,0.22));
+}
+.slidev-layout h1 {
+  color: #35996e !important;
+}
+svg[id^="mermaid-"],
+svg.flowchart {
+  overflow: visible;
+}
+/* nodes */
+svg.flowchart .node rect,
+svg.flowchart .node circle,
+svg.flowchart .node ellipse,
+svg.flowchart .node polygon,
+svg.flowchart .node path {
+  fill: rgba(255,255,255,0.04) !important;
+  stroke: rgba(53,153,110,0.45) !important;
+  stroke-width: 1.5px !important;
+  filter:
+    drop-shadow(0 0 16px rgba(53,153,110,0.12));
+}
+/* text */
+svg.flowchart .label,
+svg.flowchart text,
+svg.flowchart span,
+svg.flowchart p {
+  fill: white !important;
+  color: white !important;
+  font-family:
+    "Space Grotesk",
+    sans-serif !important;
+}
+/* arrows */
+svg.flowchart .edgePath .path,
+svg.flowchart .flowchart-link {
+  stroke:
+    rgba(53,153,110,0.55) !important;
+  stroke-width:
+    2px !important;
+  filter:
+    drop-shadow(0 0 10px rgba(53,153,110,0.22));
+}
+/* arrowheads */
+svg.flowchart .marker,
+svg.flowchart .arrowMarkerPath,
+svg.flowchart marker path {
+  fill:
+    rgba(53,153,110,0.8) !important;
+  stroke:
+    rgba(53,153,110,0.8) !important;
+}
+.mermaid svg {
+  filter:
+    drop-shadow(0 0 24px rgba(53,153,110,0.14));
+}
+.mermaid .node rect {
+  rx: 18px;
+}
