@@ -27,7 +27,7 @@ defineProps<{
 }
 .rf-label {
   margin-top: 1rem;
-  color: var(--rf-muted);
+  color: var(--rf-secondary);
   font-size: 0.95rem;
 }
 </style>

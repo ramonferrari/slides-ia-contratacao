@@ -18,6 +18,9 @@ defineProps<{
   </footer>
 </template>
 <style scoped>
+/* ════════════════════════════════════════════
+   BOTTOM BAR
+════════════════════════════════════════════ */
 .rf-bottom-bar {
   position: absolute;
   left: 48px;
@@ -27,30 +30,34 @@ defineProps<{
   align-items: center;
   justify-content: space-between;
   padding-top: 14px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  color: rgba(255, 255, 255, 0.42);
-  font-family: "JetBrains Mono", monospace;
+  border-top:
+    1px solid var(--rf-bottom-border);
+  font-size:
+    0.72rem;
+  letter-spacing:
+    0.12em;
+  font-family:
+    "JetBrains Mono",
+    monospace;
 }
-
-/* Light Mode Overrides */
-html.light .rf-bottom-bar {
-  border-top-color: rgba(15, 23, 42, 0.39);
-  color: rgba(17, 24, 39, 0.72);
-}
-
+/* LEFT TEXT */
 .rf-bottom-left {
-  opacity: 0.72;
+  color:
+    var(--rf-bottom-text);
+  opacity:
+    1;
 }
-
+/* RIGHT LINK */
 .rf-bottom-right {
-  color: #35996e;
-  font-weight: 600;
-  letter-spacing: 0.16em;
+  color:
+    var(--rf-link);
+  font-weight:
+    600;
+  letter-spacing:
+    0.16em;
 }
-
-html.light .rf-bottom-right {
-  color: #2f8d65;
+.rf-bottom-right:hover {
+  color:
+    var(--rf-link-hover);
 }
 </style>
