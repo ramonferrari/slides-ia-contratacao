@@ -147,7 +147,7 @@ Você é um assessor jurídico especista em digitalização de informações do 
 # Ciência de Dados → Ciência de Dados Contratuais
 
 <div
-  class="grid gap-5 mt-15 items-center"
+  class="grid gap-0 mt-15 items-center"
   style="grid-template-columns: 1fr 1fr;"
 >
 
@@ -171,7 +171,8 @@ Você é um assessor jurídico especista em digitalização de informações do 
   top="Contratos"
   left="Análise e projeção \n de dados"
   right="Algoritmos e IA"
-  center="Ciência de\nDados"
+  center="\n🫵"
+  centerSize="70"
   size="430px"
   :transpLight="0.20"
   :transpDark="0.15"

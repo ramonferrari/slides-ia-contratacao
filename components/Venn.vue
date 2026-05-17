@@ -27,7 +27,11 @@ const props = defineProps({
   transpDark: {
     type: Number,
     default: 0.10
-  }
+  },
+  centerSize: {
+    type: String,
+    default: ""
+  },
 })
 function splitLines(text: string) {
   return text
@@ -99,7 +103,7 @@ into actual line breaks.
         <tspan
           v-for="(line, index) in leftLines"
           :key="index"
-          x="210"
+          x="190"
           :dy="index === 0 ? 0 : 24"
         >
           {{ line }}
@@ -114,7 +118,7 @@ into actual line breaks.
         <tspan
           v-for="(line, index) in rightLines"
           :key="index"
-          x="480"
+          x="500"
           :dy="index === 0 ? 0 : 24"
         >
           {{ line }}
@@ -141,6 +145,7 @@ into actual line breaks.
         y="260"
         text-anchor="middle"
         class="rf-center-title"
+        :style="{ fontSize: centerSize + 'px' }"
       >
         <tspan
           v-for="(line, index) in centerLines"
