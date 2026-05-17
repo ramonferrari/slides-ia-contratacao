@@ -251,11 +251,18 @@ h2 {
 p,
 li {
   color:
-    var(--rf-text-secondary);
+    var(--rf-text-secondary) !important;
   line-height:
     1.8;
   font-size:
     1.05rem;
+  text-shadow:
+    none !important;
+}
+
+.slidev-layout {
+  color:
+    var(--rf-text-secondary) !important;
 }
 
 /* Disable Seriph lead paragraph */
@@ -471,3 +478,4 @@ code {
       none;
   }
 }
+

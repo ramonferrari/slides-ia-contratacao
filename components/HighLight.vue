@@ -27,6 +27,8 @@ defineProps({
     #35996e;
   font-weight:
     600;
+  text-shadow:
+    none !important;
 }
 .rf-accent-glow {
   text-shadow:

@@ -188,13 +188,26 @@ Você é um assessor jurídico especista em digitalização de informações do 
 
 O problema não é a IA.
 
-O problema é confiar em uma
-<Accent glow >
-resposta não verificável.
-</Accent>
+O problema é confiar em uma resposta não verificável.
 
-Teste da cor real: <HighLight color="rgb(255, 255, 255)"> Teste da cor real </HighLight>
 
 ---
 
 # Teste de fonte
+
+
+Será que <Citation id="wang_accuracy_1996" mode="citet" /> propõem uma visão multidimensional da qualidade de dados. Avaliando o que acontece quando a frase fica muito grande e precisa extravazar.
+
+A qualidade da informação possui múltiplas dimensões além de acurácia <Citation id="wang_accuracy_1996" mode="citep" />.
+
+<Citation id="wang_accuracy_1996" mode="citet" /> propõem uma visão multidimensional da qualidade de dados.
+
+A qualidade da informação possui múltiplas dimensões além de acurácia <Citation id="wang_overview_2024" mode="citep" />.
+
+<Citation id="wang_overview_2024" mode="citet" /> propõem uma visão multidimensional da qualidade de dados.
+
+A qualidade da informação possui múltiplas além de acurácia <Citation id="wang_accuracy_1996" mode="citep" />.
+
+<Citation id="wang_accuracy_1996" mode="citep" /> testa parenteses no inicio.
+
+---
