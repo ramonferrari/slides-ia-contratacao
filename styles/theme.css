@@ -1,155 +1,109 @@
+/* ════════════════════════════════════════════
+   FONTS
+════════════════════════════════════════════ */
+
 @font-face {
   font-family: "Space Grotesk";
-  src:
-    url('/fonts/space-grotesk.ttf')
-    format('truetype');
-  font-weight:
-    300 700;
-  font-style:
-    normal;
+  src: url('/fonts/space-grotesk.ttf') format('truetype');
+  font-weight: 300 700;
+  font-style: normal;
 }
+
 @font-face {
   font-family: "JetBrains Mono";
-  src:
-    url('/fonts/jetbrains-mono.ttf')
-    format('truetype');
-  font-weight:
-    100 800;
-  font-style:
-    normal;
+  src: url('/fonts/jetbrains-mono.ttf') format('truetype');
+  font-weight: 100 800;
+  font-style: normal;
 }
-/* ════════════════════════════════════════════
-   RAMON FERRARI — SLIDEV THEME
-════════════════════════════════════════════ */
 
 /* ════════════════════════════════════════════
-   DESIGN TOKENS — DARK MODE (DEFAULT)
+   DESIGN TOKENS — DARK
 ════════════════════════════════════════════ */
+
 :root {
+
   /* BACKGROUND */
-  --rf-bg:
-    #0b0f14;
-  --rf-glow:
-    rgba(53,153,110,0.28);
+  --rf-bg: #131414;
+  --rf-bg-soft: #171919;
+  --rf-glow: rgba(12,99,85,0.28);
 
   /* SURFACES */
-  --rf-surface-primary:
-    rgba(255,255,255,0.04);
-  --rf-surface-secondary:
-    rgba(255,255,255,0.06);
+  --rf-surface-primary: rgba(255,255,255,0.04);
+  --rf-surface-secondary: rgba(255,255,255,0.06);
 
   /* BORDERS */
-  --rf-border-primary:
-    rgba(255,255,255,0.08);
-  --rf-border-secondary:
-    rgba(255,255,255,0.14);
+  --rf-border-primary: rgba(255,255,255,0.08);
+  --rf-border-secondary: rgba(255,255,255,0.14);
 
   /* TEXT */
-  --rf-text-primary:
-    rgba(255,255,255,0.92);
-  --rf-text-secondary:
-    rgba(255,255,255,0.72);
-  --rf-text-muted:
-    rgba(255,255,255,0.52);
+  --rf-text-primary: rgba(255,255,255,0.92);
+  --rf-text-secondary: rgba(255,255,255,0.72);
+  --rf-text-muted: rgba(255,255,255,0.50);
 
   /* BRAND */
-  --rf-primary:
-    #63d3a1;
-  --rf-highlight:
-    #e2f81b;
+  --rf-primary: #63d3a1;
+  --rf-highlight: #e2f81b;
 
-  /* LINKS */
-  --rf-link:
-    #63d3a1;
-  --rf-link-hover:
-    #e2f81b;
+  /* EFFECTS */
+  --rf-radius: 28px;
 
-  /* BOTTOM BAR */
-  --rf-bottom-text:
-    rgba(255,255,255,0.72);
-  --rf-bottom-border:
-    rgba(255,255,255,0.10);
-
-  /* TABLES */
-  --rf-table-bg:
-    rgba(255,255,255,0.03);
-  --rf-table-border:
-    rgba(255,255,255,0.08);
-  --rf-table-head-bg:
-    rgba(23,175,109,0.448);
-  --rf-table-th:
-    rgba(255,255,255,0.92);
-  --rf-table-td:
-    rgba(255,255,255,0.72);
-
-  /* MISC */
-  --rf-radius:
-    28px;
   --rf-shadow:
     0 20px 60px rgba(0,0,0,0.35);
+
+  --rf-shadow-soft:
+    0 10px 40px rgba(0,0,0,0.18);
+
+  --rf-ease:
+    cubic-bezier(0.22, 1, 0.36, 1);
+
   --slidev-theme-primary:
     var(--rf-primary);
+
+  /* BOTTOM BAR */
+  --rf-bottom-border: var(--rf-border-primary);
+  --rf-bottom-text:   var(--rf-text-muted);
+  --rf-link:          var(--rf-primary);
+  --rf-link-hover:    var(--rf-highlight);
 }
 
 /* ════════════════════════════════════════════
-   DESIGN TOKENS — LIGHT MODE
+   LIGHT MODE
 ════════════════════════════════════════════ */
-html.light {
-  /* BACKGROUND */
-  --rf-bg:
-    #f5f7fa;
-  --rf-glow:
-    rgba(53,153,110,0.12);
 
-  /* SURFACES */
+html.light {
+
+  --rf-bg: #f5f7fa;
+  --rf-bg-soft: #ffffff;
+
+  --rf-glow:
+    rgba(12,99,85,0.12);
+
   --rf-surface-primary:
     rgba(255,255,255,0.72);
+
   --rf-surface-secondary:
     rgba(255,255,255,0.92);
 
-  /* BORDERS */
   --rf-border-primary:
     rgba(15,23,42,0.08);
+
   --rf-border-secondary:
     rgba(15,23,42,0.14);
 
-  /* TEXT */
   --rf-text-primary:
     #111827;
+
   --rf-text-secondary:
     rgba(17,24,39,0.72);
+
   --rf-text-muted:
     rgba(17,24,39,0.52);
 
-  /* BRAND */
   --rf-primary:
     #2f8d65;
+
   --rf-highlight:
     #1f6e50;
-
-  /* LINKS */
-  --rf-link:
-    #2f8d65;
-  --rf-link-hover:
-    #1f6e50;
-
-  /* BOTTOM BAR */
-  --rf-bottom-text:
-    rgba(17,24,39,0.72);
-  --rf-bottom-border:
-    rgba(15,23,42,0.12);
-
-  /* TABLES */
-  --rf-table-bg:
-    rgba(160,163,161,0.203);
-  --rf-table-border:
-    rgba(15,23,42,0.08);
-  --rf-table-head-bg:
-    rgba(43,139,97,0.559);
-  --rf-table-th:
-    #111827;
-  --rf-table-td:
-    rgba(17,24,39,0.72);
 }
 
 /* ════════════════════════════════════════════
@@ -158,219 +112,133 @@ html.light {
 html,
 body,
 #slidev {
-  background:
-    var(--rf-bg);
-  color:
-    var(--rf-text-primary);
+
+  color: var(--rf-text-primary);
+
   font-family:
     "Space Grotesk",
     sans-serif;
 }
-.slidev-layout {
-  max-width:
-    100% !important;
-}
 
-/* ════════════════════════════════════════════
-   BACKGROUND EFFECTS
-════════════════════════════════════════════ */
-#slidev::before {
-  content:
-    "";
-  position:
-    fixed;
-  inset:
-    0;
-  pointer-events:
-    none;
+.slidev-layout {
+  max-width: 100% !important;
+  color: var(--rf-text-secondary);
   background:
     radial-gradient(
-      circle at top left,
-      rgba(53,153,110,0.12),
-      transparent 30%
+      circle at 100% 0%,
+      var(--rf-glow) 0%,
+      transparent 40%
     ),
     radial-gradient(
-      circle at bottom right,
-      rgba(53,153,110,0.06),
-      transparent 40%
-    );
-  filter:
-    blur(80px);
-  z-index:
-    -1;
+      circle at 0% 100%,
+      var(--rf-glow) 0%,
+      transparent 35%
+    ),
+    var(--rf-bg);
 }
-#slidev::after {
-  content:
-    "";
-  position:
-    fixed;
-  inset:
-    0;
-  pointer-events:
-    none;
-  opacity:
-    0.025;
-  background-image:
-    radial-gradient(
-      rgba(255,255,255,0.16) 0.5px,
-      transparent 0.5px
-    );
-  background-size:
-    8px 8px;
-  z-index:
-    -1;
+
+.slidev-layout h1 {
+  color: var(--rf-primary);
+}
+
+.slidev-layout h1.text-white {
+  color: white;
 }
 
 /* ════════════════════════════════════════════
    TYPOGRAPHY
 ════════════════════════════════════════════ */
+
 h1 {
-  font-size:
-    clamp(2.8rem, 7vw, 5rem);
-  line-height:
-    1.0;
-  letter-spacing:
-    -0.05em;
-  font-weight:
-    700;
-  margin-bottom:
-    1rem;
+  font-size: clamp(2.8rem, 7vw, 5rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
+
 h2 {
-  font-size:
-    clamp(1.8rem, 4vw, 3rem);
-  letter-spacing:
-    -0.04em;
-  margin-bottom:
-    1rem;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin-bottom: 1rem;
 }
-.slidev-layout h1 {
-  color:
-    var(--rf-primary) !important;
-}
+
 p,
 li {
-  color:
-    var(--rf-text-secondary) !important;
-  line-height:
-    1.8;
-  font-size:
-    1.05rem;
-  text-shadow:
-    none !important;
-}
-
-.slidev-layout {
-  color:
-    var(--rf-text-secondary) !important;
-}
-
-/* Disable Seriph lead paragraph */
-.slidev-layout h1 + p,
-.slidev-layout h2 + p,
-.slidev-layout h3 + p {
-  opacity:
-    1 !important;
-  font-size:
-    inherit !important;
-  font-weight:
-    inherit !important;
-  line-height:
-    inherit !important;
-  max-width:
-    none !important;
+  color: var(--rf-text-secondary);
+  line-height: 1.8;
+  font-size: 1.05rem;
 }
 
 /* ════════════════════════════════════════════
-   LINKS
+   DESIGN PRIMITIVES
 ════════════════════════════════════════════ */
-a,
-a:visited {
-  color:
-    var(--rf-link) !important;
-  text-decoration:
-    none !important;
-  border:
-    none !important;
-  outline:
-    none !important;
-  opacity:
-    1 !important;
-  transition:
-    opacity 0.2s ease,
-    color 0.2s ease;
-}
-a:hover {
-  color:
-    var(--rf-link-hover) !important;
-  opacity:
-    1 !important;
+
+.rf-title {
+  color: var(--rf-primary);
 }
 
-/* ════════════════════════════════════════════
-   BLOCKQUOTE
-════════════════════════════════════════════ */
-blockquote {
-  border-left:
-    3px solid var(--rf-primary);
-  padding-left:
-    1.2rem;
-  color:
-    var(--rf-text-primary);
-  font-size:
-    1.2rem;
+.rf-hero {
+  font-size: clamp(4rem, 10vw, 8rem);
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+  font-weight: 800;
 }
 
-/* ════════════════════════════════════════════
-   LISTS
-════════════════════════════════════════════ */
-ul {
-  list-style:
-    disc;
-  padding-left:
-    1.4rem;
-  margin-top:
-    1rem;
-}
-ol {
-  list-style-type:
-    decimal;
-  padding-left:
-    1.4rem;
-  margin-top:
-    1rem;
-}
-li {
-  margin:
-    0.4rem 0;
+.rf-section-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  font-weight: 700;
 }
 
-/* ════════════════════════════════════════════
-   CODE
-════════════════════════════════════════════ */
-pre {
+.rf-eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.35em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--rf-primary);
+}
+
+.rf-muted {
+  color: var(--rf-text-muted);
+}
+
+.rf-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rf-panel {
   background:
-    var(--rf-surface-primary) !important;
+    linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.05),
+      rgba(255,255,255,0.03)
+    );
+
   border:
     1px solid var(--rf-border-primary);
+
   border-radius:
-    22px;
-  padding:
-    1.2rem !important;
-  overflow:
-    hidden;
+    var(--rf-radius);
+
+  backdrop-filter:
+    blur(20px);
+
   box-shadow:
-    0 10px 40px rgba(0,0,0,0.25);
-}
-code {
-  font-family:
-    "JetBrains Mono",
-    monospace;
+    var(--rf-shadow);
+
+  padding:
+    2rem;
 }
 
 /* ════════════════════════════════════════════
-   GLASS SURFACES
+   GLASS
 ════════════════════════════════════════════ */
+
 .glass {
   background:
     linear-gradient(
@@ -378,104 +246,229 @@ code {
       rgba(255,255,255,0.05),
       rgba(255,255,255,0.03)
     );
+
   border:
     1px solid var(--rf-border-primary);
+
   border-radius:
     var(--rf-radius);
+
   backdrop-filter:
     blur(20px);
+
   box-shadow:
-    var(--rf-shadow);
+    var(--rf-shadow-soft);
+
   padding:
     2rem;
+
   transition:
-    transform 0.25s ease,
-    border-color 0.25s ease,
-    box-shadow 0.25s ease;
+    transform 0.25s var(--rf-ease),
+    border-color 0.25s var(--rf-ease),
+    box-shadow 0.25s var(--rf-ease);
+}
+
+/* ════════════════════════════════════════════
+   CODE
+════════════════════════════════════════════ */
+
+pre {
+  background:
+    var(--rf-surface-primary) !important;
+
+  border:
+    1px solid var(--rf-border-primary);
+
+  border-radius:
+    22px;
+
+  padding:
+    1.2rem !important;
+
+  overflow:
+    hidden;
+
+  box-shadow:
+    var(--rf-shadow-soft);
+}
+
+code {
+  font-family:
+    "JetBrains Mono",
+    monospace;
 }
 
 /* ════════════════════════════════════════════
    TABLES
 ════════════════════════════════════════════ */
+
 .rf-table {
-  width:
-    100%;
-  border-collapse:
-    collapse;
-  overflow:
-    hidden;
-  border-radius:
-    28px;
-  background:
-    var(--rf-table-bg);
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+
+  border-radius: var(--rf-radius);
+
+  background: var(--rf-surface-primary);
+
   border:
-    1px solid var(--rf-table-border);
-  backdrop-filter:
-    blur(20px);
+    1px solid var(--rf-border-primary);
+
+  backdrop-filter: blur(20px);
 }
+
 .rf-table thead {
   background:
-    var(--rf-table-head-bg);
+    rgba(23,175,109,0.32);
 }
+
 .rf-table th {
-  padding:
-    14px 22px;
-  text-align:
-    left;
-  font-size:
-    0.78rem;
-  letter-spacing:
-    0.08em;
-  text-transform:
-    uppercase;
-  color:
-    var(--rf-table-th);
+  padding: 14px 22px;
+
+  text-align: left;
+
+  font-size: 0.78rem;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  color: var(--rf-text-primary);
+
   border-bottom:
-    1px solid var(--rf-table-border);
+    1px solid var(--rf-border-primary);
 }
+
 .rf-table td {
-  padding:
-    16px 22px;
-  color:
-    var(--rf-table-td);
+  padding: 16px 22px;
+
+  color: var(--rf-text-secondary);
+
   border-bottom:
-    1px solid var(--rf-table-border);
+    1px solid var(--rf-border-primary);
 }
 
 /* ════════════════════════════════════════════
-   CURSOR
+   LINKS
 ════════════════════════════════════════════ */
-.rf-cursor {
-  display:
-    inline-block;
-  margin-left:
-    0.2rem;
-  color:
-    var(--rf-primary);
+
+a,
+a:visited {
+  color: var(--rf-primary);
+  text-decoration: none;
+  transition:
+    color 0.2s var(--rf-ease),
+    opacity 0.2s var(--rf-ease);
+}
+
+a:hover {
+  color: var(--rf-highlight);
+}
+
+.slidev-layout a,
+.slidev-layout a:visited {
+  text-decoration: none !important;
+}
+
+/* ════════════════════════════════════════════
+   MOTION
+════════════════════════════════════════════ */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.rf-reveal {
   animation:
-    rf-blink 1s infinite;
+    fadeUp 0.9s var(--rf-ease) forwards;
 }
-@keyframes rf-blink {
-  50% {
-    opacity:
-      0;
-  }
+
+.rf-reveal-1 {
+  opacity: 0;
+
+  animation:
+    fadeUp 0.9s var(--rf-ease) 0.2s forwards;
+}
+
+.rf-reveal-2 {
+  opacity: 0;
+
+  animation:
+    fadeUp 0.9s var(--rf-ease) 0.4s forwards;
+}
+
+.rf-reveal-3 {
+  opacity: 0;
+
+  animation:
+    fadeUp 0.9s var(--rf-ease) 0.6s forwards;
 }
 
 /* ════════════════════════════════════════════
-   PRINT / PDF EXPORT
+   UTILITIES
 ════════════════════════════════════════════ */
+
+.rf-vignette {
+  position: relative;
+}
+
+.rf-vignette::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle,
+      transparent 45%,
+      rgba(0,0,0,0.35) 100%
+    );
+}
+
+.rf-grid {
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.03) 1px,
+      transparent 1px
+    );
+
+  background-size:
+    40px 40px;
+}
+
+/* ════════════════════════════════════════════
+   PRINT
+════════════════════════════════════════════ */
+
 @media print {
-  .glass {
-    backdrop-filter:
-      none;
-    box-shadow:
-      none;
+
+  .glass,
+  .rf-panel {
+    backdrop-filter: none;
+    box-shadow: none;
   }
+
   #slidev::before,
   #slidev::after {
-    display:
-      none;
+    display: none;
   }
 }
-

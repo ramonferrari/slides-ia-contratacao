@@ -1,20 +1,19 @@
 <script setup lang="ts">
-defineProps<{
-  title?: string
-}>()
+import { useNav, configs } from '@slidev/client'
+
+defineProps<{ title?: string }>()
+
+const { currentPage, total } = useNav()
 </script>
 <template>
   <footer class="rf-bottom-bar">
     <div class="rf-bottom-left">
-      {{ title || $slidev.configs.themeConfig?.shortTitle || 'AI SYSTEMS' }}
+      {{ title || configs.themeConfig?.shortTitle || 'AI SYSTEMS' }}
     </div>
-    <a
-      class="rf-bottom-right"
-      href="https://ramonferrari.dev"
-      target="_blank"
-    >
-      ramonferrari.dev
-    </a>
+    <div class="rf-bottom-right">
+      <a href="https://ramonferrari.dev" target="_blank">ramonferrari.dev</a>
+      <span class="rf-bottom-page">{{ currentPage }} de {{ total }}</span>
+    </div>
   </footer>
 </template>
 <style scoped>
@@ -47,17 +46,26 @@ defineProps<{
   opacity:
     1;
 }
-/* RIGHT LINK */
+/* RIGHT */
 .rf-bottom-right {
-  color:
-    var(--rf-link);
-  font-weight:
-    600;
-  letter-spacing:
-    0.16em;
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
 }
-.rf-bottom-right:hover {
-  color:
-    var(--rf-link-hover);
+
+.rf-bottom-right a {
+  color: var(--rf-link);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-decoration: none !important;
+}
+
+.rf-bottom-right a:hover {
+  color: var(--rf-link-hover);
+}
+
+.rf-bottom-page {
+  color: var(--rf-bottom-text);
+  letter-spacing: 0.12em;
 }
 </style>
