@@ -2,7 +2,7 @@
 colorSchema: both
 themeConfig:
   appearance: dark
-  shortTitle: "IA na Gestão de Contratos"
+  shortTitle: "Fórum de Gestão Tecnológica: IA na Gestão de Contratos"
 fonts:
   sans: Space Grotesk
   serif: Space Grotesk
@@ -628,4 +628,20 @@ ramon.ferrari@gmail.com
 <ModelComparison />
 
 ---
+
+
+# Somos todos cientistas de dados
+
+<DataVSContract />
+
+---
+
+# Luz sobre riscos silenciosos
+
+<AISpotlight />
+
+---
+
+
+
 
