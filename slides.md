@@ -609,9 +609,9 @@ ramon.ferrari@gmail.com
 
 <div class="relative z-10 text-center h-full flex flex-col justify-center" style="padding: 4rem 2rem;">
 
-<div style="font-size: 4.5rem; margin-bottom: 2rem;">🔦</div>
+<div style="font-size: 4.5rem; margin-bottom: 2rem;">🔍</div>
 <h2 style="font-size: 2.2rem; font-weight: 900; margin: 0 0 3rem 0; color: white;">FAROL DE CONTRATOS</h2>
-<p style="font-size: 0.95rem; color: #cbd5e1;">ramon.ferrari@gmail.com</p>
+<p style="font-size: 0.95rem; color: #cbd5e1;">ES/ENGP - CSDA</p>
 
 </div>
 

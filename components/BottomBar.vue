@@ -11,8 +11,8 @@ const { currentPage, total } = useNav()
       {{ title || configs.themeConfig?.shortTitle || 'AI SYSTEMS' }}
     </div>
     <div class="rf-bottom-right">
-      <a href="https://ramonferrari.dev" target="_blank">ramonferrari.dev</a>
-      <span class="rf-bottom-page">{{ currentPage }} de {{ total }}</span>
+      <a href="http://esdigital.petrobras.com.br" target="_blank">esdigital.petrobras.com.br</a>
+      <span class="rf-bottom-page">{{ currentPage }}/{{ total }}</span>
     </div>
   </footer>
 </template>
@@ -42,7 +42,7 @@ const { currentPage, total } = useNav()
 /* LEFT TEXT */
 .rf-bottom-left {
   color:
-    var(--rf-bottom-text);
+    var(--rf-text-secondary);
   opacity:
     1;
 }
@@ -58,6 +58,8 @@ const { currentPage, total } = useNav()
   font-weight: 600;
   letter-spacing: 0.16em;
   text-decoration: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 .rf-bottom-right a:hover {
@@ -65,7 +67,7 @@ const { currentPage, total } = useNav()
 }
 
 .rf-bottom-page {
-  color: var(--rf-bottom-text);
+  color: var(--rf-text-secondary);
   letter-spacing: 0.12em;
 }
 </style>
