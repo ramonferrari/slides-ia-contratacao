@@ -616,3 +616,16 @@ ramon.ferrari@gmail.com
 </div>
 
 ---
+
+# A IA não tem memória. Tem mesa de trabalho.
+
+<Contextdesk />
+
+---
+
+# Tanto faz o modelo? Atenção aos flash X pro
+
+<ModelComparison />
+
+---
+
