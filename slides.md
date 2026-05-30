@@ -630,7 +630,7 @@ ramon.ferrari@gmail.com
 ---
 
 
-# Somos todos cientistas de dados
+# Somos todos cientistas
 
 <DataVSContract />
 
