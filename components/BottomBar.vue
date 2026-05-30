@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useNav, configs } from '@slidev/client'
+import { useNav } from '@slidev/client'
 
 defineProps<{ title?: string }>()
 
@@ -7,13 +7,8 @@ const { currentPage, total } = useNav()
 </script>
 <template>
   <footer class="rf-bottom-bar">
-    <div class="rf-bottom-left">
-      {{ title || configs.themeConfig?.shortTitle || 'AI SYSTEMS' }}
-    </div>
-    <div class="rf-bottom-right">
-      <a href="http://esdigital.petrobras.com.br" target="_blank">esdigital.petrobras.com.br</a>
-      <span class="rf-bottom-page">{{ currentPage }}/{{ total }}</span>
-    </div>
+    <a href="http://esdigital.petrobras.com.br" target="_blank">esdigital.petrobras.com.br</a>
+    <span class="rf-bottom-page">{{ currentPage }}/{{ total }}</span>
   </footer>
 </template>
 <style scoped>
@@ -24,36 +19,16 @@ const { currentPage, total } = useNav()
   position: absolute;
   left: 48px;
   right: 48px;
-  bottom: 22px;
+  bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 14px;
-  border-top:
-    1px solid var(--rf-bottom-border);
-  font-size:
-    0.72rem;
-  letter-spacing:
-    0.12em;
-  font-family:
-    "JetBrains Mono",
-    monospace;
-}
-/* LEFT TEXT */
-.rf-bottom-left {
-  color:
-    var(--rf-text-secondary);
-  opacity:
-    1;
-}
-/* RIGHT */
-.rf-bottom-right {
-  display: flex;
-  align-items: center;
-  gap: 1.2em;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  font-family: "JetBrains Mono", monospace;
 }
 
-.rf-bottom-right a {
+.rf-bottom-bar a {
   color: var(--rf-link);
   font-weight: 600;
   letter-spacing: 0.16em;
@@ -62,7 +37,7 @@ const { currentPage, total } = useNav()
   box-shadow: none !important;
 }
 
-.rf-bottom-right a:hover {
+.rf-bottom-bar a:hover {
   color: var(--rf-link-hover);
 }
 

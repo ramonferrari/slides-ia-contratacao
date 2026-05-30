@@ -16,6 +16,34 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "TeX Gyre Pagella";
+  src: url('/fonts/texgyrepagella-regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TeX Gyre Pagella";
+  src: url('/fonts/texgyrepagella-italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "TeX Gyre Pagella";
+  src: url('/fonts/texgyrepagella-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TeX Gyre Pagella";
+  src: url('/fonts/texgyrepagella-bolditalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
 /* ════════════════════════════════════════════
    DESIGN TOKENS — DARK
 ════════════════════════════════════════════ */
@@ -137,12 +165,58 @@ body,
     var(--rf-bg);
 }
 
-.slidev-layout h1 {
-  color: var(--rf-primary);
+.slidev-layout h1:not(.rf-hero) {
+  font-family: "TeX Gyre Pagella", "Palatino Linotype", "Palatino", Georgia, serif;
+  font-size: clamp(1.4rem, 7vw, 4rem);
+  font-weight: 700 !important;
+  letter-spacing: 0.06em;
+  line-height: 1.0;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--rf-text-primary);
+  margin-bottom: 0;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.slidev-layout h1:not(.rf-hero)::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: var(--rf-highlight);
+  border-radius: 2px;
+  margin: 1rem auto 1.8rem;
 }
 
 .slidev-layout h1.text-white {
   color: white;
+}
+
+/* ════════════════════════════════════════════
+   SLIDE SUPERTITLE (presentation title above h1)
+════════════════════════════════════════════ */
+
+.rf-supertitle-bar {
+  text-align: center;
+  padding-top: 0;
+  margin-top: -1rem;
+  margin-bottom: 0.2rem;
+  font-family: "TeX Gyre Pagella", "Palatino Linotype", "Palatino", Georgia, serif;
+  font-style: italic;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+}
+
+.rf-supertitle-main {
+  color: var(--rf-text-secondary);
+  font-weight: 700;
+}
+
+.rf-supertitle-after {
+  color: var(--rf-highlight);
+  font-weight: 700;
 }
 
 /* ════════════════════════════════════════════
