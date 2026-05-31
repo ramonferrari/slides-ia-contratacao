@@ -22,6 +22,20 @@ class: text-left
 
 ---
 
+# Quem sou eu?
+
+<CircularImage 
+src="https://github.com/ramonferrari.png" 
+size="180px"
+borderColor="var(--rf-highlight)"
+:scale="1.1"
+x="120"
+y="200"
+/>
+
+
+---
+
 # Somos todos cientistas
 
 <DataVSContract />
