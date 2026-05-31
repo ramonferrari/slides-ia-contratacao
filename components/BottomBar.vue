@@ -17,8 +17,8 @@ const { currentPage, total } = useNav()
 ════════════════════════════════════════════ */
 .rf-bottom-bar {
   position: absolute;
-  left: 48px;
-  right: 48px;
+  left: 24px;
+  right: 24px;
   bottom: 10px;
   display: flex;
   align-items: center;
