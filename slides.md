@@ -647,3 +647,15 @@ ramon.ferrari@gmail.com
 <AIKnowledge />
 
 
+---
+
+# O que a IA sabe
+
+<ContractExtraction />
+
+---
+
+
+# Projeção
+
+<Regression />
