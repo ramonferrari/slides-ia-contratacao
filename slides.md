@@ -36,11 +36,54 @@ y="200"
 
 ---
 
+
+
+# Ciência de Dados
+
+<div
+  class="grid gap-0 mt-15 items-center"
+  style="grid-template-columns: 1fr 1fr;"
+>
+
+<div>
+
+<Venn
+  top="Negócio"
+  left="Estatística"
+  right="Computação"
+  center="Ciência de\nDados"
+  size="430px"
+  :transpLight="0.20"
+  :transpDark="0.15"
+/>
+
+</div>
+
+<div v-click>
+
+<Venn
+  top="Contratos"
+  left="Análise e projeção \n de dados"
+  right="Algoritmos e IA"
+  center="\n🫵"
+  centerSize="70"
+  size="430px"
+  :transpLight="0.20"
+  :transpDark="0.15"
+/>
+
+</div>
+
+</div>
+
+---
+
 # Somos todos cientistas
 
 <DataVSContract />
 
 ---
+
 
 # Gestão de Contratos
 
@@ -494,45 +537,6 @@ A solução não é ter mais força — é ter a chave certa para cada fechadura
 
 ---
 
-# Ciência de Dados → Ciência de Dados Contratuais
-
-<div
-  class="grid gap-0 mt-15 items-center"
-  style="grid-template-columns: 1fr 1fr;"
->
-
-<div>
-
-<Venn
-  top="Negócio"
-  left="Estatística"
-  right="Computação"
-  center="Ciência de\nDados"
-  size="430px"
-  :transpLight="0.20"
-  :transpDark="0.15"
-/>
-
-</div>
-
-<div v-click>
-
-<Venn
-  top="Contratos"
-  left="Análise e projeção \n de dados"
-  right="Algoritmos e IA"
-  center="\n🫵"
-  centerSize="70"
-  size="430px"
-  :transpLight="0.20"
-  :transpDark="0.15"
-/>
-
-</div>
-
-</div>
-
----
 
 # Classificação
 
