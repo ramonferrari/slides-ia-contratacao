@@ -642,6 +642,8 @@ ramon.ferrari@gmail.com
 
 ---
 
+# O que a IA sabe
 
+<AIKnowledge />
 
 

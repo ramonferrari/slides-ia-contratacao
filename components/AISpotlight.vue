@@ -206,45 +206,48 @@
         </g>
       </g><!-- /r1 grid -->
 
-      <!-- ══ AI TORCH ══ -->
+      <!-- ══ AI ELEMENT ══ -->
       <g class="r1">
-        <rect x="477" y="4" width="78" height="88" rx="22"
-          fill="rgba(16,26,20,0.96)" stroke="rgba(99,211,161,0.45)" stroke-width="1.5"/>
-        <line x1="493" y1="18" x2="539" y2="18" stroke="rgba(99,211,161,.12)" stroke-width="1"/>
-        <line x1="493" y1="25" x2="539" y2="25" stroke="rgba(99,211,161,.10)" stroke-width="1"/>
-        <line x1="493" y1="32" x2="539" y2="32" stroke="rgba(99,211,161,.08)" stroke-width="1"/>
-        <circle cx="516" cy="66" r="30" fill="url(#asp-torch-rad)" :filter="'url(#asp-blur3)'"/>
-        <circle cx="516" cy="66" r="24" fill="rgba(8,18,12,0.9)" stroke="rgba(99,211,161,.55)" stroke-width="2"/>
-        <circle cx="516" cy="66" r="17" fill="rgba(99,211,161,.10)" stroke="rgba(99,211,161,.30)" stroke-width="1"/>
-        <text x="516" y="72" font-family="Space Grotesk,sans-serif" font-size="5.5" font-weight="800"
+        <circle cx="516" cy="160" r="30" fill="url(#asp-torch-rad)" :filter="'url(#asp-blur3)'"/>
+        <circle cx="516" cy="160" r="24" fill="rgba(8,18,12,0.9)" stroke="rgba(99,211,161,.55)" stroke-width="2"/>
+        <circle cx="516" cy="160" r="17" fill="rgba(99,211,161,.10)" stroke="rgba(99,211,161,.30)" stroke-width="1"/>
+        <text x="516" y="166" font-family="Space Grotesk,sans-serif" font-size="5.5" font-weight="800"
           fill="rgba(99,211,161,.95)" text-anchor="middle" letter-spacing=".5">AI</text>
       </g>
 
-      <!-- ══ LASER PENDULUM ══ -->
+      <!-- ══ FLOW ARROW ══ -->
       <g class="r2">
-        <g class="laser">
-          <g>
-            <line x1="516" y1="92" x2="516" y2="380"
-              stroke="rgba(99,211,161,.12)" stroke-width="22" stroke-linecap="round" :filter="'url(#asp-blur6)'"/>
-            <line x1="516" y1="92" x2="516" y2="380"
-              stroke="rgba(99,211,161,.22)" stroke-width="8" stroke-linecap="round" :filter="'url(#asp-blur3)'"/>
-            <line x1="516" y1="92" x2="516" y2="380"
-              stroke="rgba(160,240,200,.35)" stroke-width="3" stroke-linecap="round" :filter="'url(#asp-blur1)'"/>
-            <line x1="516" y1="92" x2="516" y2="380"
-              stroke="rgba(200,255,230,.85)" stroke-width="1.2" stroke-linecap="round"/>
-            <animateTransform
-              attributeName="transform"
-              type="rotate"
-              values="-40 516 92; 40 516 92; -40 516 92"
-              dur="3s"
-              repeatCount="indefinite"
-              calcMode="spline"
-              keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"
-            />
-          </g>
-          <circle cx="516" cy="92" r="5" fill="rgba(255,255,255,.6)" :filter="'url(#asp-blur1)'"/>
-          <circle cx="516" cy="92" r="2.5" fill="rgba(255,255,255,.9)"/>
-        </g>
+
+        <!-- Halo externo -->
+        <line x1="462" y1="196" x2="548" y2="196"
+          stroke="rgba(99,211,161,.10)" stroke-width="12" stroke-linecap="round" :filter="'url(#asp-blur6)'"/>
+        <!-- Glow médio -->
+        <line x1="462" y1="196" x2="548" y2="196"
+          stroke="rgba(99,211,161,.22)" stroke-width="5" stroke-linecap="round" :filter="'url(#asp-blur3)'"/>
+        <!-- Glow fino -->
+        <line x1="462" y1="196" x2="548" y2="196"
+          stroke="rgba(99,211,161,.50)" stroke-width="1.5" stroke-linecap="round" :filter="'url(#asp-blur1)'"/>
+        <!-- Núcleo com traço animado -->
+        <line x1="462" y1="196" x2="548" y2="196"
+          class="arrow-flow" stroke="rgba(160,240,200,.90)" stroke-width="0.8"/>
+
+        <!-- Ponta da seta: halo -->
+        <polygon points="546,188 562,196 546,204"
+          fill="rgba(99,211,161,.20)" :filter="'url(#asp-blur3)'"/>
+        <!-- Ponta da seta: preenchimento -->
+        <polygon points="547,190 560,196 547,202"
+          fill="rgba(99,211,161,.90)"/>
+
+        <!-- Ponto de origem -->
+        <circle cx="462" cy="196" r="5" fill="rgba(99,211,161,.12)" :filter="'url(#asp-blur3)'"/>
+        <circle cx="462" cy="196" r="2.5" fill="rgba(99,211,161,.75)"/>
+
+        <!-- Partícula viajante -->
+        <circle r="3.5" fill="rgba(200,255,230,.85)" :filter="'url(#asp-blur1)'">
+          <animate attributeName="cx" from="462" to="548" dur="1.4s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1"/>
+          <animate attributeName="cy" from="196" to="196" dur="1.4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.82;1" dur="1.4s" repeatCount="indefinite"/>
+        </circle>
       </g>
 
       <!-- ══ OPEN DOCUMENT ══ -->
@@ -327,13 +330,13 @@
   0%,100% { filter:drop-shadow(0 0 5px rgba(226,248,27,.35)); }
   50%      { filter:drop-shadow(0 0 18px rgba(226,248,27,.8)); }
 }
-@keyframes laser-pulse {
-  0%,100% { opacity:.55; }
-  50%      { opacity:.85; }
-}
 @keyframes float-doc {
   0%,100% { transform:translateY(0); }
   50%      { transform:translateY(-4px); }
+}
+@keyframes flow {
+  from { stroke-dashoffset: 13; }
+  to   { stroke-dashoffset: 0; }
 }
 @keyframes fadeUp {
   from { opacity:0; transform:translateY(16px); filter:blur(4px); }
@@ -349,18 +352,12 @@
 .w2     { animation-delay: .5s; }
 .w3     { animation-delay: 1s; }
 .w4     { animation-delay: 1.5s; }
-.badge-g { animation: pulse-badge 2.5s ease-in-out infinite; }
-.laser  { animation: laser-pulse 3s   ease-in-out infinite; }
-.doc-float { animation: float-doc 4s  ease-in-out infinite; }
+.badge-g   { animation: pulse-badge  2.5s ease-in-out infinite; }
+.doc-float { animation: float-doc    4s   ease-in-out infinite; }
+.arrow-flow { stroke-dasharray: 8 5; animation: flow 0.9s linear infinite; }
 
 .r1 { opacity:0; animation: fadeUp .9s cubic-bezier(.22,1,.36,1) .10s forwards; }
 .r2 { opacity:0; animation: fadeUp .9s cubic-bezier(.22,1,.36,1) .35s forwards; }
 .r3 { opacity:0; animation: fadeUp .9s cubic-bezier(.22,1,.36,1) .60s forwards; }
 
-.p1 { --dx:-8px;  --dy:12px; animation: particle 2.2s ease-out .3s  infinite; }
-.p2 { --dx:6px;   --dy:18px; animation: particle 2.8s ease-out .7s  infinite; }
-.p3 { --dx:-12px; --dy:8px;  animation: particle 2.5s ease-out 1.1s infinite; }
-.p4 { --dx:10px;  --dy:14px; animation: particle 3s   ease-out .5s  infinite; }
-.p5 { --dx:-6px;  --dy:20px; animation: particle 2.3s ease-out 1.4s infinite; }
-.p6 { --dx:8px;   --dy:10px; animation: particle 2.7s ease-out .2s  infinite; }
 </style>
