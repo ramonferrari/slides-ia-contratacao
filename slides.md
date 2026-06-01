@@ -734,8 +734,7 @@ Juridiquês entra. Matemático sai.
 
 ---
 
-# Caso 01
-## Extração na Prática
+# Caso de Extração na Prática
 
 <div class="grid gap-12 mt-5"
 style="grid-template-columns: 4fr 6fr;"
@@ -840,9 +839,6 @@ A terceira opção é colocar estrutura em volta dela: definir o que procurar, v
 
 É essa estrutura que transforma IA de ferramenta exploratória em pipeline confiável.
 
-::note::
-O que você faz? Volta pro papel e pro advogado lendo contrato por contrato? Não. Mas a IA crua também não é suficiente — pelo menos não pra quem precisa de confiabilidade, rastreabilidade e escala.
-
 ---
 
 # 🔦 FAROL DE CONTRATOS
@@ -944,6 +940,8 @@ Sempre.
 
 </div>
 
+<div>
+
 <TerminalBlock>
 
 > Extração: contrato_fornecedor_A.pdf
@@ -961,15 +959,14 @@ Foro de eleição: N/E
 
 </div>
 
+</div>
+
 ::note::
 O que mais me incomoda na IA crua é que você não sabe de onde veio a resposta. Ela diz '5%' e você torce pra estar certo.
 
 O Farol funciona diferente. Quando extrai uma informação, ele cita a fonte. 'Multa rescisória: 5%. Fonte: Cláusula 8.2, página 12.'
 
 Você pode abrir o PDF e conferir. Você não precisa confiar no sistema — você pode verificar. E isso é tudo que importa pra gestão de risco.
-
-::note::
-O que mais me incomoda na IA crua é que você não sabe de onde veio a resposta. O Farol funciona diferente: quando extrai, ele cita a fonte. Você pode abrir o PDF e conferir.
 
 ---
 
@@ -1067,7 +1064,7 @@ Prazo de rescisão sem multa
 
 <div class="glass mt-6 p-4 text-center">
 
-**Qualquer campo que faz sentido — o Farol extrai.**
+**O Farol extrai campos que fazem sentido para o cliente.**
 
 </div>
 
@@ -1091,12 +1088,7 @@ Qualquer campo que faz sentido pra vocês — o Farol pode extrair. Porque o que
 </div>
 
 ::note::
-Esse é o slide mais importante da segunda metade. Deixa alguém responder. Anota o que as pessoas falam — vai virar argumento personalizado na conversa depois.
-
-Se ninguém falar em 8 segundos: "Quem aqui já teve um problema que poderia ter sido evitado se soubesse antes que um contrato estava vencendo? [pausa] Qual informação você queria ter tido?"
-
-::note::
-Esse é o slide mais importante da segunda metade. Deixa alguém responder. Anota o que as pessoas falam — vai virar argumento personalizado na conversa depois.
+"Quem aqui já teve um problema que poderia ter sido evitado se soubesse antes que um contrato estava vencendo? [pausa] Qual informação você queria ter tido?"
 
 ---
 
@@ -1138,9 +1130,6 @@ Ele extrai e organiza — mas não julga estratégia. Se a multa de 5% é boa ou
 Ele avisa sobre cláusulas — mas não interpreta legislação. Isso ainda é com o jurídico.
 
 E se o contrato referencia um anexo que não está no PDF — ele vai avisar que o anexo está faltando. Mas não vai inventar o que está nele.
-
-::note::
-A divisão de trabalho é clara: Farol faz o trabalho sujo de leitura. Você e seu time fazem o trabalho que exige julgamento.
 
 ---
 
