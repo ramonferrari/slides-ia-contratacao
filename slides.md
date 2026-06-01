@@ -36,11 +36,10 @@ y="200"
 <div class="prose" style="position: absolute; right: 60px; top: 180px; width: 550px; font-size: 1.1rem; line-height: 1.6;">
 
 - Baiano, 15 anos no RJ, 2 anos em Vitória.
-- 15 anos no Processamento de Dados Sísmicos
-- Cientista de Dados certificado da Petrobras
-- Coordenador: CSDA
-- Doutorando em Administração de Empresas na FGV EAE-SP
-    - Qualidade da Informação em LLMs
+- Atuação por ~15 anos em processamento de dados sísmicos
+- Coordenador e Cientista de Dados na Petrobras
+- Doutorando em Adm. de Empresas (FGV EAESP)
+  - Qualidade de informação em sistemas de LLM
 </div>
 
 ::note::
