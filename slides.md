@@ -25,13 +25,30 @@ class: text-left
 # Quem sou eu?
 
 <CircularImage 
-src="https://github.com/ramonferrari.png" 
+src="/public/rf.jpg" 
 size="180px"
 borderColor="var(--rf-highlight)"
 :scale="1.1"
 x="120"
 y="200"
 />
+
+<div class="prose" style="position: absolute; right: 60px; top: 180px; width: 550px; font-size: 1.1rem; line-height: 1.6;">
+
+- Baiano, 15 anos no RJ, 2 anos em Vitória.
+- 15 anos no Processamento de Dados Sísmicos
+- Cientista de Dados certificado da Petrobras
+- Coordenador: CSDA
+- Doutorando em Administração de Empresas na FGV EAE-SP
+    - Qualidade da Informação em LLMs
+</div>
+
+::note::
+Trabalho com ciência de dados há alguns anos. O que um cientista de dados faz, no fundo, é simples: pega informação bruta, bagunçada, espalhada — e transforma em algo que ajuda alguém a decidir melhor.
+
+Aí eu olhei pra vocês e pensei: é exatamente isso que vocês fazem. Vocês pegam contratos — informação bruta, densa, espalhada em dezenas de documentos — e tentam transformar isso em decisão. Renovar ou não. Rescindir ou não.
+
+Vocês são cientistas de dados de contratos. Só que as ferramentas que vocês usam ainda não acompanharam o que a área tem de melhor.
 
 
 ---
@@ -76,11 +93,25 @@ y="200"
 
 </div>
 
+::note::
+À esquerda: ciência de dados tradicional - interseção de negócio, estatística e computação.
+
+À direita (no clique): reframe - vocês estão na interseção de contratos, análise/projeção de dados, e algoritmos/IA. São cientistas de dados também, só que especializados.
+
 ---
 
 # Somos todos cientistas
 
 <DataVSContract />
+
+::note::
+Um cientista de dados começa sempre com o mesmo problema: os dados são uma bagunça.
+
+Faltam campos. Têm inconsistências. Têm duplicatas. Têm informação desatualizada. E o pior — são difíceis de consultar e quase impossíveis de comparar entre si.
+
+Contratos têm exatamente os mesmos problemas. Campo de valor não preenchido. Cláusulas que contradizem o anexo. Três versões do mesmo documento sem saber qual é a final. Aditivo que mudou tudo mas está num PDF separado que ninguém vinculou.
+
+Os problemas são idênticos. O que muda é o nome.
 
 ---
 
@@ -125,11 +156,34 @@ A IA transforma contratos em sinais operacionais, informações vivas capazes de
 
 <AIKnowledge />
 
+::note::
+A IA generativa foi treinada com uma quantidade absurda de texto da internet. Tudo isso até uma certa data.
+
+É por isso que ela parece tão inteligente: ela leu mais do que qualquer humano conseguiria ler em mil vidas.
+
+Mas ela não sabe nada sobre os seus contratos. Seus documentos nunca estiveram na internet.
+
+Então o que a gente faz? Manda os contratos junto com a pergunta — e torce pra ela ser inteligente o suficiente pra usar bem. E é aí que começa a conversa interessante.
+
 ---
 
 # A IA não tem memória. Tem mesa de trabalho.
 
 <Contextdesk />
+
+::note::
+Imagina que a IA tem uma mesa de trabalho. Tudo que você quer que ela use na análise precisa estar em cima dessa mesa ao mesmo tempo.
+
+Documentos que você mandou: na mesa. Histórico da conversa: na mesa. Sua próxima pergunta: também vai pra mesa.
+
+O que não cabe — ela não vê. E não avisa que não viu.
+
+Isso explica três comportamentos que todo mundo já viveu:
+- Ela lembrou do que você disse há 5 mensagens? Ainda estava na mesa.
+- Ela esqueceu o começo da conversa? A mesa encheu.
+- Nova conversa, zero memória? Mesa limpa. Do zero. Sempre.
+
+A frase que eu quero que vocês levem: a IA não tem memória. Ela tem mesa. E a mesa tem limite.
 
 ---
 
@@ -137,11 +191,27 @@ A IA transforma contratos em sinais operacionais, informações vivas capazes de
 
 <AICompetition />
 
+::note::
+Os modelos de IA estão em constante evolução. A corrida entre OpenAI, Google, Anthropic e outros continua acelerada.
+
+O importante não é qual é o melhor modelo agora — é saber que o campo muda rápido. Pra gestão de contratos, o que importa mais é o tamanho do modelo (capacidade de entender contexto longo) e como você estrutura as instruções.
+
+Toda semana tem um novo modelo saindo. Não deixe a ferramenta mudar sua estratégia.
+
 ---
 
 # Tanto faz o modelo? Atenção aos flash X pro
 
 <ModelComparison />
+
+::note::
+Quando você escolhe modelo, não está escolhendo por elegância técnica — está escolhendo a mesa de trabalho certa.
+
+Flash é modelo leve, rápido, barato — mesa pequena. Bom pra tarefas diretas, perguntas pontuais, contratos curtos e simples.
+
+Pro é modelo maior, mais caro, mesa maior — consegue segurar mais contexto, perceber condicionais, detectar contradições, avisar o que você nem perguntou.
+
+A escolha certa não é sempre o mais caro. É o suficiente pro problema. Se você tem 200 contratos de 50 páginas cada, pro é quase obrigatório.
 
 ---
 
@@ -202,6 +272,8 @@ Treinamento: multas ficam entre 5–10%.
 </div>
 
 ::note::
+Sabe por que a IA alucina com tanta frequência? Porque ela foi literalmente treinada pra te agradar. Quando você pergunta 'qual é a multa rescisória?' — a resposta que te agrada é um número. A resposta honesta, se o contrato não define, é: 'não existe.'
+
 Antes de falar nos limites técnicos, é importante entender o conflito de objetivos. A IA não falha por acidente — ela falha porque foi treinada para um objetivo (agradar, ser completa) que às vezes entra em rota de colisão com o que você precisa (precisão, rastreabilidade, contenção).
 
 ---
@@ -535,6 +607,13 @@ A solução não é ter mais força — é ter a chave certa para cada fechadura
 
 </div>
 
+::note::
+Usar o mesmo prompt pra contratos diferentes é como tentar abrir todas as fechaduras com a mesma chave.
+
+Cada contrato é uma fechadura diferente. Alguns são simples, diretos, funcionam com prompt genérico. Outros têm variabilidade que o prompt genérico não consegue seguir.
+
+A solução não é ter mais força bruta de modelo. É ter a chave certa — prompt especializado, regras claras, validações estruturadas.
+
 ---
 
 
@@ -542,11 +621,27 @@ A solução não é ter mais força — é ter a chave certa para cada fechadura
 
 <Classification />
 
+::note::
+Classificação é triagem — como no pronto-socorro. Quando você chega com dor no peito: pulseira vermelha, atendimento imediato. Torção no tornozelo: pulseira verde, pode esperar.
+
+Com contratos: o modelo aprende com seu histórico — quais deram problema, quais não deram. Quando chega um contrato novo, ele classifica automaticamente: risco baixo, médio, alto, crítico.
+
+Você e o jurídico focam energia onde realmente importa.
+
 ---
 
 # Projeção
 
 <Regression />
+
+::note::
+Projeção é como o corretor de imóveis que olha pra um apartamento e diz o preço sem pesquisar — ele sente, baseado em tudo que já vendeu.
+
+Com contratos: você tem 50 contratos de limpeza. Metragem, frequência, localidade, valor pago em cada um. O modelo encontra o padrão real.
+
+Chega uma proposta nova. O modelo diz: R$ 47k por mês é o valor justo. O fornecedor quer R$ 71k.
+
+Você não precisa aceitar nem recusar na hora. Você tem um argumento baseado em dados — não em feeling.
 
 ---
 
@@ -554,17 +649,41 @@ A solução não é ter mais força — é ter a chave certa para cada fechadura
 
 <Clustering />
 
+::note::
+Agrupamento é encontrar padrões que você não viu. Todos os seus contratos de segurança têm multa entre 3% e 7%. Um tem 25%. 
+
+Anomalia não significa necessariamente problema. Significa: alguém precisa olhar pra esse.
+
+O banco bloqueia sua compra em Dubai às 3h da manhã — não porque sabe que é fraude, mas porque é fora do padrão. Com contratos, anomalia pode ser oportunidade de negociação ou aviso de cláusula estranha.
+
 ---
 
 # Redes
 
 <GraphNetwork />
 
+::note::
+LinkedIn recomenda conexão porque vocês têm 12 contatos em comum. Ele mapeia relacionamentos — não atributos isolados, mas conexões entre pessoas.
+
+Com fornecedores: Fornecedor A tem contrato com sua empresa. Fornecedor A tem sociedade com Fornecedor B. Fornecedor B tem pendência judicial com sua empresa.
+
+Sem grafo: você assina com A sem saber da relação com B.
+Com grafo: o sistema avisa — 'atenção, conexão de risco detectada.'
+
+Vocês gerenciam fornecedores, não só contratos. E fornecedores têm relacionamentos que os contratos não mostram.
+
 ---
 
 # Acompanhamento temporal
 
 <TimeSeries />
+
+::note::
+Series temporal mostra padrões ao longo do tempo. Seus custos contratuais cresceram 8% ao ano? Algum fornecedor virou outlier? Tem sazonalidade que você não tinha percebido?
+
+Com histórico estruturado de todos os contratos, você identifica tendências que não aparecem em PDFs isolados.
+
+Por exemplo: o reajuste médio da carteira estava em 5% — mas nos últimos 3 anos pulou pra 8%. Isso merecia atenção. É oportunidade de renegociar ou sinal de que o mercado mudou.
 
 ---
 
@@ -590,11 +709,29 @@ O elo que faltava é transformar **PDF em dado**.
 
 </v-click>
 
+::note::
+Técnicas incríveis. Todas funcionam. Mas todas têm um pré-requisito que ninguém menciona: elas precisam de dados estruturados.
+
+Não PDFs de 80 páginas. Dados estruturados — tabelas, campos, números comparáveis.
+
+E é exatamente aí que a maioria das empresas trava. Porque os contratos estão em PDF — não em base de dados.
+
+O elo que falta é transformar PDF em dado. E é isso que vou mostrar agora.
+
 ---
 
 # Extração de Dados
 
 <ContractExtraction />
+
+::note::
+Imagina que cada contrato já tem um formulário escondido dentro dele. Data de vencimento, valor total, multa rescisória, índice de reajuste — tudo lá.
+
+Só que misturado com 79 páginas de 'considerando que', 'doravante denominado' e 'nos termos da cláusula 7.2.1 do Anexo D'.
+
+Extração com IA é encontrar esse formulário invisível — e preenchê-lo automaticamente.
+
+Juridiquês entra. Matemático sai.
 
 ---
 
@@ -609,7 +746,7 @@ style="grid-template-columns: 4fr 6fr;"
 
 <div style="font-size: 0.9rem">
 <PromptCard title="Extração Dados">
-Você é um assessor jurídico especista em digitalização de informações do contrato recebido Extraia:
+Você é um assessor jurídico especialista em digitalização de informações do contrato recebido. Extraia:
 
   - Categoria, entre: engenharia, jurídico, saúde ou secretaria.
   - Número de posições
@@ -666,6 +803,13 @@ Você é um assessor jurídico especista em digitalização de informações do 
 
 </div>
 
+::note::
+À esquerda: um prompt bem estruturado que pede extração específica com regras claras.
+
+À direita (no clique): a tabela que sai automaticamente. Quatro linhas de dados estruturados — cada uma corresponde a um contrato, cada coluna a um campo que importa.
+
+Agora você pode comparar. Qual categoria tira mais custo? Qual fornecedor tem melhor valor por posição? Essas perguntas só aparecem quando os dados estão estruturados.
+
 ---
 
 # Então o Que Fazer?
@@ -687,6 +831,15 @@ O que funciona é **colocar estrutura em volta da IA**.
 </div>
 
 </v-click>
+
+::note::
+Você pode voltar pro papel e advogado lendo contrato por contrato — e perder eficiência total.
+
+Ou pode usar IA crua direto no ChatGPT — e nunca saber o que ela perdeu ou inventou.
+
+A terceira opção é colocar estrutura em volta dela: definir o que procurar, validar o que encontra, guardar histórico, alertar quando algo precisa atenção.
+
+É essa estrutura que transforma IA de ferramenta exploratória em pipeline confiável.
 
 ::note::
 O que você faz? Volta pro papel e pro advogado lendo contrato por contrato? Não. Mas a IA crua também não é suficiente — pelo menos não pra quem precisa de confiabilidade, rastreabilidade e escala.
@@ -727,7 +880,13 @@ graph LR
 </ArchitectureFlow>
 
 ::note::
-Primeiro: o sistema lê o PDF de verdade. Segundo: extrai informações em campos fixos, não inventa. Terceiro: tudo aparece num painel com alertas e scores de risco.
+O processo tem três etapas.
+
+Primeiro: leitura inteligente do PDF — não só o texto, mas o layout. Tabelas, anexos, cabeçalhos. Porque é nesses lugares que ficam as informações importantes.
+
+Segundo: a IA extrai com regras claras. 'Se não encontrar, escreva N/E — não invente.' 'Para cada campo preenchido, cite de onde veio.' Essas regras são o antídoto contra alucinação.
+
+Terceiro: tudo aparece num painel. Com alertas, scores de risco e histórico.
 
 ---
 
@@ -755,6 +914,13 @@ Primeiro: o sistema lê o PDF de verdade. Segundo: extrai informações em campo
 
 </template>
 </BeforeAfter>
+
+::note::
+A diferença entre usar ChatGPT direto e uma solução estruturada é a diferença entre mandar alguém no mercado sem lista e mandar com uma lista bem feita.
+
+Sem lista: a pessoa volta com o que achou. Pode estar tudo certo — ou pode faltar a metade. Você nunca sabe.
+
+Com lista: você sabe exatamente o que pediu, o que veio e o que faltou. Sempre o mesmo formato. Sempre os mesmos campos.
 
 ---
 
@@ -797,6 +963,13 @@ Foro de eleição: N/E
 </div>
 
 ::note::
+O que mais me incomoda na IA crua é que você não sabe de onde veio a resposta. Ela diz '5%' e você torce pra estar certo.
+
+O Farol funciona diferente. Quando extrai uma informação, ele cita a fonte. 'Multa rescisória: 5%. Fonte: Cláusula 8.2, página 12.'
+
+Você pode abrir o PDF e conferir. Você não precisa confiar no sistema — você pode verificar. E isso é tudo que importa pra gestão de risco.
+
+::note::
 O que mais me incomoda na IA crua é que você não sabe de onde veio a resposta. O Farol funciona diferente: quando extrai, ele cita a fonte. Você pode abrir o PDF e conferir.
 
 ---
@@ -810,13 +983,19 @@ Carregando contratos reais...
 </div>
 
 ::note::
-Neste momento você compartilha a tela do sistema. 
-- Passso 1: Carregamento de 5 contratos reais
-- Passo 2: Processamento (30-60s) — o sistema está lendo layout, identificando cláusulas, estruturando em campos
-- Passo 3: Painel aparece — cinco contratos, dois em Risco Alto, um em Crítico
-- Passo 4: Clica no contrato crítico — renovação automática detectada, prazo 90 dias, data limite calculada
-- Passo 5: Mostra a fonte — Cláusula 8.2, página 12, rastreável
-- Passo 6: Campo com baixa confiança em amarelo — sistema marcou incerteza em vez de inventar
+Neste momento você compartilha a tela do sistema ao vivo (ou vídeo gravado como fallback).
+
+Passo 1 — Carregamento: subir 5 contratos reais, anonimizados. PDFs do jeito que chegam.
+
+Passo 2 — Processamento (30-60s): enquanto processa, comentar que o sistema está lendo o layout, identificando cláusulas, estruturando em campos fixos.
+
+Passo 3 — Painel aparece: cinco contratos em overview. Dois em Risco Alto, um em Crítico. Mostrar a cor, o score.
+
+Passo 4 — Clica no contrato crítico: renovação automática detectada. Prazo de notificação: 90 dias. Data limite calculada automaticamente.
+
+Passo 5 — Mostra a fonte: Cláusula 8.2, página 12. Rastreável. Você pode abrir e conferir.
+
+Passo 6 — Campo com baixa confiança em amarelo: o sistema achou algo, mas não estava claro no texto. Marcou incerteza em vez de inventar. Vai pra revisão manual.
 
 ---
 
@@ -893,6 +1072,13 @@ Prazo de rescisão sem multa
 
 </div>
 
+::note::
+Esses são os campos padrão. Mas cada negócio tem prioridades diferentes.
+
+Empresa de logística quer SLA de entrega garantido contratualmente. Empresa pública quer número da licitação e dotação orçamentária. Empresa de serviços recorrentes quer cláusula de exclusividade.
+
+Qualquer campo que faz sentido pra vocês — o Farol pode extrair. Porque o que muda é só o que você pede pra ele procurar.
+
 ---
 
 # O Que Está Faltando?
@@ -904,6 +1090,11 @@ Prazo de rescisão sem multa
 **Olhando pra lista de campos padrão — qual informação vocês queria ter tido?**
 
 </div>
+
+::note::
+Esse é o slide mais importante da segunda metade. Deixa alguém responder. Anota o que as pessoas falam — vai virar argumento personalizado na conversa depois.
+
+Se ninguém falar em 8 segundos: "Quem aqui já teve um problema que poderia ter sido evitado se soubesse antes que um contrato estava vencendo? [pausa] Qual informação você queria ter tido?"
 
 ::note::
 Esse é o slide mais importante da segunda metade. Deixa alguém responder. Anota o que as pessoas falam — vai virar argumento personalizado na conversa depois.
@@ -943,6 +1134,15 @@ Esse é o slide mais importante da segunda metade. Deixa alguém responder. Anot
 ::note::
 A divisão de trabalho é clara: Farol faz o trabalho sujo de leitura. Você e seu time fazem o trabalho que exige julgamento.
 
+Ele extrai e organiza — mas não julga estratégia. Se a multa de 5% é boa ou ruim pra vocês, depende do mercado, do fornecedor, da negociação — isso é decisão humana.
+
+Ele avisa sobre cláusulas — mas não interpreta legislação. Isso ainda é com o jurídico.
+
+E se o contrato referencia um anexo que não está no PDF — ele vai avisar que o anexo está faltando. Mas não vai inventar o que está nele.
+
+::note::
+A divisão de trabalho é clara: Farol faz o trabalho sujo de leitura. Você e seu time fazem o trabalho que exige julgamento.
+
 ---
 
 # Moral
@@ -956,6 +1156,13 @@ A divisão de trabalho é clara: Farol faz o trabalho sujo de leitura. Você e s
 **pra você decidir com dados, não com sorte.**
 
 </div>
+
+::note::
+Vocês começaram o dia ouvindo sobre tudo que IA pode fazer. Eu vim mostrar onde ela tropeça — e como a gente construiu estrutura em volta dela pra que funcione de verdade.
+
+O Farol não existe porque IA é incrível. Existe porque informação escondida num PDF de 80 páginas não serve pra ninguém.
+
+O risco silencioso ainda está lá. Mas agora vocês têm ferramentas pra iluminar o que estava escondido.
 
 ---
 
