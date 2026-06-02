@@ -56,34 +56,38 @@ Vocês são cientistas de dados de contratos. Só que as ferramentas que vocês 
 
 # Roteiro de hoje
 
-<div class="grid gap-5 mt-4" style="grid-template-columns: 1fr 1fr;">
+<div class="space-y-2.5 -mt-2">
 
-<div class="glass p-5">
-
-### 1️⃣ Entender o problema
-**IA generativa: promessas e armadilhas**
-
+<div class="glass p-3 flex gap-3 items-center" style="border-color: rgba(99,211,161,0.45);">
+  <div style="font-size: 3rem; font-weight: 900; color: #63d3a1; flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">1</div>
+  <div style="min-width: 0;">
+    <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">Entender o problema</div>
+    <div style="opacity: 0.75; font-size: 0.9rem;">IA generativa: promessas e armadilhas</div>
+  </div>
 </div>
 
-<div class="glass p-5">
-
-### 2️⃣ Explorar as técnicas
-**IA tradicional + estrutura de dados**
-
+<div class="glass p-3 flex gap-3 items-center" style="border-color: rgba(99,211,161,0.45);">
+  <div style="font-size: 3rem; font-weight: 900; color: #63d3a1; flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">2</div>
+  <div style="min-width: 0;">
+    <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">Explorar as técnicas</div>
+    <div style="opacity: 0.75; font-size: 0.9rem;">IA tradicional + estrutura de dados</div>
+  </div>
 </div>
 
-<div class="glass p-5">
-
-### 3️⃣ Integrar os dois mundos
-**Quando usar cada um**
-
+<div class="glass p-3 flex gap-3 items-center" style="border-color: rgba(99,211,161,0.45);">
+  <div style="font-size: 3rem; font-weight: 900; color: #63d3a1; flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">3</div>
+  <div style="min-width: 0;">
+    <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">Integrar os dois mundos</div>
+    <div style="opacity: 0.75; font-size: 0.9rem;">Quando usar cada um</div>
+  </div>
 </div>
 
-<div class="glass p-5">
-
-### 4️⃣ Solução na prática
-**Farol de Contratos**
-
+<div class="glass p-3 flex gap-3 items-center" style="border-color: rgba(226,248,27,0.45);">
+  <div style="font-size: 3rem; font-weight: 900; color: #e2f81b; flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">4</div>
+  <div style="min-width: 0;">
+    <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">Solução na prática</div>
+    <div style="opacity: 0.75; font-size: 0.9rem;">Farol de Contratos</div>
+  </div>
 </div>
 
 </div>
@@ -168,12 +172,12 @@ Os problemas são idênticos. O que muda é o nome.
 <BeforeAfter language="pt">>
 <template #before>
 
-Você vai ao contrato quando o problema <HighLight  color="#EC635E"> já aconteceu</HighLight>.
+Você vai ao contrato quando<br> o problema <HighLight  color="#EC635E"> já aconteceu</HighLight>.
 
 </template>
 <template #after>
 
-Com IA: o contrato <HighLight color="#e2f81b"> te avisa antes</HighLight>.
+Com IA: o contrato <br><HighLight color="#e2f81b"> te avisa antes</HighLight>.
 
 </template>
 </BeforeAfter>
@@ -194,7 +198,7 @@ A IA transforma contratos em sinais operacionais, informações vivas capazes de
 
 ---
 
-# O que a IA sabe
+# O que a IA sabe x não sabe
 
 <AIKnowledge />
 
@@ -245,7 +249,7 @@ Toda semana tem um novo modelo saindo. Não deixe a ferramenta mudar sua estrat�
 
 ---
 
-# Modelo light X topo
+# Modelo light X pro
 
 <ModelComparison />
 

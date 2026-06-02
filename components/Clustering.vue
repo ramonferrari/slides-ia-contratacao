@@ -20,8 +20,8 @@
 
       <div class="feat-list r2">
         <div class="feat-item">
-          <div class="feat-icon" style="--ic:#63d3a1">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--ic)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--rf-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
               <polyline points="17 6 23 6 23 12"/>
             </svg>
@@ -32,8 +32,8 @@
           </div>
         </div>
         <div class="feat-item">
-          <div class="feat-icon" style="--ic:rgba(150,120,232,1)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--ic)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--rf-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="12 2 2 7 12 12 22 7 12 2"/>
               <polyline points="2 17 12 22 22 17"/>
               <polyline points="2 12 12 17 22 12"/>
@@ -45,8 +45,8 @@
           </div>
         </div>
         <div class="feat-item">
-          <div class="feat-icon" style="--ic:rgba(224,73,108,1)">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--ic)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--rf-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"/>
               <polyline points="12 6 12 12 16 14"/>
             </svg>
@@ -57,8 +57,8 @@
           </div>
         </div>
         <div class="feat-item">
-          <div class="feat-icon" style="--ic:#e2f81b">
-            <svg viewBox="0 0 24 24" fill="none" stroke="var(--ic)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <div class="feat-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--rf-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
               <circle cx="12" cy="10" r="3"/>
             </svg>
