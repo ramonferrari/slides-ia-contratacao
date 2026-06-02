@@ -191,7 +191,7 @@
 
           <!-- ── Annotation callout ── -->
           <g class="ts-annotation">
-            <rect x="284" y="24" width="122" height="30" rx="3"
+            <rect x="270" y="24" width="150" height="30" rx="3"
               fill="rgba(40,8,8,0.93)" stroke="rgba(255,87,88,0.55)" stroke-width=".6"/>
             <text x="345" y="38" text-anchor="middle"
               font-family="JetBrains Mono,monospace" font-size="3.0" font-weight="700"

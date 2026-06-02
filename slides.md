@@ -810,38 +810,55 @@ Vocês gerenciam fornecedores, não só contratos. E fornecedores têm relaciona
 
 <TimeSeries />
 
-::note::
+<!--
 Series temporal mostra padrões ao longo do tempo. Seus custos contratuais cresceram 8% ao ano? Algum fornecedor virou outlier? Tem sazonalidade que você não tinha percebido?
 
 Com histórico estruturado de todos os contratos, você identifica tendências que não aparecem em PDFs isolados.
 
 Por exemplo: o reajuste médio da carteira estava em 5% — mas nos últimos 3 anos pulou pra 8%. Isso merecia atenção. É oportunidade de renegociar ou sinal de que o mercado mudou.
+-->
 
 ---
 
 # O Elo que Faltava
 
-<div class="glass mt-16 p-10 text-center">
+<div class="grid gap-8 mt-12" style="grid-template-columns: 1fr 1fr; align-items: center;">
 
-### Todas essas técnicas precisam da mesma coisa:
+<div class="glass p-8">
 
-**dados estruturados.**
+### Todas essas técnicas
 
-Não PDFs. Dados.
+**Classificação, Projeção, Agrupamentos, Redes, Temporal...**
 
-</div>
+Todas funcionam. Todas escalam. Todas revelam padrões.
 
-<v-click>
+<div class="glass p-4 mt-6" style="border-color: var(--rf-primary); background: transparent;">
 
-<div class="glass mt-6 p-6 text-center">
-
-O elo que faltava é transformar **PDF em dado**.
+**Pré-requisito:** Dados estruturados.
 
 </div>
 
-</v-click>
+</div>
 
-::note::
+<div v-click class="glass p-8" style="border-color: var(--rf-highlight); text-align: center;">
+
+### O Elo que Faltava
+
+**PDF** → Caótico, denso, não-estruturado
+
+<FlowArrow />
+
+**Transformação com IA**
+
+<FlowArrow />
+
+**Dados** → Tabelas, campos, comparáveis
+
+</div>
+
+</div>
+
+<!--
 Técnicas incríveis. Todas funcionam. Mas todas têm um pré-requisito que ninguém menciona: elas precisam de dados estruturados.
 
 Não PDFs de 80 páginas. Dados estruturados — tabelas, campos, números comparáveis.
@@ -849,14 +866,14 @@ Não PDFs de 80 páginas. Dados estruturados — tabelas, campos, números compa
 E é exatamente aí que a maioria das empresas trava. Porque os contratos estão em PDF — não em base de dados.
 
 O elo que falta é transformar PDF em dado. E é isso que vou mostrar agora.
-
+-->
 ---
 
 # Extração de Dados
 
 <ContractExtraction />
 
-::note::
+<!--
 Imagina que cada contrato já tem um formulário escondido dentro dele. Data de vencimento, valor total, multa rescisória, índice de reajuste — tudo lá.
 
 Só que misturado com 79 páginas de 'considerando que', 'doravante denominado' e 'nos termos da cláusula 7.2.1 do Anexo D'.
@@ -864,6 +881,7 @@ Só que misturado com 79 páginas de 'considerando que', 'doravante denominado' 
 Extração com IA é encontrar esse formulário invisível — e preenchê-lo automaticamente.
 
 Juridiquês entra. Matemático sai.
+-->
 
 ---
 
@@ -941,36 +959,6 @@ Você é um assessor jurídico especialista em digitalização de informações 
 
 Agora você pode comparar. Qual categoria tira mais custo? Qual fornecedor tem melhor valor por posição? Essas perguntas só aparecem quando os dados estão estruturados.
 
----
-
-# Então o Que Fazer?
-
-<div class="text-center mt-16">
-
-Voltamos pro **papel** e pro **advogado**?
-
-</div>
-
-<v-click>
-
-<div class="text-center mt-8">
-
-**Não.** Mas a IA crua também não é suficiente.
-
-O que funciona é **colocar estrutura em volta da IA**.
-
-</div>
-
-</v-click>
-
-::note::
-Você pode voltar pro papel e advogado lendo contrato por contrato — e perder eficiência total.
-
-Ou pode usar IA crua direto no ChatGPT — e nunca saber o que ela perdeu ou inventou.
-
-A terceira opção é colocar estrutura em volta dela: definir o que procurar, validar o que encontra, guardar histórico, alertar quando algo precisa atenção.
-
-É essa estrutura que transforma IA de ferramenta exploratória em pipeline confiável.
 
 ---
 
@@ -993,7 +981,7 @@ O Farol de Contratos é uma solução que resolve exatamente o que mostrei. Prim
 
 # Como Funciona
 
-<ArchitectureFlow>
+<Spacer :h="20"/>
 
 ```mermaid
 graph LR
@@ -1005,9 +993,7 @@ graph LR
   A --> B --> C --> D
 ```
 
-</ArchitectureFlow>
-
-::note::
+<!--
 O processo tem três etapas.
 
 Primeiro: leitura inteligente do PDF — não só o texto, mas o layout. Tabelas, anexos, cabeçalhos. Porque é nesses lugares que ficam as informações importantes.
@@ -1015,6 +1001,7 @@ Primeiro: leitura inteligente do PDF — não só o texto, mas o layout. Tabelas
 Segundo: a IA extrai com regras claras. 'Se não encontrar, escreva N/E — não invente.' 'Para cada campo preenchido, cite de onde veio.' Essas regras são o antídoto contra alucinação.
 
 Terceiro: tudo aparece num painel. Com alertas, scores de risco e histórico.
+-->
 
 ---
 
@@ -1043,12 +1030,13 @@ Terceiro: tudo aparece num painel. Com alertas, scores de risco e histórico.
 </template>
 </BeforeAfter>
 
-::note::
+<!--
 A diferença entre usar ChatGPT direto e uma solução estruturada é a diferença entre mandar alguém no mercado sem lista e mandar com uma lista bem feita.
 
 Sem lista: a pessoa volta com o que achou. Pode estar tudo certo — ou pode faltar a metade. Você nunca sabe.
 
 Com lista: você sabe exatamente o que pediu, o que veio e o que faltou. Sempre o mesmo formato. Sempre os mesmos campos.
+-->
 
 ---
 
@@ -1094,45 +1082,19 @@ Foro de eleição: N/E
 
 </div>
 
-::note::
+<!--
 O que mais me incomoda na IA crua é que você não sabe de onde veio a resposta. Ela diz '5%' e você torce pra estar certo.
 
 O Farol funciona diferente. Quando extrai uma informação, ele cita a fonte. 'Multa rescisória: 5%. Fonte: Cláusula 8.2, página 12.'
 
 Você pode abrir o PDF e conferir. Você não precisa confiar no sistema — você pode verificar. E isso é tudo que importa pra gestão de risco.
-
----
-
-# DEMONSTRAÇÃO
-
-<div class="text-center mt-20">
-
-Carregando contratos reais...
-
-</div>
-
-::note::
-Neste momento você compartilha a tela do sistema ao vivo (ou vídeo gravado como fallback).
-
-Passo 1 — Carregamento: subir 5 contratos reais, anonimizados. PDFs do jeito que chegam.
-
-Passo 2 — Processamento (30-60s): enquanto processa, comentar que o sistema está lendo o layout, identificando cláusulas, estruturando em campos fixos.
-
-Passo 3 — Painel aparece: cinco contratos em overview. Dois em Risco Alto, um em Crítico. Mostrar a cor, o score.
-
-Passo 4 — Clica no contrato crítico: renovação automática detectada. Prazo de notificação: 90 dias. Data limite calculada automaticamente.
-
-Passo 5 — Mostra a fonte: Cláusula 8.2, página 12. Rastreável. Você pode abrir e conferir.
-
-Passo 6 — Campo com baixa confiança em amarelo: o sistema achou algo, mas não estava claro no texto. Marcou incerteza em vez de inventar. Vai pra revisão manual.
+-->
 
 ---
 
 # O Que o Farol Extrai (Padrão)
 
 <div class="mt-10">
-
-<div class="glass p-6">
 
 ```
 ✓  Número do contrato
@@ -1146,16 +1108,15 @@ Passo 6 — Campo com baixa confiança em amarelo: o sistema achou algo, mas nã
 
 </div>
 
-</div>
-
 <div class="mt-6 text-sm opacity-75">
 
-**Mas cada negócio tem o que importa pra ele.**
+## Mas cada negócio tem o que importa pra ele.
 
 </div>
 
-::note::
+<!--
 Esses são os campos que o Farol extrai por padrão. É um bom começo pra qualquer empresa. Mas é só o começo.
+-->
 
 ---
 
@@ -1201,12 +1162,13 @@ Prazo de rescisão sem multa
 
 </div>
 
-::note::
+<!--
 Esses são os campos padrão. Mas cada negócio tem prioridades diferentes.
 
 Empresa de logística quer SLA de entrega garantido contratualmente. Empresa pública quer número da licitação e dotação orçamentária. Empresa de serviços recorrentes quer cláusula de exclusividade.
 
 Qualquer campo que faz sentido pra vocês — o Farol pode extrair. Porque o que muda é só o que você pede pra ele procurar.
+-->
 
 ---
 
@@ -1220,8 +1182,9 @@ Qualquer campo que faz sentido pra vocês — o Farol pode extrair. Porque o que
 
 </div>
 
-::note::
+<!--
 "Quem aqui já teve um problema que poderia ter sido evitado se soubesse antes que um contrato estava vencendo? [pausa] Qual informação você queria ter tido?"
+-->
 
 ---
 
@@ -1233,12 +1196,12 @@ Qualquer campo que faz sentido pra vocês — o Farol pode extrair. Porque o que
 
 ### O Farol FAZ
 
-✓ Extrai dados estruturados  
-✓ Identifica padrões  
-✓ Alerta sobre anomalias  
-✓ Escala para centenas  
-✓ Rastreia a fonte  
-✓ Marca incertezas  
+<span style="color: #e2f81b;">✓</span> Extrai dados estruturados  
+<span style="color: #e2f81b;">✓</span> Identifica padrões  
+<span style="color: #e2f81b;">✓</span> Alerta sobre anomalias  
+<span style="color: #e2f81b;">✓</span> Escala para centenas  
+<span style="color: #e2f81b;">✓</span> Rastreia a fonte  
+<span style="color: #e2f81b;">✓</span> Marca incertezas  
 
 </div>
 
@@ -1246,16 +1209,16 @@ Qualquer campo que faz sentido pra vocês — o Farol pode extrair. Porque o que
 
 ### O Farol NÃO FAZ
 
-✗ Julga se o contrato é bom ou ruim  
-✗ Interpreta lei  
-✗ Resolve anexos faltantes  
-✗ Substitui advogado em casos complexos  
+<span style="color: #EC635E;">✗</span> Julga se o contrato é bom ou ruim  
+<span style="color: #EC635E;">✗</span> Interpreta lei  
+<span style="color: #EC635E;">✗</span> Resolve anexos faltantes  
+<span style="color: #EC635E;">✗</span> Substitui advogado em casos complexos  
 
 </div>
 
 </div>
 
-::note::
+<!--
 A divisão de trabalho é clara: Farol faz o trabalho sujo de leitura. Você e seu time fazem o trabalho que exige julgamento.
 
 Ele extrai e organiza — mas não julga estratégia. Se a multa de 5% é boa ou ruim pra vocês, depende do mercado, do fornecedor, da negociação — isso é decisão humana.
@@ -1263,37 +1226,82 @@ Ele extrai e organiza — mas não julga estratégia. Se a multa de 5% é boa ou
 Ele avisa sobre cláusulas — mas não interpreta legislação. Isso ainda é com o jurídico.
 
 E se o contrato referencia um anexo que não está no PDF — ele vai avisar que o anexo está faltando. Mas não vai inventar o que está nele.
+-->
 
 ---
 
 # Moral
 
-<div class="glass mt-16 p-10 text-center">
+<div style="position: relative; height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
 
-### Informação escondida num PDF não serve pra ninguém.
+<div style="position: absolute; width: 600px; height: 300px; background: radial-gradient(ellipse at center, rgba(226,248,27,0.15) 0%, transparent 70%); border-radius: 50%; filter: blur(40px);"></div>
 
-**O Farol ilumina o que está lá —**
+<div style="position: relative; z-index: 1;">
 
-**pra você decidir com dados, não com sorte.**
+<div style="font-size: 1.3rem; opacity: 0.7; margin-bottom: 1.5rem; letter-spacing: 0.05em;">
+Informação escondida num PDF não serve pra ninguém.
+</div>
+
+<div style="font-size: 3.5rem; font-weight: 900; letter-spacing: 0.02em; line-height: 1.2; margin-bottom: 1.5rem;">
+
+O <span style="color: #e2f81b;">Farol</span> ilumina
+
+<span style="color: #63d3a1;">o que está lá</span>
 
 </div>
 
-::note::
+<div style="height: 2px; width: 120px; background: linear-gradient(to right, transparent, #e2f81b, transparent); margin: 2rem auto;"></div>
+
+<div style="font-size: 1.8rem; opacity: 0.85; letter-spacing: 0.02em; line-height: 1.6;">
+Pra você decidir com <span style="color: #e2f81b; font-weight: 700;">dados</span>,<br>não com <span style="text-decoration: line-through; opacity: 0.5;">sorte</span>.
+</div>
+
+</div>
+
+</div>
+
+<!--
 Vocês começaram o dia ouvindo sobre tudo que IA pode fazer. Eu vim mostrar onde ela tropeça — e como a gente construiu estrutura em volta dela pra que funcione de verdade.
 
 O Farol não existe porque IA é incrível. Existe porque informação escondida num PDF de 80 páginas não serve pra ninguém.
 
 O risco silencioso ainda está lá. Mas agora vocês têm ferramentas pra iluminar o que estava escondido.
+-->
 
 ---
 
 # Perguntas?
 
-<div class="text-center mt-20">
+<div style="position: relative; height: 350px; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center;">
 
-🔦 **FAROL DE CONTRATOS**
+<div style="position: absolute; width: 500px; height: 300px; background: radial-gradient(ellipse at center, rgba(99,211,161,0.15) 0%, transparent 70%); border-radius: 50%; filter: blur(40px); left: 50%; top: 50%; transform: translate(-50%, -50%);"></div>
 
-ramon.ferrari@gmail.com
+<!-- Coluna esquerda: Emoji -->
+<div style="position: relative; z-index: 1; display: flex; justify-content: flex-end; align-items: center;">
+<div style="font-size: 8rem; filter: drop-shadow(0 0 30px rgba(99,211,161,0.4));">
+🔦
+</div>
+</div>
+
+<!-- Coluna direita: Texto e links -->
+<div style="position: relative; z-index: 1; text-align: left;">
+
+<div style="font-size: 2.8rem; font-weight: 900; letter-spacing: 0.03em; margin-bottom: 1.5rem; line-height: 1.3;">
+<span style="color: #e2f81b;">FAROL</span> DE<br><span style="color: #63d3a1;">CONTRATOS</span>
+</div>
+
+<div style="height: 2px; width: 100px; background: linear-gradient(to right, #63d3a1, transparent); margin-bottom: 2.5rem;"></div>
+
+<div style="line-height: 2.2;">
+<div style="font-size: 1.1rem; font-weight: 600; letter-spacing: 0.02em; margin-bottom: 1.2rem;">
+<span style="color: #e2f81b;">▶</span> <span style="color: #63d3a1;">esdigital.petrobras.com.br</span>
+</div>
+<div style="font-size: 1.1rem; font-weight: 600; letter-spacing: 0.02em;">
+<span style="color: #e2f81b;">▶</span> <span style="color: #63d3a1;">farol.petrobras.com.br</span>
+</div>
+</div>
+
+</div>
 
 </div>
 

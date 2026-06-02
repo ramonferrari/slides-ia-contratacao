@@ -172,30 +172,30 @@
 
           <!-- ── LICIT nodes (rounded rects) ── -->
           <g class="n-licits">
-            <rect x="120" y="162" width="24" height="16" rx="3"
+            <rect x="107" y="159" width="50" height="22" rx="3"
               fill="rgba(150,120,232,0.15)" stroke="rgba(150,120,232,0.65)" stroke-width="1.2"/>
             <text x="132" y="172" text-anchor="middle"
               font-family="JetBrains Mono,monospace" font-size="2.4" font-weight="700"
               fill="rgba(150,120,232,0.90)">L-147</text>
-            <text x="132" y="185" text-anchor="middle"
+            <text x="132" y="192" text-anchor="middle"
               font-family="JetBrains Mono,monospace" font-size="2.2"
               fill="rgba(255,255,255,0.35)">licitação</text>
 
-            <rect x="233" y="162" width="24" height="16" rx="3"
+            <rect x="220" y="159" width="50" height="22" rx="3"
               fill="rgba(150,120,232,0.15)" stroke="rgba(150,120,232,0.65)" stroke-width="1.2"/>
             <text x="245" y="172" text-anchor="middle"
               font-family="JetBrains Mono,monospace" font-size="2.4" font-weight="700"
               fill="rgba(150,120,232,0.90)">L-089</text>
-            <text x="245" y="185" text-anchor="middle"
+            <text x="245" y="192" text-anchor="middle"
               font-family="JetBrains Mono,monospace" font-size="2.2"
               fill="rgba(255,255,255,0.35)">licitação</text>
 
-            <rect x="346" y="162" width="24" height="16" rx="3"
+            <rect x="333" y="159" width="50" height="22" rx="3"
               fill="rgba(150,120,232,0.15)" stroke="rgba(150,120,232,0.65)" stroke-width="1.2"/>
             <text x="358" y="172" text-anchor="middle"
               font-family="JetBrains Mono,monospace" font-size="2.4" font-weight="700"
               fill="rgba(150,120,232,0.90)">L-203</text>
-            <text x="358" y="185" text-anchor="middle"
+            <text x="358" y="192" text-anchor="middle"
               font-family="JetBrains Mono,monospace" font-size="2.2"
               fill="rgba(255,255,255,0.35)">licitação</text>
           </g>
@@ -298,11 +298,11 @@
       </div>
 
       <div class="chain-box r4" style="animation-delay:2.9s">
-        <div class="chain-node cn-forn">FORN. A</div>
+        <div class="chain-node cn-forn">A</div>
         <div class="chain-conn"></div>
         <div class="chain-node cn-person">J. SILVA</div>
         <div class="chain-conn"></div>
-        <div class="chain-node cn-forn">FORN. C</div>
+        <div class="chain-node cn-forn">C</div>
       </div>
 
       <div class="r4" style="animation-delay:3.1s">
