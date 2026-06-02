@@ -26,14 +26,14 @@ class: text-left
 
 <CircularImage 
 src="./rf.JPG" 
-size="180px"
+size="220px"
 borderColor="var(--rf-highlight)"
 :scale="1.1"
-x="120"
-y="200"
+x="100"
+y="180"
 />
 
-<div class="prose" style="position: absolute; right: 60px; top: 180px; width: 550px; font-size: 1.1rem; line-height: 1.6;">
+<div class="prose" style="position: absolute; right: 60px; top: 175px; width: 550px; font-size: 1.1rem; line-height: 1.6;">
 
 - Baiano, 15 anos no RJ, 2 anos em Vitória.
 - Atuação por ~15 anos em processamento de dados sísmicos
@@ -42,17 +42,63 @@ y="200"
   - Qualidade de informação em sistemas de LLM
 </div>
 
-::note::
+<!--
 Trabalho com ciência de dados há alguns anos. O que um cientista de dados faz, no fundo, é simples: pega informação bruta, bagunçada, espalhada — e transforma em algo que ajuda alguém a decidir melhor.
 
 Aí eu olhei pra vocês e pensei: é exatamente isso que vocês fazem. Vocês pegam contratos — informação bruta, densa, espalhada em dezenas de documentos — e tentam transformar isso em decisão. Renovar ou não. Rescindir ou não.
 
 Vocês são cientistas de dados de contratos. Só que as ferramentas que vocês usam ainda não acompanharam o que a área tem de melhor.
-
+-->
 
 ---
 
+# Roteiro de hoje
 
+<div class="grid gap-5 mt-4" style="grid-template-columns: 1fr 1fr;">
+
+<div class="glass p-5">
+
+### 1️⃣ Entender o problema
+**IA generativa: promessas e armadilhas**
+
+Como funciona, onde falha, por que alucina.
+
+</div>
+
+<div class="glass p-5">
+
+### 2️⃣ Explorar as técnicas
+**IA tradicional + estrutura de dados**
+
+O que a IA crua não vê.
+
+</div>
+
+<div class="glass p-5">
+
+### 3️⃣ Integrar os dois mundos
+**Quando usar cada um**
+
+IA generativa responsável + dados
+
+</div>
+
+<div class="glass p-5">
+
+### 4️⃣ Solução na prática
+**Farol de Contratos**
+
+Extração confiável, rastreável, escalável.
+
+</div>
+
+</div>
+
+<!--
+"O que vocês vão levar daqui: IA generativa é incrível, mas sozinha não resolve gestão de contratos. O que funciona é estrutura. E é exatamente isso que vamos explorar."
+-->
+
+---
 
 # Ciência de Dados
 
@@ -92,10 +138,11 @@ Vocês são cientistas de dados de contratos. Só que as ferramentas que vocês 
 
 </div>
 
-::note::
+<!--
 À esquerda: ciência de dados tradicional - interseção de negócio, estatística e computação.
 
 À direita (no clique): reframe - vocês estão na interseção de contratos, análise/projeção de dados, e algoritmos/IA. São cientistas de dados também, só que especializados.
+-->
 
 ---
 
@@ -103,7 +150,7 @@ Vocês são cientistas de dados de contratos. Só que as ferramentas que vocês 
 
 <DataVSContract />
 
-::note::
+<!--
 Um cientista de dados começa sempre com o mesmo problema: os dados são uma bagunça.
 
 Faltam campos. Têm inconsistências. Têm duplicatas. Têm informação desatualizada. E o pior — são difíceis de consultar e quase impossíveis de comparar entre si.
@@ -111,6 +158,7 @@ Faltam campos. Têm inconsistências. Têm duplicatas. Têm informação desatua
 Contratos têm exatamente os mesmos problemas. Campo de valor não preenchido. Cláusulas que contradizem o anexo. Três versões do mesmo documento sem saber qual é a final. Aditivo que mudou tudo mas está num PDF separado que ninguém vinculou.
 
 Os problemas são idênticos. O que muda é o nome.
+-->
 
 ---
 
@@ -136,12 +184,13 @@ Com IA: o contrato <HighLight color="#e2f81b"> te avisa antes</HighLight>.
 </template>
 </BeforeAfter>
 
-::note::
+<!--
 Contratos: não são apenas documentos. São riscos silenciosos espalhados em 80 páginas que você não tem tempo de ler.
 
 Gestão contratual tradicional considera cada contrato um documento, e até um potencial fator de risco. A gente fala em "contrato" no corredor e as pessoas associam com problemas.
 
 A IA transforma contratos em sinais operacionais, informações vivas capazes de te avisarem antes que o problema aconteça.
+-->
 
 ---
 
@@ -155,7 +204,7 @@ A IA transforma contratos em sinais operacionais, informações vivas capazes de
 
 <AIKnowledge />
 
-::note::
+<!--
 A IA generativa foi treinada com uma quantidade absurda de texto da internet. Tudo isso até uma certa data.
 
 É por isso que ela parece tão inteligente: ela leu mais do que qualquer humano conseguiria ler em mil vidas.
@@ -163,6 +212,7 @@ A IA generativa foi treinada com uma quantidade absurda de texto da internet. Tu
 Mas ela não sabe nada sobre os seus contratos. Seus documentos nunca estiveram na internet.
 
 Então o que a gente faz? Manda os contratos junto com a pergunta — e torce pra ela ser inteligente o suficiente pra usar bem. E é aí que começa a conversa interessante.
+-->
 
 ---
 
@@ -170,7 +220,7 @@ Então o que a gente faz? Manda os contratos junto com a pergunta — e torce pr
 
 <Contextdesk />
 
-::note::
+<!--
 Imagina que a IA tem uma mesa de trabalho. Tudo que você quer que ela use na análise precisa estar em cima dessa mesa ao mesmo tempo.
 
 Documentos que você mandou: na mesa. Histórico da conversa: na mesa. Sua próxima pergunta: também vai pra mesa.
@@ -183,6 +233,7 @@ Isso explica três comportamentos que todo mundo já viveu:
 - Nova conversa, zero memória? Mesa limpa. Do zero. Sempre.
 
 A frase que eu quero que vocês levem: a IA não tem memória. Ela tem mesa. E a mesa tem limite.
+--> 
 
 ---
 
@@ -190,20 +241,21 @@ A frase que eu quero que vocês levem: a IA não tem memória. Ela tem mesa. E a
 
 <AICompetition />
 
-::note::
+<!--
 Os modelos de IA estão em constante evolução. A corrida entre OpenAI, Google, Anthropic e outros continua acelerada.
 
 O importante não é qual é o melhor modelo agora — é saber que o campo muda rápido. Pra gestão de contratos, o que importa mais é o tamanho do modelo (capacidade de entender contexto longo) e como você estrutura as instruções.
 
 Toda semana tem um novo modelo saindo. Não deixe a ferramenta mudar sua estratégia.
+-->
 
 ---
 
-# Tanto faz o modelo? Atenção aos flash X pro
+# Modelo light X topo
 
 <ModelComparison />
 
-::note::
+<!--
 Quando você escolhe modelo, não está escolhendo por elegância técnica — está escolhendo a mesa de trabalho certa.
 
 Flash é modelo leve, rápido, barato — mesa pequena. Bom pra tarefas diretas, perguntas pontuais, contratos curtos e simples.
@@ -211,6 +263,7 @@ Flash é modelo leve, rápido, barato — mesa pequena. Bom pra tarefas diretas,
 Pro é modelo maior, mais caro, mesa maior — consegue segurar mais contexto, perceber condicionais, detectar contradições, avisar o que você nem perguntou.
 
 A escolha certa não é sempre o mais caro. É o suficiente pro problema. Se você tem 200 contratos de 50 páginas cada, pro é quase obrigatório.
+-->
 
 ---
 
@@ -270,10 +323,11 @@ Treinamento: multas ficam entre 5–10%.
 
 </div>
 
-::note::
+<!--
 Sabe por que a IA alucina com tanta frequência? Porque ela foi literalmente treinada pra te agradar. Quando você pergunta 'qual é a multa rescisória?' — a resposta que te agrada é um número. A resposta honesta, se o contrato não define, é: 'não existe.'
 
 Antes de falar nos limites técnicos, é importante entender o conflito de objetivos. A IA não falha por acidente — ela falha porque foi treinada para um objetivo (agradar, ser completa) que às vezes entra em rota de colisão com o que você precisa (precisão, rastreabilidade, contenção).
+-->
 
 ---
 
@@ -305,14 +359,14 @@ Antes de falar nos limites técnicos, é importante entender o conflito de objet
   <!-- CLIQUE 0: sempre visível — contrato -->
   <circle cx="450" cy="183" r="145"
     fill="rgba(99,211,161,0.03)"
-    stroke="#63d3a1"
+    stroke="#9bedff"
     stroke-width="1.5"
     stroke-dasharray="9 6"
     opacity="0.7"/>
   <text x="450" y="27" text-anchor="middle"
     class="svg-label"
     style="font-size:13px; font-weight:400; letter-spacing:0.03em; font-family:'Space Grotesk',sans-serif;"
-    fill="rgba(99,211,161,0.65)">O que estava no contrato</text>
+    fill="#9bedff">O que estava no contrato</text>
 
   <!-- CLIQUE 1: o que a IA achou -->
   <g v-click>
@@ -391,8 +445,9 @@ Antes de falar nos limites técnicos, é importante entender o conflito de objet
 
 </div>
 
-::note::
+<!--
 Dois problemas opostos — ao mesmo tempo. Recall: ela não cobre tudo e não avisa o que perdeu. Alucinação: ela vai além do que estava no documento sem avisar. Os próximos dois slides detalham cada um.
+-->
 
 ---
 
@@ -440,29 +495,67 @@ Sem avisar que perdeu.
 
 </div>
 
-::note::
+<!--
 O estagiário pelo menos diria 'esse aqui eu não entendi bem.' A IA devolve a lista com a mesma confiança — tenha encontrado tudo ou não.
+-->
 
 ---
 
 # Limite 2: Alucinação
 
-<div class="mt-10">
+<div class="grid gap-8 mt-8" style="grid-template-columns: 1fr 1fr;">
 
-A IA tem pavor de dizer **"não sei"**.
+<div>
 
-Quando não encontra — **ela inventa**.
+A IA foi **treinada pra agradar**.
 
-Com a mesma voz de quem encontrou.
+Quando não encontra informação, ela não diz "não sei".
+
+→ Ela inventa uma resposta que **soa plausível**.
+
+<div class="glass p-4 mt-6" style="border-color: #e2f81b;">
+
+**O pior?** Ela inventa **com total confiança.**
+
+Você não sabe que foi inventado.
 
 </div>
 
-::note::
+</div>
+
+<div class="glass p-5" style="border-color: #EC635E;">
+
+### Exemplo real
+
+**Pergunta:** Qual é a multa rescisória?
+
+**Contrato:** Não define.
+
+**Resposta da IA:**  
+"8% do valor total — Cláusula 12.3"
+
+<div class="text-sm mt-4" style="opacity: 0.7; line-height: 1.6;">
+
+❌ Cláusula 12.3 não existe  
+❌ A multa nunca foi definida  
+❌ IA também não sabe de onde veio "8%"
+
+</div>
+
+</div>
+
+</div>
+
+<!--
 O segundo limite se chama alucinação. É quando a IA não encontra a informação — mas em vez de dizer 'não sei', ela cria uma resposta que parece plausível. Testei isso: peguei um contrato que não tinha multa rescisória definida. Perguntei: 'qual é o valor da multa?' Ela respondeu: 8%. Com total confiança. De onde veio esse 8%? Ela também não sabe.
+-->
 
 ---
 
-# O GPS no Lago
+# alucinação com propriedade
+
+<Spacer :h="20"/>
+
 
 <div class="grid gap-8 mt-6" style="grid-template-columns: 1fr 1fr;">
 
@@ -488,35 +581,66 @@ A multa rescisória é de **8% do valor total**, conforme estabelecido na Cláus
 
 </div>
 
-::note::
+<!--
 O contrato não tinha multa definida. A Cláusula 12.3 não existe. A IA criou as duas coisas com total confiança.
+-->
 
 ---
 
 # A IA Quer te Agradar
 
-<div class="mt-10">
+<div class="grid gap-6 mt-8" style="grid-template-columns: 1fr 1fr;">
 
-A IA foi **literalmente treinada pra te agradar**.
+<div class="glass p-4" style="border-color: rgba(99,211,161,0.45);">
 
-Aprende com feedback humano — quando a gente gosta da resposta, ela reforça aquilo.
+### O que você pede
 
-O problema: **"te agradar" e "ser preciso"** são objetivos opostos.
+"Qual é a multa rescisória?"
+
+A resposta que você **quer ouvir:**  
+Um número.
+
+A resposta **honesta**, se não existe:  
+"Não está definida."
 
 </div>
 
-::note::
+<div class="glass p-4" style="border-color: rgba(226,248,27,0.45);">
+
+### O que a IA foi treinada pra fazer
+
+A IA aprende com feedback humano.
+
+→ Usuário gosta de resposta **completa**  
+→ Usuário gosta de resposta **confiante**
+
+**O conflito:** "agradar" ≠ "ser preciso"
+
+</div>
+
+</div>
+
+<div class="glass mt-6 p-3" style="border-color: #EC635E; text-align: center;">
+
+**Resultado:** Quando precisa escolher entre te agradar e estar certo — ela te agrada primeiro.
+
+</div>
+
+<!--
 Sabe por que a IA alucina com tanta frequência? Porque ela foi treinada pra te agradar. Quando você pergunta 'qual é a multa rescisória?' — a resposta que te agrada é um número. A resposta honesta, se o contrato não define, é: 'não existe.' Mas adivinhem qual ela prefere te dar.
+-->
 
 ---
 
-# Limite 3: Variabilidade de Documentos
+# Limite 3: Usuário
 
 <div class="grid grid-cols-3 gap-4 mt-8" style="font-size: 0.85rem;">
 
 <div class="glass p-4">
 
 ### Contrato A — 2015
+
+<Spacer :h="15"/>
 
 ```
 Multa rescisória:
@@ -530,6 +654,8 @@ Multa rescisória:
 <div class="glass p-4">
 
 ### Contrato B — 2019
+
+<Spacer :h="15"/>
 
 ```
 Penalidade conforme
@@ -545,6 +671,7 @@ no PDF.
 
 ### Contrato C — 2023
 
+<Spacer :h="15"/>
 ```
 Indenização pelos
 custos operacionais
@@ -559,12 +686,13 @@ externas.
 
 </div>
 
-::note::
+<!--
 Terceiro limite — esse não é culpa da IA. É culpa dos próprios contratos. Três formas diferentes de dizer — ou não dizer — a mesma coisa. Multiplicado por 80 contratos, isso vira um problema operacional.
+-->
 
 ---
 
-# O Chaveiro ✂️
+# O Chaveiro 🔒
 
 <div class="grid grid-cols-3 gap-5 mt-8" style="font-size: 0.85rem;">
 
@@ -578,17 +706,17 @@ Terceiro limite — esse não é culpa da IA. É culpa dos próprios contratos. 
 
 </div>
 
-<div class="glass p-5" style="border-color: #e2f81b; opacity: 0.75;">
+<div class="glass p-5" style="border-color: #e2f81b; opacity: 1;">
 
 🗝️ **Mesmo prompt**
 
 → Contrato 2019  
 **Falha.**  
-"Penalidade conforme Anexo D"
+"Penalidade no Anexo D"
 
 </div>
 
-<div class="glass p-5" style="border-color: #EC635E; opacity: 0.6;">
+<div class="glass p-5" style="border-color: #EC635E; opacity: 1;">
 
 🔐 **Mesmo prompt**
 
@@ -602,16 +730,17 @@ Terceiro limite — esse não é culpa da IA. É culpa dos próprios contratos. 
 
 <div class="glass mt-6 p-4 text-center" style="font-size: 0.95rem;">
 
-A solução não é ter mais força — é ter a chave certa para cada fechadura.
+A solução não é ter mais força, é ter a chave certa para cada fechadura.
 
 </div>
 
-::note::
+<!--
 Usar o mesmo prompt pra contratos diferentes é como tentar abrir todas as fechaduras com a mesma chave.
 
 Cada contrato é uma fechadura diferente. Alguns são simples, diretos, funcionam com prompt genérico. Outros têm variabilidade que o prompt genérico não consegue seguir.
 
 A solução não é ter mais força bruta de modelo. É ter a chave certa — prompt especializado, regras claras, validações estruturadas.
+-->
 
 ---
 
@@ -620,12 +749,13 @@ A solução não é ter mais força bruta de modelo. É ter a chave certa — pr
 
 <Classification />
 
-::note::
+<!--
 Classificação é triagem — como no pronto-socorro. Quando você chega com dor no peito: pulseira vermelha, atendimento imediato. Torção no tornozelo: pulseira verde, pode esperar.
 
 Com contratos: o modelo aprende com seu histórico — quais deram problema, quais não deram. Quando chega um contrato novo, ele classifica automaticamente: risco baixo, médio, alto, crítico.
 
 Você e o jurídico focam energia onde realmente importa.
+-->
 
 ---
 
@@ -633,7 +763,7 @@ Você e o jurídico focam energia onde realmente importa.
 
 <Regression />
 
-::note::
+<!--
 Projeção é como o corretor de imóveis que olha pra um apartamento e diz o preço sem pesquisar — ele sente, baseado em tudo que já vendeu.
 
 Com contratos: você tem 50 contratos de limpeza. Metragem, frequência, localidade, valor pago em cada um. O modelo encontra o padrão real.
@@ -641,6 +771,7 @@ Com contratos: você tem 50 contratos de limpeza. Metragem, frequência, localid
 Chega uma proposta nova. O modelo diz: R$ 47k por mês é o valor justo. O fornecedor quer R$ 71k.
 
 Você não precisa aceitar nem recusar na hora. Você tem um argumento baseado em dados — não em feeling.
+-->
 
 ---
 
@@ -648,12 +779,13 @@ Você não precisa aceitar nem recusar na hora. Você tem um argumento baseado e
 
 <Clustering />
 
-::note::
+<!--
 Agrupamento é encontrar padrões que você não viu. Todos os seus contratos de segurança têm multa entre 3% e 7%. Um tem 25%. 
 
 Anomalia não significa necessariamente problema. Significa: alguém precisa olhar pra esse.
 
 O banco bloqueia sua compra em Dubai às 3h da manhã — não porque sabe que é fraude, mas porque é fora do padrão. Com contratos, anomalia pode ser oportunidade de negociação ou aviso de cláusula estranha.
+-->
 
 ---
 
@@ -661,7 +793,7 @@ O banco bloqueia sua compra em Dubai às 3h da manhã — não porque sabe que �
 
 <GraphNetwork />
 
-::note::
+<!--
 LinkedIn recomenda conexão porque vocês têm 12 contatos em comum. Ele mapeia relacionamentos — não atributos isolados, mas conexões entre pessoas.
 
 Com fornecedores: Fornecedor A tem contrato com sua empresa. Fornecedor A tem sociedade com Fornecedor B. Fornecedor B tem pendência judicial com sua empresa.
@@ -670,6 +802,7 @@ Sem grafo: você assina com A sem saber da relação com B.
 Com grafo: o sistema avisa — 'atenção, conexão de risco detectada.'
 
 Vocês gerenciam fornecedores, não só contratos. E fornecedores têm relacionamentos que os contratos não mostram.
+-->
 
 ---
 

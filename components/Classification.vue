@@ -65,20 +65,6 @@
         </div>
       </div>
 
-      <div class="legend r2">
-        <div class="legend-item">
-          <div class="legend-dot" style="background:#63d3a1"></div>
-          <span>Padrão</span>
-        </div>
-        <div class="legend-item">
-          <div class="legend-dot" style="background:rgba(150,120,232,1)"></div>
-          <span>Atenção</span>
-        </div>
-        <div class="legend-item">
-          <div class="legend-dot" style="background:#FF5758"></div>
-          <span>Risco</span>
-        </div>
-      </div>
 
     </div>
 
@@ -158,13 +144,13 @@
           <ellipse cx="373" cy="128" rx="72" ry="56" fill="url(#cls-blob-red)" class="r-blob"/>
 
           <!-- Region labels -->
-          <text x="96" y="308" text-anchor="middle"
+          <text x="96" y="285" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="2.5" font-weight="700"
             fill="rgba(99,211,161,0.38)" class="r-label">PADRÃO</text>
           <text x="248" y="185" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="2.5" font-weight="700"
             fill="rgba(150,120,232,0.38)" class="r-label">ATENÇÃO</text>
-          <text x="393" y="72" text-anchor="middle"
+          <text x="393" y="85" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="2.5" font-weight="700"
             fill="rgba(255,87,88,0.38)" class="r-label">RISCO</text>
 
@@ -230,13 +216,11 @@
 
           <!-- Callout: NOVO FORNECEDOR -->
           <g class="appear-24s">
-            <rect x="195" y="22" width="155" height="22" rx="3"
+            <rect x="210" y="32" width="155" height="22" rx="3"
               fill="rgba(20,18,0,0.90)" stroke="rgba(226,248,27,0.50)" stroke-width=".6"/>
-            <text x="272" y="36"
+            <text x="287" y="46"
               font-family="JetBrains Mono,monospace" font-size="2.8" font-weight="700"
               fill="rgba(226,248,27,0.95)" text-anchor="middle" letter-spacing=".04em">NOVO FORNECEDOR</text>
-            <line x1="350" y1="44" x2="384" y2="41"
-              stroke="rgba(226,248,27,0.50)" stroke-width=".6" stroke-linecap="round"/>
           </g>
 
           <!-- "zona de risco" label -->
@@ -249,6 +233,21 @@
           </g>
 
         </svg>
+      </div>
+
+      <div class="legend-horizontal r2">
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#63d3a1"></div>
+          <span>Padrão</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:rgba(150,120,232,1)"></div>
+          <span>Atenção</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#FF5758"></div>
+          <span>Risco</span>
+        </div>
       </div>
     </div>
 
@@ -389,14 +388,10 @@
   font-family: "JetBrains Mono", monospace;
 }
 
-.legend {
-  display: flex; flex-direction: column; gap: 0.28rem;
-  padding: 0.42rem 0.55rem;
-  background: var(--rf-surface-secondary);
-  border: 1px solid var(--rf-border-secondary);
-  border-radius: 6px;
-  align-self: flex-start;
-  width: 80%;
+.legend-horizontal {
+  display: flex; flex-direction: row; gap: 1.2rem;
+  padding: 1.2rem 0 0 0;
+  justify-content: center;
 }
 .legend-item {
   display: flex; align-items: center; gap: 0.42rem;

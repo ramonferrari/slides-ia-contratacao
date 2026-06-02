@@ -70,20 +70,6 @@
         </div>
       </div>
 
-      <div class="legend r2">
-        <div class="legend-item">
-          <div class="legend-dot" style="background:#63d3a1"></div>
-          <span>Grupo A</span>
-        </div>
-        <div class="legend-item">
-          <div class="legend-dot" style="background:rgba(150,120,232,1)"></div>
-          <span>Grupo B</span>
-        </div>
-        <div class="legend-item">
-          <div class="legend-dot" style="background:#FF5758"></div>
-          <span>Grupo C</span>
-        </div>
-      </div>
 
     </div>
 
@@ -279,6 +265,21 @@
 
         </svg>
       </div>
+
+      <div class="legend-horizontal r2">
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#63d3a1"></div>
+          <span>Grupo A</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:rgba(150,120,232,1)"></div>
+          <span>Grupo B</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#FF5758"></div>
+          <span>Grupo C</span>
+        </div>
+      </div>
     </div>
 
     <!-- ══ COL 3: Result ══ -->
@@ -404,13 +405,10 @@
 .feat-text { display: flex; flex-direction: column; gap: 1px; }
 .feat-label { font-size: 0.74rem; font-weight: 700; color: var(--rf-text-secondary); }
 .feat-sub { font-size: 0.52rem; color: var(--rf-text-muted); font-family: "JetBrains Mono", monospace; }
-.legend {
-  display: flex; flex-direction: column; gap: 0.28rem;
-  padding: 0.42rem 0.55rem;
-  background: var(--rf-surface-secondary);
-  border: 1px solid var(--rf-border-secondary);
-  border-radius: 6px;
-  align-self: flex-start; width: 80%;
+.legend-horizontal {
+  display: flex; flex-direction: row; gap: 1.2rem;
+  padding: 1.2rem 0 0 0;
+  justify-content: center;
 }
 .legend-item { display: flex; align-items: center; gap: 0.42rem; font-size: 0.58rem; font-weight: 600; color: var(--rf-text-secondary); font-family: "JetBrains Mono", monospace; }
 .legend-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
