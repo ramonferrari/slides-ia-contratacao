@@ -25,7 +25,7 @@ class: text-left
 # Quem sou eu?
 
 <CircularImage 
-src="/public/rf.jpg" 
+src="./rf.JPG" 
 size="180px"
 borderColor="var(--rf-highlight)"
 :scale="1.1"
