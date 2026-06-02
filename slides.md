@@ -43,6 +43,8 @@ y="180"
 </div>
 
 <!--
+[gracinha] Passei 15 anos lendo ondas sísmicas underground pra encontrar petróleo. Hoje vou te ajudar a encontrar o petróleo dentro dos seus contratos. O problema é o mesmo — informação valiosa escondida em formato que ninguém consegue ler direito.
+
 Trabalho com ciência de dados há alguns anos. O que um cientista de dados faz, no fundo, é simples: pega informação bruta, bagunçada, espalhada — e transforma em algo que ajuda alguém a decidir melhor.
 
 Aí eu olhei pra vocês e pensei: é exatamente isso que vocês fazem. Vocês pegam contratos — informação bruta, densa, espalhada em dezenas de documentos — e tentam transformar isso em decisão. Renovar ou não. Rescindir ou não.
@@ -61,16 +63,12 @@ Vocês são cientistas de dados de contratos. Só que as ferramentas que vocês 
 ### 1️⃣ Entender o problema
 **IA generativa: promessas e armadilhas**
 
-Como funciona, onde falha, por que alucina.
-
 </div>
 
 <div class="glass p-5">
 
 ### 2️⃣ Explorar as técnicas
 **IA tradicional + estrutura de dados**
-
-O que a IA crua não vê.
 
 </div>
 
@@ -79,16 +77,12 @@ O que a IA crua não vê.
 ### 3️⃣ Integrar os dois mundos
 **Quando usar cada um**
 
-IA generativa responsável + dados
-
 </div>
 
 <div class="glass p-5">
 
 ### 4️⃣ Solução na prática
 **Farol de Contratos**
-
-Extração confiável, rastreável, escalável.
 
 </div>
 
@@ -548,6 +542,8 @@ Você não sabe que foi inventado.
 
 <!--
 O segundo limite se chama alucinação. É quando a IA não encontra a informação — mas em vez de dizer 'não sei', ela cria uma resposta que parece plausível. Testei isso: peguei um contrato que não tinha multa rescisória definida. Perguntei: 'qual é o valor da multa?' Ela respondeu: 8%. Com total confiança. De onde veio esse 8%? Ela também não sabe.
+
+[gracinha] Parecia um advogado sênior. O problema: a cláusula não existe. A multa nunca foi definida. E ela também não sabe de onde veio o 8%. Basicamente o estagiário no primeiro dia de estágio — só que o estagiário pelo menos ficaria com vergonha.
 -->
 
 ---
@@ -628,6 +624,8 @@ A IA aprende com feedback humano.
 
 <!--
 Sabe por que a IA alucina com tanta frequência? Porque ela foi treinada pra te agradar. Quando você pergunta 'qual é a multa rescisória?' — a resposta que te agrada é um número. A resposta honesta, se o contrato não define, é: 'não existe.' Mas adivinhem qual ela prefere te dar.
+
+[gracinha] Ela foi treinada por feedback humano. Toda vez que alguém aprovou uma resposta, ela aprendeu: isso agrada. Toda vez que reclamaram, ela ajustou. O resultado é um sistema literalmente incapaz de te dizer 'não sei'. [pausa] Você conhece alguém assim?
 -->
 
 ---
@@ -750,6 +748,8 @@ A solução não é ter mais força bruta de modelo. É ter a chave certa — pr
 <Classification />
 
 <!--
+[gracinha — transição pro bloco de técnicas] Agora vem a parte em que eu sou pago pra ser entediante. Vou mostrar 5 técnicas. Vou tentar ser rápido.
+
 Classificação é triagem — como no pronto-socorro. Quando você chega com dor no peito: pulseira vermelha, atendimento imediato. Torção no tornozelo: pulseira verde, pode esperar.
 
 Com contratos: o modelo aprende com seu histórico — quais deram problema, quais não deram. Quando chega um contrato novo, ele classifica automaticamente: risco baixo, médio, alto, crítico.
@@ -1294,10 +1294,10 @@ O risco silencioso ainda está lá. Mas agora vocês têm ferramentas pra ilumin
 
 <div style="line-height: 2.2;">
 <div style="font-size: 1.1rem; font-weight: 600; letter-spacing: 0.02em; margin-bottom: 1.2rem;">
-<span style="color: #e2f81b;">▶</span> <span style="color: #63d3a1;">esdigital.petrobras.com.br</span>
+<span style="color: #e2f81b;">▶</span> <a href="https://esdigital.petrobras.com.br" style="color: #63d3a1; text-decoration: none; cursor: pointer;" target="_blank">esdigital.petrobras.com.br</a>
 </div>
 <div style="font-size: 1.1rem; font-weight: 600; letter-spacing: 0.02em;">
-<span style="color: #e2f81b;">▶</span> <span style="color: #63d3a1;">farol.petrobras.com.br</span>
+<span style="color: #e2f81b;">▶</span> <a href="https://farol.petrobras.com.br" style="color: #63d3a1; text-decoration: none; cursor: pointer;" target="_blank">farol.petrobras.com.br</a>
 </div>
 </div>
 
