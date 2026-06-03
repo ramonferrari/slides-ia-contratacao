@@ -61,32 +61,32 @@ Vocês são cientistas de dados de contratos. Só que as ferramentas que vocês 
 <div class="glass p-3 flex gap-3 items-center" style="border-color: rgba(99,211,161,0.45);">
   <div style="font-size: 3rem; font-weight: 900; color: #63d3a1; flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">1</div>
   <div style="min-width: 0;">
-    <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">Entender o problema</div>
-    <div style="opacity: 0.75; font-size: 0.9rem;">IA generativa: promessas e armadilhas</div>
+    <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">O Desafio</div>
+    <div style="opacity: 0.75; font-size: 0.9rem;">IA além do hype</div>
   </div>
 </div>
 
 <div class="glass p-3 flex gap-3 items-center" style="border-color: rgba(99,211,161,0.45);">
   <div style="font-size: 3rem; font-weight: 900; color: #63d3a1; flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">2</div>
   <div style="min-width: 0;">
-    <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">Explorar as técnicas</div>
-    <div style="opacity: 0.75; font-size: 0.9rem;">IA tradicional + estrutura de dados</div>
+    <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">O Método</div>
+    <div style="opacity: 0.75; font-size: 0.9rem;">Do texto ao dado estruturado</div>
   </div>
 </div>
 
 <div class="glass p-3 flex gap-3 items-center" style="border-color: rgba(99,211,161,0.45);">
   <div style="font-size: 3rem; font-weight: 900; color: #63d3a1; flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">3</div>
   <div style="min-width: 0;">
-    <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">Integrar os dois mundos</div>
-    <div style="opacity: 0.75; font-size: 0.9rem;">Quando usar cada um</div>
+    <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">O Plano</div>
+    <div style="opacity: 0.75; font-size: 0.9rem;">Unindo os dois mundos</div>
   </div>
 </div>
 
 <div class="glass p-3 flex gap-3 items-center" style="border-color: rgba(226,248,27,0.45);">
   <div style="font-size: 3rem; font-weight: 900; color: #e2f81b; flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">4</div>
   <div style="min-width: 0;">
-    <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">Solução na prática</div>
-    <div style="opacity: 0.75; font-size: 0.9rem;">Farol de Contratos</div>
+    <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">O Resultado</div>
+    <div style="opacity: 0.75; font-size: 0.9rem;">Decisão baseada em dados</div>
   </div>
 </div>
 
@@ -95,6 +95,13 @@ Vocês são cientistas de dados de contratos. Só que as ferramentas que vocês 
 <!--
 "O que vocês vão levar daqui: IA generativa é incrível, mas sozinha não resolve gestão de contratos. O que funciona é estrutura. E é exatamente isso que vamos explorar."
 -->
+
+---
+
+<HeroSlide
+  eyebrow="01"
+  title="O Desafio"
+/>
 
 ---
 
@@ -172,12 +179,12 @@ Os problemas são idênticos. O que muda é o nome.
 <BeforeAfter language="pt">>
 <template #before>
 
-Você vai ao contrato quando<br> o problema <HighLight  color="#EC635E"> já aconteceu</HighLight>.
+Você vai ao contrato quando<br> o problema <HighLight  color="#EC635E"> já aconteceu.</HighLight>
 
 </template>
 <template #after>
 
-Com IA: o contrato <br><HighLight color="#e2f81b"> te avisa antes</HighLight>.
+Com IA: o contrato <br><HighLight color="#e2f81b"> te avisa antes!</HighLight>
 
 </template>
 </BeforeAfter>
@@ -210,6 +217,54 @@ A IA generativa foi treinada com uma quantidade absurda de texto da internet. Tu
 Mas ela não sabe nada sobre os seus contratos. Seus documentos nunca estiveram na internet.
 
 Então o que a gente faz? Manda os contratos junto com a pergunta — e torce pra ela ser inteligente o suficiente pra usar bem. E é aí que começa a conversa interessante.
+-->
+
+---
+
+
+# A IA Quer te Agradar
+
+<div class="grid gap-6 mt-8" style="grid-template-columns: 1fr 1fr;">
+
+<div class="glass p-4" style="border-color: rgba(99,211,161,0.45);">
+
+### O que você pede
+
+"Qual é a multa rescisória?"
+
+A resposta que você **quer ouvir:**  
+Um número.
+
+A resposta **honesta**, se não existe:  
+"Não está definida."
+
+</div>
+
+<div class="glass p-4" style="border-color: rgba(226,248,27,0.45);">
+
+### O que a IA foi treinada pra fazer
+
+A IA aprende com feedback humano.
+
+→ Usuário gosta de resposta **completa**  
+→ Usuário gosta de resposta **confiante**
+
+**O conflito:** "agradar" ≠ "ser preciso"
+
+</div>
+
+</div>
+
+<div class="glass mt-6 p-3" style="border-color: #EC635E; text-align: center;">
+
+**Resultado:** Quando precisa escolher entre te agradar e estar certo — ela te agrada primeiro.
+
+</div>
+
+<!--
+Sabe por que a IA alucina com tanta frequência? Porque ela foi treinada pra te agradar. Quando você pergunta 'qual é a multa rescisória?' — a resposta que te agrada é um número. A resposta honesta, se o contrato não define, é: 'não existe.' Mas adivinhem qual ela prefere te dar.
+
+[gracinha] Ela foi treinada por feedback humano. Toda vez que alguém aprovou uma resposta, ela aprendeu: isso agrada. Toda vez que reclamaram, ela ajustou. O resultado é um sistema literalmente incapaz de te dizer 'não sei'. [pausa] Você conhece alguém assim?
 -->
 
 ---
@@ -501,59 +556,6 @@ O estagiário pelo menos diria 'esse aqui eu não entendi bem.' A IA devolve a l
 
 # Limite 2: Alucinação
 
-<div class="grid gap-8 mt-8" style="grid-template-columns: 1fr 1fr;">
-
-<div>
-
-A IA foi **treinada pra agradar**.
-
-Quando não encontra informação, ela não diz "não sei".
-
-→ Ela inventa uma resposta que **soa plausível**.
-
-<div class="glass p-4 mt-6" style="border-color: #e2f81b;">
-
-**O pior?** Ela inventa **com total confiança.**
-
-Você não sabe que foi inventado.
-
-</div>
-
-</div>
-
-<div class="glass p-5" style="border-color: #EC635E;">
-
-### Exemplo real
-
-**Pergunta:** Qual é a multa rescisória?
-
-**Contrato:** Não define.
-
-**Resposta da IA:**  
-"8% do valor total — Cláusula 12.3"
-
-<div class="text-sm mt-4" style="opacity: 0.7; line-height: 1.6;">
-
-❌ Cláusula 12.3 não existe  
-❌ A multa nunca foi definida  
-❌ IA também não sabe de onde veio "8%"
-
-</div>
-
-</div>
-
-</div>
-
-<!--
-O segundo limite se chama alucinação. É quando a IA não encontra a informação — mas em vez de dizer 'não sei', ela cria uma resposta que parece plausível. Testei isso: peguei um contrato que não tinha multa rescisória definida. Perguntei: 'qual é o valor da multa?' Ela respondeu: 8%. Com total confiança. De onde veio esse 8%? Ela também não sabe.
-
-[gracinha] Parecia um advogado sênior. O problema: a cláusula não existe. A multa nunca foi definida. E ela também não sabe de onde veio o 8%. Basicamente o estagiário no primeiro dia de estágio — só que o estagiário pelo menos ficaria com vergonha.
--->
-
----
-
-# alucinação com propriedade
-
 <Spacer :h="20"/>
 
 
@@ -582,59 +584,15 @@ A multa rescisória é de **8% do valor total**, conforme estabelecido na Cláus
 </div>
 
 <!--
-O contrato não tinha multa definida. A Cláusula 12.3 não existe. A IA criou as duas coisas com total confiança.
+O segundo limite se chama alucinação. É quando a IA não encontra a informação — mas em vez de dizer 'não sei', ela cria uma resposta que parece plausível. Testei isso: peguei um contrato que não tinha multa rescisória definida. Perguntei: 'qual é o valor da multa?' Ela respondeu: 8%. Com total confiança. De onde veio esse 8%? Ela também não sabe.
+
+[gracinha] Parecia um advogado sênior. O problema: a cláusula não existe. A multa nunca foi definida. E ela também não sabe de onde veio o 8%. Basicamente o estagiário no primeiro dia de estágio — só que o estagiário pelo menos ficaria com vergonha.
 -->
 
 ---
 
-# A IA Quer te Agradar
 
-<div class="grid gap-6 mt-8" style="grid-template-columns: 1fr 1fr;">
-
-<div class="glass p-4" style="border-color: rgba(99,211,161,0.45);">
-
-### O que você pede
-
-"Qual é a multa rescisória?"
-
-A resposta que você **quer ouvir:**  
-Um número.
-
-A resposta **honesta**, se não existe:  
-"Não está definida."
-
-</div>
-
-<div class="glass p-4" style="border-color: rgba(226,248,27,0.45);">
-
-### O que a IA foi treinada pra fazer
-
-A IA aprende com feedback humano.
-
-→ Usuário gosta de resposta **completa**  
-→ Usuário gosta de resposta **confiante**
-
-**O conflito:** "agradar" ≠ "ser preciso"
-
-</div>
-
-</div>
-
-<div class="glass mt-6 p-3" style="border-color: #EC635E; text-align: center;">
-
-**Resultado:** Quando precisa escolher entre te agradar e estar certo — ela te agrada primeiro.
-
-</div>
-
-<!--
-Sabe por que a IA alucina com tanta frequência? Porque ela foi treinada pra te agradar. Quando você pergunta 'qual é a multa rescisória?' — a resposta que te agrada é um número. A resposta honesta, se o contrato não define, é: 'não existe.' Mas adivinhem qual ela prefere te dar.
-
-[gracinha] Ela foi treinada por feedback humano. Toda vez que alguém aprovou uma resposta, ela aprendeu: isso agrada. Toda vez que reclamaram, ela ajustou. O resultado é um sistema literalmente incapaz de te dizer 'não sei'. [pausa] Você conhece alguém assim?
--->
-
----
-
-# Limite 3: Usuário
+# Limite 3: O Usuário
 
 <div class="grid grid-cols-3 gap-4 mt-8" style="font-size: 0.85rem;">
 
@@ -688,47 +646,6 @@ externas.
 
 </div>
 
-<!--
-Terceiro limite — esse não é culpa da IA. É culpa dos próprios contratos. Três formas diferentes de dizer — ou não dizer — a mesma coisa. Multiplicado por 80 contratos, isso vira um problema operacional.
--->
-
----
-
-# O Chaveiro 🔒
-
-<div class="grid grid-cols-3 gap-5 mt-8" style="font-size: 0.85rem;">
-
-<div class="glass p-5" style="border-color: var(--rf-primary);">
-
-🔑 **Prompt genérico**
-
-→ Contrato 2015  
-**Funciona.**  
-"Multa: 5% do valor total"
-
-</div>
-
-<div class="glass p-5" style="border-color: #e2f81b; opacity: 1;">
-
-🗝️ **Mesmo prompt**
-
-→ Contrato 2019  
-**Falha.**  
-"Penalidade no Anexo D"
-
-</div>
-
-<div class="glass p-5" style="border-color: #EC635E; opacity: 1;">
-
-🔐 **Mesmo prompt**
-
-→ Contrato 2023  
-**Inventa.**  
-"8% do valor total" ← alucinação
-
-</div>
-
-</div>
 
 <div class="glass mt-6 p-4 text-center" style="font-size: 0.95rem;">
 
@@ -737,12 +654,23 @@ A solução não é ter mais força, é ter a chave certa para cada fechadura.
 </div>
 
 <!--
+Terceiro limite — esse não é culpa da IA. É culpa dos próprios contratos. Três formas diferentes de dizer — ou não dizer — a mesma coisa. Multiplicado por 80 contratos, isso vira um problema operacional.
+
 Usar o mesmo prompt pra contratos diferentes é como tentar abrir todas as fechaduras com a mesma chave.
 
 Cada contrato é uma fechadura diferente. Alguns são simples, diretos, funcionam com prompt genérico. Outros têm variabilidade que o prompt genérico não consegue seguir.
 
 A solução não é ter mais força bruta de modelo. É ter a chave certa — prompt especializado, regras claras, validações estruturadas.
 -->
+
+
+---
+
+<HeroSlide
+  eyebrow="02"
+  title="O Método"
+  subtitle="Do texto ao dado estruturado"
+/>
 
 ---
 
@@ -821,6 +749,14 @@ Com histórico estruturado de todos os contratos, você identifica tendências q
 
 Por exemplo: o reajuste médio da carteira estava em 5% — mas nos últimos 3 anos pulou pra 8%. Isso merecia atenção. É oportunidade de renegociar ou sinal de que o mercado mudou.
 -->
+
+---
+
+<HeroSlide
+  eyebrow="03"
+  title="O Plano"
+  subtitle="Unindo os dois mundos"
+/>
 
 ---
 
@@ -912,44 +848,16 @@ Você é um assessor jurídico especialista em digitalização de informações 
 <v-click>
 
 <div style="font-size: 0.9rem">
-<div>
-  <table class="rf-table">
-    <thead>
-      <tr>
-        <th>Categoria</th>
-        <th>Posições</th>
-        <th>Valor mensal</th>
-        <th>Fornecedor</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Engenharia</td>
-        <td>82</td>
-        <td>R$ 1.600.000</td>
-        <td>BB Consulting</td>
-      </tr>
-      <tr>
-        <td>Jurídico</td>
-        <td>12</td>
-        <td>R$ 480.000</td>
-        <td>Lex Group</td>
-      </tr>
-      <tr>
-        <td>Secretariado</td>
-        <td>24</td>
-        <td>R$ 210.000</td>
-        <td>Prime Office</td>
-      </tr>
-      <tr>
-        <td>Saúde</td>
-        <td>18</td>
-        <td>R$ 234.000</td>
-        <td>MedCayre</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+<ExtractionTable :colWidths="['25%', '15%', '35%', '25%']">
+
+| Categoria | Posições | Valor mensal | Fornecedor |
+|-----------|----------|--------------|------------|
+| Engenharia| 82       | R$ 1.600.000 | BB Consulting |
+| Jurídico  | 12       | R$ 480.000   | Lex Group     |
+| Secretariado| 24     | R$ 210.000   | Prime Office  |
+| Saúde     | 18       | R$ 234.000   | MedCayre      |
+
+</ExtractionTable>
 </div>
 </v-click>
 
@@ -963,6 +871,14 @@ Você é um assessor jurídico especialista em digitalização de informações 
 
 Agora você pode comparar. Qual categoria tira mais custo? Qual fornecedor tem melhor valor por posição? Essas perguntas só aparecem quando os dados estão estruturados.
 
+
+---
+
+<HeroSlide
+  eyebrow="04"
+  title="O Resultado"
+  subtitle="Decisão baseada em dados"
+/>
 
 ---
 
