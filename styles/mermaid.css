@@ -59,6 +59,30 @@
   overflow: visible !important;
 }
 
+/* CENTER TEXT IN LABELS */
+.mermaid .label,
+.mermaid .nodeLabel {
+  text-anchor: middle !important;
+}
+
+.mermaid .label text,
+.mermaid .nodeLabel text,
+.mermaid text {
+  text-anchor: middle !important;
+}
+
+.mermaid .label foreignObject,
+.mermaid .nodeLabel foreignObject {
+  display: flex !important;
+}
+
+.mermaid .label foreignObject div,
+.mermaid .nodeLabel foreignObject div {
+  text-align: center !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+
 /* EDGES & ARROWS */
 .mermaid .edgePath path {
   stroke: #35996e;

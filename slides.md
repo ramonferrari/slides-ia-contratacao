@@ -86,7 +86,7 @@ Vocês são cientistas de dados de contratos. Só que as ferramentas que vocês 
   <div style="font-size: 3rem; font-weight: 900; color: #e2f81b; flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">4</div>
   <div style="min-width: 0;">
     <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">O Resultado</div>
-    <div style="opacity: 0.75; font-size: 0.9rem;">Decisão baseada em dados</div>
+    <div style="opacity: 0.75; font-size: 0.9rem;">FAROL: Decisão baseada em dados</div>
   </div>
 </div>
 
@@ -877,20 +877,29 @@ Agora você pode comparar. Qual categoria tira mais custo? Qual fornecedor tem m
 <HeroSlide
   eyebrow="04"
   title="O Resultado"
-  subtitle="Decisão baseada em dados"
+  subtitle="FAROL: Decisão baseada em dados"
 />
 
 ---
 
 # 🔦 FAROL DE CONTRATOS
 
-<div class="glass mt-12">
+<div style="position: absolute; width: 600px; height: 400px; background: radial-gradient(ellipse at center, rgba(99,211,161,0.12) 0%, transparent 70%); border-radius: 50%; filter: blur(60px); top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
 
-**Inteligência aplicada à gestão de contratos.**
+<div style="position: relative; max-width: 800px; margin: 0 auto;">
 
-Você carrega seus PDFs — do jeito que estão — e o sistema lê, extrai as informações críticas, organiza num painel e avisa quando algo precisa de atenção.
+<div style="margin-bottom: 2rem;">
+<span style="font-size: 0.9rem; color: #63d3a1; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.8;">Solução inteligente</span>
+<div style="font-size: 1.6rem; font-weight: 700; margin-top: 0.8rem; background: linear-gradient(to right, #63d3a1, #e2f81b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Inteligência aplicada à gestão de contratos</div>
+</div>
 
-Não substitui o advogado. Substitui o trabalho de ler 50 páginas pra descobrir uma data.
+<div v-click style="margin-top: 2.5rem; padding: 1.5rem; border: 1px solid rgba(99,211,161,0.3); border-radius: 12px; background: rgba(99,211,161,0.05);"> Você carrega seus PDFs do jeito que estão. O sistema lê, extrai os dados críticos, organiza as informações e avisa quando algo precisa de atenção.
+
+<div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(99,211,161,0.2); color: #e2f81b; font-weight: 500; font-size: 1.1rem;">
+→ Não substitui o advogado <br> → Substitui ler 50 páginas pra descobrir uma data
+</div>
+
+</div>
 
 </div>
 
@@ -899,19 +908,51 @@ O Farol de Contratos é uma solução que resolve exatamente o que mostrei. Prim
 
 ---
 
+# Apresentamos o FAROL
+
+<ImagePanel
+  src="/farol.jpeg"
+  alt="Farol de Contratos"
+  position="center"
+  width="800px"
+/>
+
+<!--
+FAROL: solução de extração de texto a partir de documentos, e consulta posterior usando IA Generativa.
+
+Qualquer campo que faz sentido pra vocês — o Farol pode extrair. Porque o que muda é só o que você pede pra ele procurar.
+-->
+
+---
+
 # Como Funciona
 
-<Spacer :h="20"/>
+<div style="display: flex; align-items: center; justify-content: center;">
 
 ```mermaid
+%%{init: {'flowchart': {'curve': 'linear', 'htmlLabels': true}, 'theme': 'dark', 'themeVariables': {'primaryColor': '#131414', 'primaryBorderColor': '#63d3a1', 'secondBkgColor': '#1a1b1b', 'tertiaryColor': '#1a1b1b', 'fontFamily': 'Space Grotesk'}}}%%
 graph LR
-  A["📄 Seus PDFs"]
-  B["🔍 Leitura Inteligente<br/>Layout, tabelas,<br/>anexos, assinaturas"]
-  C["🤖 Extração Estruturada<br/>Cláusulas em campos<br/>fixos e validados"]
-  D["📊 Painel + Alertas<br/>Dados prontos pra decisão"]
+  A["<br/><b>Seus PDFs</b><br/>Caótico, denso<br/>não-estruturado"]
+  B["<br/><b>Leitura Inteligente</b><br/>Layout, tabelas,<br/>anexos, assinaturas"]
+  C["<br/><b>Extração Estruturada</b><br/>Cláusulas em campos<br/>fixos e validados"]
+  D["<br/><b>Painel + Alertas</b><br/>Dados prontos<br/>pra decisão"]
   
-  A --> B --> C --> D
+  A -->|transformação| B
+  B -->|estruturação| C
+  C -->|visualização| D
+  
+  classDef step1 stroke:#63d3a1,stroke-width:2px,color:#fff,fill:#0a4d3e,text-align:center
+  classDef step2 stroke:#63d3a1,stroke-width:2px,color:#fff,fill:#0a4d3e,text-align:center
+  classDef step3 stroke:#e2f81b,stroke-width:2px,color:#fff,fill:#131414,text-align:center
+  classDef step4 stroke:#e2f81b,stroke-width:2px,color:#fff,fill:#131414,text-align:center
+  
+  class A step1
+  class B step2
+  class C step3
+  class D step4
 ```
+
+</div>
 
 <!--
 O processo tem três etapas.
@@ -925,52 +966,98 @@ Terceiro: tudo aparece num painel. Com alertas, scores de risco e histórico.
 
 ---
 
-# A Lista de Mercado
+# O Que o Farol Extrai (Padrão)
 
-<Spacer :h="20"/>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem;">
 
-<BeforeAfter language="pt">
-<template #before>
+<div style="padding: 1rem; border: 1px solid rgba(226,248,27,0.3); border-radius: 8px; background: rgba(226,248,27,0.05);">
+<div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
+<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<div>
+<div style="font-weight: 600; color: #63d3a1;">Número do contrato</div>
+</div>
+</div>
+<div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
+<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<div>
+<div style="font-weight: 600; color: #63d3a1;">Quem contrata / contratado</div>
+</div>
+</div>
+<div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
+<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<div>
+<div style="font-weight: 600; color: #63d3a1;">Valor total</div>
+</div>
+</div>
+<div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
+<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<div>
+<div style="font-weight: 600; color: #63d3a1;">Data de assinatura</div>
+</div>
+</div>
+<div style="display: flex; gap: 0.8rem;">
+<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<div>
+<div style="font-weight: 600; color: #63d3a1;">Data de vencimento</div>
+</div>
+</div>
+</div>
 
-**IA crua:** "Analise este contrato."
+<div style="padding: 1rem; border: 1px solid rgba(226,248,27,0.3); border-radius: 8px; background: rgba(226,248,27,0.05);">
 
-→ Volta com o que achou  
-→ Formato diferente toda vez  
-→ Você não sabe o que faltou  
+<Spacer :h="13"/>
 
-</template>
-<template #after>
+<div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
+<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<div>
+<div style="font-weight: 600; color: #63d3a1;">Score de risco (0-100)</div>
+</div>
+</div>
+<div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
+<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<div>
+<div style="font-weight: 600; color: #63d3a1;">Criticidade</div>
+<div style="font-size: 0.8rem; opacity: 0.8;">Baixo / Médio / Alto / Crítico</div>
+</div>
+</div>
+<div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
+<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<div>
+<div style="font-weight: 600; color: #63d3a1;">Resumo do escopo</div>
+</div>
+</div>
+<div style="display: flex; gap: 0.8rem;">
+<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<div>
+<div style="font-weight: 600; color: #63d3a1;">Resumo dos riscos</div>
+</div>
+</div>
+</div>
 
-**Com estrutura:** "Extraia: multa, vencimento, renovação. Se não encontrar: N/E."
+</div>
 
-→ Você sabe o que pediu  
-→ Mesmo formato, sempre  
-→ Você sabe o que faltou  
-
-</template>
-</BeforeAfter>
+<div style="margin-top: 2.5rem; font-size: 0.9rem; opacity: 0.75; text-align: center;">
+<span style="color: #e2f81b; font-weight: 600; font-size: 1.4rem ">Cada negócio tem o que importa pra ele.</span>
+</div>
 
 <!--
-A diferença entre usar ChatGPT direto e uma solução estruturada é a diferença entre mandar alguém no mercado sem lista e mandar com uma lista bem feita.
-
-Sem lista: a pessoa volta com o que achou. Pode estar tudo certo — ou pode faltar a metade. Você nunca sabe.
-
-Com lista: você sabe exatamente o que pediu, o que veio e o que faltou. Sempre o mesmo formato. Sempre os mesmos campos.
+Esses são os campos que o Farol extrai por padrão. É um bom começo pra qualquer empresa. Mas é só o começo.
 -->
 
 ---
 
-# O Detetive
+# Farol: o assistente do detetive
+<Spacer :h="3"/>
 
 <div class="grid gap-8 mt-6" style="grid-template-columns: 1fr 1fr;">
 
 <div>
 
 ### Você não precisa confiar — você pode verificar
+<Spacer :h="8"/>
 
-IA crua diz "5%". Você torce pra estar certo.
-
-O Farol diz "5%" — e te mostra de onde veio.
+- IA crua diz "5%". Você torce pra estar certo.
+- O Farol diz "5%" — e te mostra de onde veio.
 
 <div class="glass p-4 mt-6" style="font-size: 0.9rem; border-color: var(--rf-primary);">
 
@@ -981,22 +1068,31 @@ Sempre.
 
 </div>
 
+<div v-click style="display: flex; flex-direction: column; gap: 0.8rem;">
+
+<div style="padding: 1rem; border-left: 3px solid #63d3a1; background: rgba(99,211,161,0.08); border-radius: 4px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 1rem;">
 <div>
+<div style="font-weight: 600; color: #63d3a1; font-size: 0.85rem;">Multa rescisória</div>
+<div style="font-size: 1.2rem; font-weight: 700; margin-top: 0.3rem;">5%</div>
+</div>
+<div style="font-size: 0.75rem; color: #e2f81b; text-align: right;">📄 Cláusula 8.2<br>página 12</div>
+</div>
 
-<TerminalBlock>
+<div style="padding: 1rem; border-left: 3px solid #63d3a1; background: rgba(99,211,161,0.08); border-radius: 4px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 1rem;">
+<div>
+<div style="font-weight: 600; color: #63d3a1; font-size: 0.85rem;">Renovação automática</div>
+<div style="font-size: 1.2rem; font-weight: 700; margin-top: 0.3rem;">Sim</div>
+</div>
+<div style="font-size: 0.75rem; color: #e2f81b; text-align: right;">📄 Cláusula 14.1<br>página 18</div>
+</div>
 
-> Extração: contrato_fornecedor_A.pdf
-
-Multa rescisória: 5%
-  → Cláusula 8.2, página 12
-
-Renovação automática: Sim
-  → Cláusula 14.1, página 18
-
-Foro de eleição: N/E
-  → Campo não encontrado
-
-</TerminalBlock>
+<div style="padding: 1rem; border-left: 3px solid #EC635E; background: rgba(236,99,94,0.08); border-radius: 4px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 1rem;">
+<div>
+<div style="font-weight: 600; color: #EC635E; font-size: 0.85rem;">Foro de eleição</div>
+<div style="font-size: 1.2rem; font-weight: 700; margin-top: 0.3rem;">N/E</div>
+</div>
+<div style="font-size: 0.75rem; color: #EC635E; text-align: right;">⚠ Campo não<br>encontrado</div>
+</div>
 
 </div>
 
@@ -1012,93 +1108,24 @@ Você pode abrir o PDF e conferir. Você não precisa confiar no sistema — voc
 
 ---
 
-# O Que o Farol Extrai (Padrão)
-
-<div class="mt-10">
-
-```
-✓  Número do contrato
-✓  Quem contrata / quem é contratado
-✓  Valor total
-✓  Data de assinatura
-✓  Data de vencimento
-✓  Score de risco (Baixo / Médio / Alto / Crítico)
-✓  Tem renovação automática? (Sim / Não)
-```
-
-</div>
-
-<div class="mt-6 text-sm opacity-75">
-
-## Mas cada negócio tem o que importa pra ele.
-
-</div>
-
-<!--
-Esses são os campos que o Farol extrai por padrão. É um bom começo pra qualquer empresa. Mas é só o começo.
--->
-
----
-
-# O Cardápio
-
-<div class="grid grid-cols-3 gap-4 mt-8" style="font-size: 0.85rem;">
-
-<div class="glass p-5">
-
-**🚛 Logística**
-
-SLA de entrega garantido  
-Multa por atraso  
-Responsabilidade por avaria  
-
-</div>
-
-<div class="glass p-5">
-
-**🏛️ Setor público**
-
-Número da licitação  
-Dotação orçamentária  
-Vigência fiscal  
-
-</div>
-
-<div class="glass p-5">
-
-**🔄 Serviços recorrentes**
-
-Cláusula de exclusividade  
-Reajuste (IPCA / IGP-M)  
-Prazo de rescisão sem multa  
-
-</div>
-
-</div>
-
-<div class="glass mt-6 p-4 text-center">
-
-**O Farol extrai campos que fazem sentido para o cliente.**
-
-</div>
-
-<!--
-Esses são os campos padrão. Mas cada negócio tem prioridades diferentes.
-
-Empresa de logística quer SLA de entrega garantido contratualmente. Empresa pública quer número da licitação e dotação orçamentária. Empresa de serviços recorrentes quer cláusula de exclusividade.
-
-Qualquer campo que faz sentido pra vocês — o Farol pode extrair. Porque o que muda é só o que você pede pra ele procurar.
--->
-
----
-
 # O Que Está Faltando?
 
-<div class="glass mt-16 text-center p-12">
+<div style="position: absolute; width: 600px; height: 400px; background: radial-gradient(ellipse at center, rgba(226,248,27,0.12) 0%, transparent 70%); border-radius: 50%; filter: blur(60px); top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
 
-### O que vocês sentiriam falta no dia a dia?
+<div style="text-align: center; position: relative;">
 
-**Olhando pra lista de campos padrão — qual informação vocês queria ter tido?**
+<div style="font-size: 2.2rem; font-weight: 900; line-height: 1.3; margin-bottom: 3rem; background: linear-gradient(to bottom, #e2f81b, #63d3a1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+Farol de Contratos: personalizado para vocês
+</div>
+
+<div v-click style="max-width: 700px; margin: 0 auto; padding: 2rem; border-left: 4px solid #63d3a1; text-align: left;">
+
+
+**Quem aqui já teve um problema que poderia ter sido evitado se soubesse antes que um contrato estava vencendo?**
+
+<div style="margin-top: 1rem; color: #e2f81b; font-weight: 500;">→ Qual informação o Farol deveria extrair para você?</div>
+
+</div>
 
 </div>
 
@@ -1112,7 +1139,7 @@ Qualquer campo que faz sentido pra vocês — o Farol pode extrair. Porque o que
 
 <div class="grid grid-cols-2 gap-8 mt-10">
 
-<div class="glass p-6">
+<div style="padding: 1rem; border: 1px solid rgba(226,248,27,0.3); border-radius: 32px; background: rgba(226,248,27,0.05);">
 
 ### O Farol FAZ
 
@@ -1125,11 +1152,11 @@ Qualquer campo que faz sentido pra vocês — o Farol pode extrair. Porque o que
 
 </div>
 
-<div class="glass p-6">
+<div style="padding: 1rem; border: 1px solid rgba(248, 27, 27, 0.3); border-radius: 32px; background: rgba(248, 86, 27, 0.05);">
 
 ### O Farol NÃO FAZ
 
-<span style="color: #EC635E;">✗</span> Julga se o contrato é bom ou ruim  
+<span style="color: #EC635E;">✗ </span> Julga se o contrato é bom ou ruim  
 <span style="color: #EC635E;">✗</span> Interpreta lei  
 <span style="color: #EC635E;">✗</span> Resolve anexos faltantes  
 <span style="color: #EC635E;">✗</span> Substitui advogado em casos complexos  
@@ -1152,32 +1179,16 @@ E se o contrato referencia um anexo que não está no PDF — ele vai avisar que
 
 # Moral
 
-<div style="position: relative; height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+<div class="rf-center" style="display: flex; flex-direction: column; align-items: center; text-align: left;">
 
-<div style="position: absolute; width: 600px; height: 300px; background: radial-gradient(ellipse at center, rgba(226,248,27,0.15) 0%, transparent 70%); border-radius: 50%; filter: blur(40px);"></div>
 
-<div style="position: relative; z-index: 1;">
-
-<div style="font-size: 1.3rem; opacity: 0.7; margin-bottom: 1.5rem; letter-spacing: 0.05em;">
-Informação escondida num PDF não serve pra ninguém.
+<div style="width: 560px; max-width: 90%;">
+<Terminal
+  :conversation="[{ user: 'E aí, qual a moral da história?', response: 'Ah! Informação escondida num PDF não serve pra ninguém\nO farol ilumina o que está lá.\nPara você decidir com dados, não com sorte!' }]"
+  modelName="Claude Opus 4.8"
+  :loop="false"
+/>
 </div>
-
-<div style="font-size: 3.5rem; font-weight: 900; letter-spacing: 0.02em; line-height: 1.2; margin-bottom: 1.5rem;">
-
-O <span style="color: #e2f81b;">Farol</span> ilumina
-
-<span style="color: #63d3a1;">o que está lá</span>
-
-</div>
-
-<div style="height: 2px; width: 120px; background: linear-gradient(to right, transparent, #e2f81b, transparent); margin: 2rem auto;"></div>
-
-<div style="font-size: 1.8rem; opacity: 0.85; letter-spacing: 0.02em; line-height: 1.6;">
-Pra você decidir com <span style="color: #e2f81b; font-weight: 700;">dados</span>,<br>não com <span style="text-decoration: line-through; opacity: 0.5;">sorte</span>.
-</div>
-
-</div>
-
 </div>
 
 <!--
@@ -1196,11 +1207,9 @@ O risco silencioso ainda está lá. Mas agora vocês têm ferramentas pra ilumin
 
 <div style="position: absolute; width: 500px; height: 300px; background: radial-gradient(ellipse at center, rgba(99,211,161,0.15) 0%, transparent 70%); border-radius: 50%; filter: blur(40px); left: 50%; top: 50%; transform: translate(-50%, -50%);"></div>
 
-<!-- Coluna esquerda: Emoji -->
+<!-- Coluna esquerda: SVG -->
 <div style="position: relative; z-index: 1; display: flex; justify-content: flex-end; align-items: center;">
-<div style="font-size: 8rem; filter: drop-shadow(0 0 30px rgba(99,211,161,0.4));">
-🔦
-</div>
+<img src="./farol.svg" alt="Farol" style="width: 300px; height: 300px; filter: drop-shadow(0 0 30px rgba(99,211,161,0.4));" />
 </div>
 
 <!-- Coluna direita: Texto e links -->
@@ -1217,7 +1226,7 @@ O risco silencioso ainda está lá. Mas agora vocês têm ferramentas pra ilumin
 <span style="color: #e2f81b;">▶</span> <a href="https://esdigital.petrobras.com.br" style="color: #63d3a1; text-decoration: none; cursor: pointer;" target="_blank">esdigital.petrobras.com.br</a>
 </div>
 <div style="font-size: 1.1rem; font-weight: 600; letter-spacing: 0.02em;">
-<span style="color: #e2f81b;">▶</span> <a href="https://farol.petrobras.com.br" style="color: #63d3a1; text-decoration: none; cursor: pointer;" target="_blank">farol.petrobras.com.br</a>
+<span style="color: #e2f81b;">▶</span> <a href="https://hubES.petrobras.com.br" style="color: #63d3a1; text-decoration: none; cursor: pointer;" target="_blank">hubES.petrobras.com.br</a> → <span style="color: #e2f81b;">Farol</span>
 </div>
 </div>
 

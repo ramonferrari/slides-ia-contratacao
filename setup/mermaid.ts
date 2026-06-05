@@ -18,8 +18,10 @@ export default defineMermaidSetup(() => {
       fontSize: '16px',
     },
     flowchart: {
-      htmlLabels: true,
+      htmlLabels: false,
       useMaxWidth: false,
+      nodeSpacing: 80,
+      rankSpacing: 80,
     },
   }
 })
