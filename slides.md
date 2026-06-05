@@ -786,11 +786,11 @@ Todas funcionam. Todas escalam. Todas revelam padrões.
 
 **PDF** → Caótico, denso, não-estruturado
 
-<FlowArrow />
+<div style="font-size: 2rem; text-align: center; margin: 0.8rem 0; background: linear-gradient(to bottom, #63d3a1, #e2f81b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">↓</div>
 
 **Transformação com IA**
 
-<FlowArrow />
+<div style="font-size: 2rem; text-align: center; margin: 0.8rem 0; background: linear-gradient(to bottom, #63d3a1, #e2f81b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">↓</div>
 
 **Dados** → Tabelas, campos, comparáveis
 
