@@ -1203,13 +1203,17 @@ O risco silencioso ainda está lá. Mas agora vocês têm ferramentas pra ilumin
 
 # Perguntas?
 
+<script setup>
+import farolSvg from '/public/farol.svg?url'
+</script>
+
 <div style="position: relative; height: 350px; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center;">
 
 <div style="position: absolute; width: 500px; height: 300px; background: radial-gradient(ellipse at center, rgba(99,211,161,0.15) 0%, transparent 70%); border-radius: 50%; filter: blur(40px); left: 50%; top: 50%; transform: translate(-50%, -50%);"></div>
 
 <!-- Coluna esquerda: SVG -->
 <div style="position: relative; z-index: 1; display: flex; justify-content: flex-end; align-items: center;">
-<img src="./farol.svg" alt="Farol" style="width: 300px; height: 300px; filter: drop-shadow(0 0 30px rgba(99,211,161,0.4));" />
+<img :src="farolSvg" alt="Farol" style="width: 300px; height: 300px; filter: drop-shadow(0 0 30px rgba(99,211,161,0.4));" />
 </div>
 
 <!-- Coluna direita: Texto e links -->
