@@ -58,32 +58,32 @@ Vocês são cientistas de dados de contratos. Só que as ferramentas que vocês 
 
 <div class="space-y-2.5 -mt-2">
 
-<div class="glass p-3 flex gap-3 items-center" style="border-color: rgba(99,211,161,0.45);">
-  <div style="font-size: 3rem; font-weight: 900; color: #63d3a1; flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">1</div>
+<div class="glass p-3 flex gap-3 items-center" style="border-color: color-mix(in srgb, var(--rf-primary) 45%, transparent);">
+  <div style="font-size: 3rem; font-weight: 900; color: var(--rf-primary); flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">1</div>
   <div style="min-width: 0;">
     <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">O Desafio</div>
     <div style="opacity: 0.75; font-size: 0.9rem;">IA além do hype</div>
   </div>
 </div>
 
-<div class="glass p-3 flex gap-3 items-center" style="border-color: rgba(99,211,161,0.45);">
-  <div style="font-size: 3rem; font-weight: 900; color: #63d3a1; flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">2</div>
+<div class="glass p-3 flex gap-3 items-center" style="border-color: color-mix(in srgb, var(--rf-primary) 45%, transparent);">
+  <div style="font-size: 3rem; font-weight: 900; color: var(--rf-primary); flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">2</div>
   <div style="min-width: 0;">
     <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">O Método</div>
     <div style="opacity: 0.75; font-size: 0.9rem;">Do texto ao dado estruturado</div>
   </div>
 </div>
 
-<div class="glass p-3 flex gap-3 items-center" style="border-color: rgba(99,211,161,0.45);">
-  <div style="font-size: 3rem; font-weight: 900; color: #63d3a1; flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">3</div>
+<div class="glass p-3 flex gap-3 items-center" style="border-color: color-mix(in srgb, var(--rf-primary) 45%, transparent);">
+  <div style="font-size: 3rem; font-weight: 900; color: var(--rf-primary); flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">3</div>
   <div style="min-width: 0;">
     <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">O Plano</div>
     <div style="opacity: 0.75; font-size: 0.9rem;">Unindo os dois mundos</div>
   </div>
 </div>
 
-<div class="glass p-3 flex gap-3 items-center" style="border-color: rgba(226,248,27,0.45);">
-  <div style="font-size: 3rem; font-weight: 900; color: #e2f81b; flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">4</div>
+<div class="glass p-3 flex gap-3 items-center" style="border-color: color-mix(in srgb, var(--rf-highlight) 45%, transparent);">
+  <div style="font-size: 3rem; font-weight: 900; color: var(--rf-highlight); flex-shrink: 0; line-height: 0.9; width: 70px; text-align: center;">4</div>
   <div style="min-width: 0;">
     <div style="font-size: 1rem; font-weight: 700; margin-bottom: 0.15rem;">O Resultado</div>
     <div style="opacity: 0.75; font-size: 0.9rem;">FAROL: Decisão baseada em dados</div>
@@ -184,7 +184,7 @@ Você vai ao contrato quando<br> o problema <HighLight  color="#EC635E"> já aco
 </template>
 <template #after>
 
-Com IA: o contrato <br><HighLight color="#e2f81b"> te avisa antes!</HighLight>
+Com IA: o contrato <br><HighLight color="var(--rf-highlight)"> te avisa antes!</HighLight>
 
 </template>
 </BeforeAfter>
@@ -226,7 +226,7 @@ Então o que a gente faz? Manda os contratos junto com a pergunta — e torce pr
 
 <div class="grid gap-6 mt-8" style="grid-template-columns: 1fr 1fr;">
 
-<div class="glass p-4" style="border-color: rgba(99,211,161,0.45);">
+<div class="glass p-4" style="border-color: color-mix(in srgb, var(--rf-primary) 45%, transparent);">
 
 ### O que você pede
 
@@ -240,7 +240,7 @@ A resposta **honesta**, se não existe:
 
 </div>
 
-<div class="glass p-4" style="border-color: rgba(226,248,27,0.45);">
+<div class="glass p-4" style="border-color: color-mix(in srgb, var(--rf-highlight) 45%, transparent);">
 
 ### O que a IA foi treinada pra fazer
 
@@ -324,18 +324,18 @@ A escolha certa não é sempre o mais caro. É o suficiente pro problema. Se voc
 
 <div class="flex items-center gap-4 mt-4" style="font-size: 0.8rem; line-height: 1.4;">
 
-<div class="glass p-3 flex-1" style="border-color: rgba(99,211,161,0.45); text-align: center;">
+<div class="glass p-3 flex-1" style="border-color: color-mix(in srgb, var(--rf-primary) 45%, transparent); text-align: center;">
 
-<span style="color: #63d3a1; font-weight: 700;">🧠 Fiel ao treinamento</span>  
+<span style="color: var(--rf-primary); font-weight: 700;">🧠 Fiel ao treinamento</span>  
 Ser completa. Agradar. Parecer confiante. Nunca deixar uma pergunta sem resposta.
 
 </div>
 
 <div style="font-size: 1rem; font-weight: 700; flex-shrink: 0; text-align: center; opacity: 0.45; letter-spacing: 0.1em;">vs</div>
 
-<div class="glass p-3 flex-1" style="border-color: rgba(226,248,27,0.45); text-align: center;">
+<div class="glass p-3 flex-1" style="border-color: color-mix(in srgb, var(--rf-highlight) 45%, transparent); text-align: center;">
 
-<span style="color: #e2f81b; font-weight: 700;">📋 Seguir suas instruções</span>  
+<span style="color: var(--rf-highlight); font-weight: 700;">📋 Seguir suas instruções</span>  
 Ser precisa. Dizer N/E. Citar a fonte. Usar só o que está no documento.
 
 </div>
@@ -391,12 +391,12 @@ Antes de falar nos limites técnicos, é importante entender o conflito de objet
 <svg viewBox="0 0 900 355" xmlns="http://www.w3.org/2000/svg" style="position: absolute; inset: 0; width: 100%; height: 100%;">
   <defs>
     <radialGradient id="innerGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#63d3a1" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#63d3a1" stop-opacity="0.03"/>
+      <stop offset="0%" stop-color="var(--rf-primary)" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="var(--rf-primary)" stop-opacity="0.03"/>
     </radialGradient>
     <radialGradient id="inventouGrad" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#e2f81b" stop-opacity="0.15"/>
-      <stop offset="100%" stop-color="#e2f81b" stop-opacity="0.02"/>
+      <stop offset="0%" stop-color="var(--rf-highlight)" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="var(--rf-highlight)" stop-opacity="0.02"/>
     </radialGradient>
     <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="3" result="blur"/>
@@ -411,37 +411,37 @@ Antes de falar nos limites técnicos, é importante entender o conflito de objet
 
   <!-- CLIQUE 0: sempre visível — contrato -->
   <circle cx="450" cy="183" r="145"
-    fill="rgba(99,211,161,0.03)"
-    stroke="#9bedff"
+    fill="color-mix(in srgb, var(--rf-primary) 3%, transparent)"
+    stroke="#2cc9ec"
     stroke-width="1.5"
     stroke-dasharray="9 6"
-    opacity="0.7"/>
+    opacity="0.85"/>
   <text x="450" y="27" text-anchor="middle"
     class="svg-label"
-    style="font-size:13px; font-weight:400; letter-spacing:0.03em; font-family:'Space Grotesk',sans-serif;"
-    fill="#9bedff">O que estava no contrato</text>
+    style="font-size:13px; font-weight:500; letter-spacing:0.03em; font-family:'Space Grotesk',sans-serif;"
+    fill="#2cc9ec">O que estava no contrato</text>
 
   <!-- CLIQUE 1: o que a IA achou -->
   <g v-click>
     <circle cx="468" cy="177" r="110"
       fill="url(#innerGrad)"
-      stroke="#63d3a1"
+      stroke="var(--rf-primary)"
       stroke-width="1.5"
       filter="url(#softGlow)"/>
-    <circle cx="412" cy="138" r="3" fill="#63d3a1" opacity="0.75"/>
-    <line x1="420" y1="138" x2="542" y2="138" stroke="#63d3a1" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
-    <circle cx="412" cy="157" r="3" fill="#63d3a1" opacity="0.75"/>
-    <line x1="420" y1="157" x2="524" y2="157" stroke="#63d3a1" stroke-width="1.8" stroke-linecap="round" opacity="0.5"/>
-    <circle cx="412" cy="176" r="3" fill="#63d3a1" opacity="0.75"/>
-    <line x1="420" y1="176" x2="538" y2="176" stroke="#63d3a1" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
-    <circle cx="412" cy="195" r="3" fill="#63d3a1" opacity="0.75"/>
-    <line x1="420" y1="195" x2="514" y2="195" stroke="#63d3a1" stroke-width="1.8" stroke-linecap="round" opacity="0.5"/>
-    <circle cx="412" cy="214" r="3" fill="#63d3a1" opacity="0.75"/>
-    <line x1="420" y1="214" x2="528" y2="214" stroke="#63d3a1" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
+    <circle cx="412" cy="138" r="3" fill="var(--rf-primary)" opacity="0.75"/>
+    <line x1="420" y1="138" x2="542" y2="138" stroke="var(--rf-primary)" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
+    <circle cx="412" cy="157" r="3" fill="var(--rf-primary)" opacity="0.75"/>
+    <line x1="420" y1="157" x2="524" y2="157" stroke="var(--rf-primary)" stroke-width="1.8" stroke-linecap="round" opacity="0.5"/>
+    <circle cx="412" cy="176" r="3" fill="var(--rf-primary)" opacity="0.75"/>
+    <line x1="420" y1="176" x2="538" y2="176" stroke="var(--rf-primary)" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
+    <circle cx="412" cy="195" r="3" fill="var(--rf-primary)" opacity="0.75"/>
+    <line x1="420" y1="195" x2="514" y2="195" stroke="var(--rf-primary)" stroke-width="1.8" stroke-linecap="round" opacity="0.5"/>
+    <circle cx="412" cy="214" r="3" fill="var(--rf-primary)" opacity="0.75"/>
+    <line x1="420" y1="214" x2="528" y2="214" stroke="var(--rf-primary)" stroke-width="1.8" stroke-linecap="round" opacity="0.55"/>
     <text x="468" y="308" text-anchor="middle"
       class="svg-label-bold"
       style="font-size:13px; font-weight:600; letter-spacing:0; font-family:'Space Grotesk',sans-serif;"
-      fill="rgba(99,211,161,0.85)">O que a IA achou</text>
+      fill="color-mix(in srgb, var(--rf-primary) 85%, transparent)">O que a IA achou</text>
   </g>
 
   <!-- CLIQUE 2: perdeu (vermelho) -->
@@ -467,19 +467,19 @@ Antes de falar nos limites técnicos, é importante entender o conflito de objet
   <g v-click>
     <circle cx="636" cy="250" r="58"
       fill="url(#inventouGrad)"
-      stroke="#e2f81b"
+      stroke="var(--rf-highlight)"
       stroke-width="1.5"
       stroke-dasharray="7 5"
       opacity="0.85"/>
-    <line x1="582" y1="237" x2="688" y2="237" stroke="#e2f81b" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-    <line x1="580" y1="251" x2="690" y2="251" stroke="#e2f81b" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-    <line x1="584" y1="265" x2="684" y2="265" stroke="#e2f81b" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="582" y1="237" x2="688" y2="237" stroke="var(--rf-highlight)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="580" y1="251" x2="690" y2="251" stroke="var(--rf-highlight)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+    <line x1="584" y1="265" x2="684" y2="265" stroke="var(--rf-highlight)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
     <rect x="598" y="310" width="80" height="22" rx="5"
-      fill="rgba(226,248,27,0.10)" stroke="#e2f81b" stroke-width="1" opacity="0.9"/>
+      fill="color-mix(in srgb, var(--rf-highlight) 10%, transparent)" stroke="var(--rf-highlight)" stroke-width="1" opacity="0.9"/>
     <text x="638" y="325" text-anchor="middle"
       class="svg-badge"
       style="font-size:11px; font-weight:600; font-family:'Space Grotesk',sans-serif;"
-      fill="#e2f81b">inventou</text>
+      fill="var(--rf-highlight)">inventou</text>
   </g>
 
 </svg>
@@ -491,8 +491,8 @@ Antes de falar nos limites técnicos, é importante entender o conflito de objet
 </div>
 
 <!-- Right card: aparece no clique 3 (junto com o círculo amarelo) -->
-<div v-click="3" class="glass p-4" style="position: absolute; right: 0; top: 55px; width: 190px; border-color: rgba(226,248,27,0.45);">
-  <div style="color: #e2f81b; font-weight: 700; font-size: 0.82rem; margin-bottom: 0.4rem; line-height: 1.3;">⚠ A IA pode inventar informação</div>
+<div v-click="3" class="glass p-4" style="position: absolute; right: 0; top: 55px; width: 190px; border-color: color-mix(in srgb, var(--rf-highlight) 45%, transparent);">
+  <div style="color: var(--rf-highlight); font-weight: 700; font-size: 0.82rem; margin-bottom: 0.4rem; line-height: 1.3;">⚠ A IA pode inventar informação</div>
   <p style="font-size: 0.75rem; line-height: 1.5; opacity: 0.7; margin: 0;">Algo apareceu na resposta, mas não estava no contrato.</p>
 </div>
 
@@ -786,11 +786,11 @@ Todas funcionam. Todas escalam. Todas revelam padrões.
 
 **PDF** → Caótico, denso, não-estruturado
 
-<div style="font-size: 2rem; text-align: center; margin: 0.8rem 0; background: linear-gradient(to bottom, #63d3a1, #e2f81b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">↓</div>
+<div style="font-size: 2rem; text-align: center; margin: 0.8rem 0; background: linear-gradient(to bottom, var(--rf-primary), var(--rf-highlight)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">↓</div>
 
 **Transformação com IA**
 
-<div style="font-size: 2rem; text-align: center; margin: 0.8rem 0; background: linear-gradient(to bottom, #63d3a1, #e2f81b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">↓</div>
+<div style="font-size: 2rem; text-align: center; margin: 0.8rem 0; background: linear-gradient(to bottom, var(--rf-primary), var(--rf-highlight)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">↓</div>
 
 **Dados** → Tabelas, campos, comparáveis
 
@@ -884,18 +884,18 @@ Agora você pode comparar. Qual categoria tira mais custo? Qual fornecedor tem m
 
 # 🔦 FAROL DE CONTRATOS
 
-<div style="position: absolute; width: 600px; height: 400px; background: radial-gradient(ellipse at center, rgba(99,211,161,0.12) 0%, transparent 70%); border-radius: 50%; filter: blur(60px); top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+<div class="rf-orb" style="width: 600px; height: 400px; background: radial-gradient(ellipse at center, color-mix(in srgb, var(--rf-primary) 12%, transparent) 0%, transparent 70%); filter: blur(60px); top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
 
 <div style="position: relative; max-width: 800px; margin: 0 auto;">
 
 <div style="margin-bottom: 2rem;">
-<span style="font-size: 0.9rem; color: #63d3a1; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.8;">Solução inteligente</span>
-<div style="font-size: 1.6rem; font-weight: 700; margin-top: 0.8rem; background: linear-gradient(to right, #63d3a1, #e2f81b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Inteligência aplicada à gestão de contratos</div>
+<span style="font-size: 0.9rem; color: var(--rf-primary); font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.8;">Solução inteligente</span>
+<div style="font-size: 1.6rem; font-weight: 700; margin-top: 0.8rem; background: linear-gradient(to right, var(--rf-primary), var(--rf-highlight)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Inteligência aplicada à gestão de contratos</div>
 </div>
 
-<div v-click style="margin-top: 2.5rem; padding: 1.5rem; border: 1px solid rgba(99,211,161,0.3); border-radius: 12px; background: rgba(99,211,161,0.05);"> Você carrega seus PDFs do jeito que estão. O sistema lê, extrai os dados críticos, organiza as informações e avisa quando algo precisa de atenção.
+<div v-click style="margin-top: 2.5rem; padding: 1.5rem; border: 1px solid color-mix(in srgb, var(--rf-primary) 30%, transparent); border-radius: 12px; background: color-mix(in srgb, var(--rf-primary) 5%, transparent);"> Você carrega seus PDFs do jeito que estão. O sistema lê, extrai os dados críticos, organiza as informações e avisa quando algo precisa de atenção.
 
-<div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(99,211,161,0.2); color: #e2f81b; font-weight: 500; font-size: 1.1rem;">
+<div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid color-mix(in srgb, var(--rf-primary) 20%, transparent); color: var(--rf-highlight); font-weight: 500; font-size: 1.1rem;">
 → Não substitui o advogado <br> → Substitui ler 50 páginas pra descobrir uma data
 </div>
 
@@ -930,7 +930,7 @@ Qualquer campo que faz sentido pra vocês — o Farol pode extrair. Porque o que
 <div style="display: flex; align-items: center; justify-content: center;">
 
 ```mermaid
-%%{init: {'flowchart': {'curve': 'linear', 'htmlLabels': true}, 'theme': 'dark', 'themeVariables': {'primaryColor': '#131414', 'primaryBorderColor': '#63d3a1', 'secondBkgColor': '#1a1b1b', 'tertiaryColor': '#1a1b1b', 'fontFamily': 'Space Grotesk'}}}%%
+%%{init: {'flowchart': {'curve': 'linear', 'htmlLabels': true}, 'theme': 'dark', 'themeVariables': {'primaryColor': '#131414', 'primaryBorderColor': 'var(--rf-primary)', 'secondBkgColor': '#1a1b1b', 'tertiaryColor': '#1a1b1b', 'fontFamily': 'Space Grotesk'}}}%%
 graph LR
   A["<br/><b>Seus PDFs</b><br/>Caótico, denso<br/>não-estruturado"]
   B["<br/><b>Leitura Inteligente</b><br/>Layout, tabelas,<br/>anexos, assinaturas"]
@@ -970,66 +970,66 @@ Terceiro: tudo aparece num painel. Com alertas, scores de risco e histórico.
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem;">
 
-<div style="padding: 1rem; border: 1px solid rgba(226,248,27,0.3); border-radius: 8px; background: rgba(226,248,27,0.05);">
+<div style="padding: 1rem; border: 1px solid color-mix(in srgb, var(--rf-highlight) 30%, transparent); border-radius: 8px; background: color-mix(in srgb, var(--rf-highlight) 5%, transparent);">
 <div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
-<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<span style="color: var(--rf-highlight); font-size: 1.2rem;">✓</span>
 <div>
-<div style="font-weight: 600; color: #63d3a1;">Número do contrato</div>
-</div>
-</div>
-<div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
-<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
-<div>
-<div style="font-weight: 600; color: #63d3a1;">Quem contrata / contratado</div>
+<div style="font-weight: 600; color: var(--rf-primary);">Número do contrato</div>
 </div>
 </div>
 <div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
-<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<span style="color: var(--rf-highlight); font-size: 1.2rem;">✓</span>
 <div>
-<div style="font-weight: 600; color: #63d3a1;">Valor total</div>
+<div style="font-weight: 600; color: var(--rf-primary);">Quem contrata / contratado</div>
 </div>
 </div>
 <div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
-<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<span style="color: var(--rf-highlight); font-size: 1.2rem;">✓</span>
 <div>
-<div style="font-weight: 600; color: #63d3a1;">Data de assinatura</div>
+<div style="font-weight: 600; color: var(--rf-primary);">Valor total</div>
+</div>
+</div>
+<div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
+<span style="color: var(--rf-highlight); font-size: 1.2rem;">✓</span>
+<div>
+<div style="font-weight: 600; color: var(--rf-primary);">Data de assinatura</div>
 </div>
 </div>
 <div style="display: flex; gap: 0.8rem;">
-<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<span style="color: var(--rf-highlight); font-size: 1.2rem;">✓</span>
 <div>
-<div style="font-weight: 600; color: #63d3a1;">Data de vencimento</div>
+<div style="font-weight: 600; color: var(--rf-primary);">Data de vencimento</div>
 </div>
 </div>
 </div>
 
-<div style="padding: 1rem; border: 1px solid rgba(226,248,27,0.3); border-radius: 8px; background: rgba(226,248,27,0.05);">
+<div style="padding: 1rem; border: 1px solid color-mix(in srgb, var(--rf-highlight) 30%, transparent); border-radius: 8px; background: color-mix(in srgb, var(--rf-highlight) 5%, transparent);">
 
 <Spacer :h="13"/>
 
 <div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
-<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<span style="color: var(--rf-highlight); font-size: 1.2rem;">✓</span>
 <div>
-<div style="font-weight: 600; color: #63d3a1;">Score de risco (0-100)</div>
+<div style="font-weight: 600; color: var(--rf-primary);">Score de risco (0-100)</div>
 </div>
 </div>
 <div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
-<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<span style="color: var(--rf-highlight); font-size: 1.2rem;">✓</span>
 <div>
-<div style="font-weight: 600; color: #63d3a1;">Criticidade</div>
+<div style="font-weight: 600; color: var(--rf-primary);">Criticidade</div>
 <div style="font-size: 0.8rem; opacity: 0.8;">Baixo / Médio / Alto / Crítico</div>
 </div>
 </div>
 <div style="display: flex; gap: 0.8rem; margin-bottom: 0.8rem;">
-<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<span style="color: var(--rf-highlight); font-size: 1.2rem;">✓</span>
 <div>
-<div style="font-weight: 600; color: #63d3a1;">Resumo do escopo</div>
+<div style="font-weight: 600; color: var(--rf-primary);">Resumo do escopo</div>
 </div>
 </div>
 <div style="display: flex; gap: 0.8rem;">
-<span style="color: #e2f81b; font-size: 1.2rem;">✓</span>
+<span style="color: var(--rf-highlight); font-size: 1.2rem;">✓</span>
 <div>
-<div style="font-weight: 600; color: #63d3a1;">Resumo dos riscos</div>
+<div style="font-weight: 600; color: var(--rf-primary);">Resumo dos riscos</div>
 </div>
 </div>
 </div>
@@ -1037,7 +1037,7 @@ Terceiro: tudo aparece num painel. Com alertas, scores de risco e histórico.
 </div>
 
 <div style="margin-top: 2.5rem; font-size: 0.9rem; opacity: 0.75; text-align: center;">
-<span style="color: #e2f81b; font-weight: 600; font-size: 1.4rem ">Cada negócio tem o que importa pra ele.</span>
+<span style="color: var(--rf-highlight); font-weight: 600; font-size: 1.4rem ">Cada negócio tem o que importa pra ele.</span>
 </div>
 
 <!--
@@ -1070,20 +1070,20 @@ Sempre.
 
 <div v-click style="display: flex; flex-direction: column; gap: 0.8rem;">
 
-<div style="padding: 1rem; border-left: 3px solid #63d3a1; background: rgba(99,211,161,0.08); border-radius: 4px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 1rem;">
+<div style="padding: 1rem; border-left: 3px solid var(--rf-primary); background: color-mix(in srgb, var(--rf-primary) 8%, transparent); border-radius: 4px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 1rem;">
 <div>
-<div style="font-weight: 600; color: #63d3a1; font-size: 0.85rem;">Multa rescisória</div>
+<div style="font-weight: 600; color: var(--rf-primary); font-size: 0.85rem;">Multa rescisória</div>
 <div style="font-size: 1.2rem; font-weight: 700; margin-top: 0.3rem;">5%</div>
 </div>
-<div style="font-size: 0.75rem; color: #e2f81b; text-align: right;">📄 Cláusula 8.2<br>página 12</div>
+<div style="font-size: 0.75rem; color: var(--rf-highlight); text-align: right;">📄 Cláusula 8.2<br>página 12</div>
 </div>
 
-<div style="padding: 1rem; border-left: 3px solid #63d3a1; background: rgba(99,211,161,0.08); border-radius: 4px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 1rem;">
+<div style="padding: 1rem; border-left: 3px solid var(--rf-primary); background: color-mix(in srgb, var(--rf-primary) 8%, transparent); border-radius: 4px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 1rem;">
 <div>
-<div style="font-weight: 600; color: #63d3a1; font-size: 0.85rem;">Renovação automática</div>
+<div style="font-weight: 600; color: var(--rf-primary); font-size: 0.85rem;">Renovação automática</div>
 <div style="font-size: 1.2rem; font-weight: 700; margin-top: 0.3rem;">Sim</div>
 </div>
-<div style="font-size: 0.75rem; color: #e2f81b; text-align: right;">📄 Cláusula 14.1<br>página 18</div>
+<div style="font-size: 0.75rem; color: var(--rf-highlight); text-align: right;">📄 Cláusula 14.1<br>página 18</div>
 </div>
 
 <div style="padding: 1rem; border-left: 3px solid #EC635E; background: rgba(236,99,94,0.08); border-radius: 4px; display: grid; grid-template-columns: 1fr 1fr; align-items: center; gap: 1rem;">
@@ -1110,20 +1110,20 @@ Você pode abrir o PDF e conferir. Você não precisa confiar no sistema — voc
 
 # O Que Está Faltando?
 
-<div style="position: absolute; width: 600px; height: 400px; background: radial-gradient(ellipse at center, rgba(226,248,27,0.12) 0%, transparent 70%); border-radius: 50%; filter: blur(60px); top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
+<div class="rf-orb" style="width: 600px; height: 400px; background: radial-gradient(ellipse at center, color-mix(in srgb, var(--rf-highlight) 12%, transparent) 0%, transparent 70%); filter: blur(60px); top: 50%; left: 50%; transform: translate(-50%, -50%);"></div>
 
 <div style="text-align: center; position: relative;">
 
-<div style="font-size: 2.2rem; font-weight: 900; line-height: 1.3; margin-bottom: 3rem; background: linear-gradient(to bottom, #e2f81b, #63d3a1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+<div style="font-size: 2.2rem; font-weight: 900; line-height: 1.3; margin-bottom: 3rem; background: linear-gradient(to bottom, var(--rf-highlight), var(--rf-primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
 Farol de Contratos: personalizado para vocês
 </div>
 
-<div v-click style="max-width: 700px; margin: 0 auto; padding: 2rem; border-left: 4px solid #63d3a1; text-align: left;">
+<div v-click style="max-width: 700px; margin: 0 auto; padding: 2rem; border-left: 4px solid var(--rf-primary); text-align: left;">
 
 
 **Quem aqui já teve um problema que poderia ter sido evitado se soubesse antes que um contrato estava vencendo?**
 
-<div style="margin-top: 1rem; color: #e2f81b; font-weight: 500;">→ Qual informação o Farol deveria extrair para você?</div>
+<div style="margin-top: 1rem; color: var(--rf-highlight); font-weight: 500;">→ Qual informação o Farol deveria extrair para você?</div>
 
 </div>
 
@@ -1139,16 +1139,16 @@ Farol de Contratos: personalizado para vocês
 
 <div class="grid grid-cols-2 gap-8 mt-10">
 
-<div style="padding: 1rem; border: 1px solid rgba(226,248,27,0.3); border-radius: 32px; background: rgba(226,248,27,0.05);">
+<div style="padding: 1rem; border: 1px solid color-mix(in srgb, var(--rf-highlight) 30%, transparent); border-radius: 32px; background: color-mix(in srgb, var(--rf-highlight) 5%, transparent);">
 
 ### O Farol FAZ
 
-<span style="color: #e2f81b;">✓</span> Extrai dados estruturados  
-<span style="color: #e2f81b;">✓</span> Identifica padrões  
-<span style="color: #e2f81b;">✓</span> Alerta sobre anomalias  
-<span style="color: #e2f81b;">✓</span> Escala para centenas  
-<span style="color: #e2f81b;">✓</span> Rastreia a fonte  
-<span style="color: #e2f81b;">✓</span> Marca incertezas  
+<span style="color: var(--rf-highlight);">✓</span> Extrai dados estruturados  
+<span style="color: var(--rf-highlight);">✓</span> Identifica padrões  
+<span style="color: var(--rf-highlight);">✓</span> Alerta sobre anomalias  
+<span style="color: var(--rf-highlight);">✓</span> Escala para centenas  
+<span style="color: var(--rf-highlight);">✓</span> Rastreia a fonte  
+<span style="color: var(--rf-highlight);">✓</span> Marca incertezas  
 
 </div>
 
@@ -1209,32 +1209,31 @@ import farolSvg from '/public/farol.svg?url'
 
 <div style="position: relative; height: 350px; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center;">
 
-<div style="position: absolute; width: 500px; height: 300px; background: radial-gradient(ellipse at center, rgba(99,211,161,0.15) 0%, transparent 70%); border-radius: 50%; filter: blur(40px); left: 50%; top: 50%; transform: translate(-50%, -50%);"></div>
+<div class="rf-orb" style="width: 500px; height: 300px; background: radial-gradient(ellipse at center, color-mix(in srgb, var(--rf-primary) 15%, transparent) 0%, transparent 70%); filter: blur(40px); left: 50%; top: 50%; transform: translate(-50%, -50%);"></div>
 
 <!-- Coluna esquerda: SVG -->
 <div style="position: relative; z-index: 1; display: flex; justify-content: flex-end; align-items: center;">
-<img :src="farolSvg" alt="Farol" style="width: 300px; height: 300px; filter: drop-shadow(0 0 30px rgba(99,211,161,0.4));" />
+<img :src="farolSvg" alt="Farol" style="width: 300px; height: 300px; filter: drop-shadow(0 0 30px color-mix(in srgb, var(--rf-primary) 40%, transparent));" />
 </div>
 
 <!-- Coluna direita: Texto e links -->
 <div style="position: relative; z-index: 1; text-align: left;">
 
 <div style="font-size: 2.8rem; font-weight: 900; letter-spacing: 0.03em; margin-bottom: 1.5rem; line-height: 1.3;">
-<span style="color: #e2f81b;">FAROL</span> DE<br><span style="color: #63d3a1;">CONTRATOS</span>
+<span style="color: var(--rf-highlight);">FAROL</span> DE<br><span style="color: var(--rf-primary);">CONTRATOS</span>
 </div>
 
-<div style="height: 2px; width: 100px; background: linear-gradient(to right, #63d3a1, transparent); margin-bottom: 2.5rem;"></div>
+<div style="height: 2px; width: 100px; background: linear-gradient(to right, var(--rf-primary), transparent); margin-bottom: 2.5rem;"></div>
 
 <div style="line-height: 2.2;">
 <div style="font-size: 1.1rem; font-weight: 600; letter-spacing: 0.02em; margin-bottom: 1.2rem;">
-<span style="color: #e2f81b;">▶</span> <a href="https://esdigital.petrobras.com.br" style="color: #63d3a1; text-decoration: none; cursor: pointer;" target="_blank">esdigital.petrobras.com.br</a>
+<span style="color: var(--rf-highlight);">▶</span> <a href="https://esdigital.petrobras.com.br" style="color: var(--rf-primary); text-decoration: none; cursor: pointer;" target="_blank">esdigital.petrobras.com.br</a>
 </div>
 <div style="font-size: 1.1rem; font-weight: 600; letter-spacing: 0.02em;">
-<span style="color: #e2f81b;">▶</span> <a href="https://hubES.petrobras.com.br" style="color: #63d3a1; text-decoration: none; cursor: pointer;" target="_blank">hubES.petrobras.com.br</a> → <span style="color: #e2f81b;">Farol</span>
+<span style="color: var(--rf-highlight);">▶</span> <a href="https://hubES.petrobras.com.br" style="color: var(--rf-primary); text-decoration: none; cursor: pointer;" target="_blank">hubES.petrobras.com.br</a> → <span style="color: var(--rf-highlight);">Farol</span>
 </div>
 </div>
 
 </div>
 
 </div>
-

@@ -74,8 +74,8 @@
         <svg width="100%" viewBox="0 0 490 432" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
           <defs>
             <radialGradient id="cls-blob-green" cx="50%" cy="50%" r="50%">
-              <stop offset="0%"   stop-color="rgba(99,211,161,0.20)"/>
-              <stop offset="100%" stop-color="rgba(99,211,161,0)"/>
+              <stop offset="0%"   stop-color="color-mix(in srgb, var(--rf-primary) 20%, transparent)"/>
+              <stop offset="100%" stop-color="color-mix(in srgb, var(--rf-primary) 0%, transparent)"/>
             </radialGradient>
             <radialGradient id="cls-blob-purple" cx="50%" cy="50%" r="50%">
               <stop offset="0%"   stop-color="rgba(150,120,232,0.20)"/>
@@ -98,7 +98,7 @@
           <!-- Chart title -->
           <text x="246" y="15" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="3" font-weight="700"
-            fill="rgba(99,211,161,0.65)" letter-spacing=".18em">
+            fill="var(--rf-primary)" letter-spacing=".18em">
             CLASSIFICAÇÃO DE FORNECEDORES
           </text>
 
@@ -132,10 +132,10 @@
           <!-- Axis labels -->
           <text x="246" y="420" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="3" font-weight="700"
-            fill="rgba(99,211,161,0.60)" letter-spacing=".08em">SCORE DE PREÇO</text>
+            fill="var(--rf-primary)" letter-spacing=".08em">SCORE DE PREÇO</text>
           <text x="14" y="205" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="3" font-weight="700"
-            fill="rgba(99,211,161,0.60)" letter-spacing=".06em"
+            fill="var(--rf-primary)" letter-spacing=".06em"
             transform="rotate(-90,14,205)">SCORE DE RISCO</text>
 
           <!-- Region glow blobs -->
@@ -146,7 +146,7 @@
           <!-- Region labels -->
           <text x="96" y="285" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="2.5" font-weight="700"
-            fill="rgba(99,211,161,0.38)" class="r-label">PADRÃO</text>
+            fill="var(--rf-primary)" class="r-label">PADRÃO</text>
           <text x="248" y="185" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="2.5" font-weight="700"
             fill="rgba(150,120,232,0.38)" class="r-label">ATENÇÃO</text>
@@ -157,26 +157,26 @@
           <!-- Decision boundary lines (separating the 3 classes diagonally) -->
           <!-- Boundary 1: Padrão | Atenção -->
           <line class="b-line" x1="52" y1="115" x2="262" y2="390"
-            stroke="rgba(224,73,108,0.42)" stroke-width="1" stroke-dasharray="5,3" stroke-linecap="round"/>
+            stroke="color-mix(in srgb, var(--rf-text-primary) 55%, transparent)" stroke-width="1.8" stroke-dasharray="5,3" stroke-linecap="round"/>
           <!-- Boundary 2: Atenção | Risco -->
           <line class="b-line" x1="161" y1="20" x2="440" y2="316"
-            stroke="rgba(224,73,108,0.42)" stroke-width="1" stroke-dasharray="5,3" stroke-linecap="round"/>
+            stroke="color-mix(in srgb, var(--rf-text-primary) 55%, transparent)" stroke-width="1.8" stroke-dasharray="5,3" stroke-linecap="round"/>
 
           <!-- Green cluster (Padrão) -->
           <g filter="url(#cls-glow-dot)">
-            <circle cx="75"  cy="355" r="3.5" fill="rgba(99,211,161,0.82)"/>
-            <circle cx="90"  cy="340" r="3"   fill="rgba(99,211,161,0.75)"/>
-            <circle cx="105" cy="362" r="3.5" fill="rgba(99,211,161,0.80)"/>
-            <circle cx="120" cy="348" r="3"   fill="rgba(99,211,161,0.70)"/>
-            <circle cx="88"  cy="372" r="3"   fill="rgba(99,211,161,0.72)"/>
-            <circle cx="115" cy="330" r="3.5" fill="rgba(99,211,161,0.78)"/>
-            <circle cx="135" cy="355" r="3"   fill="rgba(99,211,161,0.68)"/>
-            <circle cx="98"  cy="318" r="3.5" fill="rgba(99,211,161,0.76)"/>
-            <circle cx="145" cy="338" r="3"   fill="rgba(99,211,161,0.72)"/>
-            <circle cx="128" cy="372" r="3"   fill="rgba(99,211,161,0.65)"/>
-            <circle cx="155" cy="320" r="3.5" fill="rgba(99,211,161,0.80)"/>
-            <circle cx="78"  cy="305" r="3"   fill="rgba(99,211,161,0.68)"/>
-            <circle cx="162" cy="348" r="3"   fill="rgba(99,211,161,0.74)"/>
+            <circle cx="75"  cy="355" r="3.5" fill="color-mix(in srgb, var(--rf-primary) 82%, transparent)"/>
+            <circle cx="90"  cy="340" r="3"   fill="color-mix(in srgb, var(--rf-primary) 75%, transparent)"/>
+            <circle cx="105" cy="362" r="3.5" fill="color-mix(in srgb, var(--rf-primary) 80%, transparent)"/>
+            <circle cx="120" cy="348" r="3"   fill="color-mix(in srgb, var(--rf-primary) 70%, transparent)"/>
+            <circle cx="88"  cy="372" r="3"   fill="color-mix(in srgb, var(--rf-primary) 72%, transparent)"/>
+            <circle cx="115" cy="330" r="3.5" fill="color-mix(in srgb, var(--rf-primary) 78%, transparent)"/>
+            <circle cx="135" cy="355" r="3"   fill="color-mix(in srgb, var(--rf-primary) 68%, transparent)"/>
+            <circle cx="98"  cy="318" r="3.5" fill="color-mix(in srgb, var(--rf-primary) 76%, transparent)"/>
+            <circle cx="145" cy="338" r="3"   fill="color-mix(in srgb, var(--rf-primary) 72%, transparent)"/>
+            <circle cx="128" cy="372" r="3"   fill="color-mix(in srgb, var(--rf-primary) 65%, transparent)"/>
+            <circle cx="155" cy="320" r="3.5" fill="color-mix(in srgb, var(--rf-primary) 80%, transparent)"/>
+            <circle cx="78"  cy="305" r="3"   fill="color-mix(in srgb, var(--rf-primary) 68%, transparent)"/>
+            <circle cx="162" cy="348" r="3"   fill="color-mix(in srgb, var(--rf-primary) 74%, transparent)"/>
           </g>
 
           <!-- Purple cluster (Atenção) -->
@@ -210,23 +210,23 @@
 
           <!-- New vendor (outlier — above risk cluster) -->
           <g class="new-vendor" filter="url(#cls-glow-new)">
-            <circle cx="393" cy="39" r="8"  fill="rgba(226,248,27,0.90)"/>
-            <circle cx="393" cy="39" r="14" fill="rgba(226,248,27,0.15)"/>
+            <circle cx="393" cy="39" r="8"  fill="color-mix(in srgb, var(--rf-highlight) 90%, transparent)"/>
+            <circle cx="393" cy="39" r="14" fill="color-mix(in srgb, var(--rf-highlight) 15%, transparent)"/>
           </g>
 
           <!-- Callout: NOVO FORNECEDOR -->
           <g class="appear-24s">
             <rect x="210" y="32" width="155" height="22" rx="3"
-              fill="rgba(20,18,0,0.90)" stroke="rgba(226,248,27,0.50)" stroke-width=".6"/>
+              fill="color-mix(in srgb, var(--rf-surface-primary) 72%, transparent)" stroke="color-mix(in srgb, var(--rf-highlight) 50%, transparent)" stroke-width=".6"/>
             <text x="287" y="46"
               font-family="JetBrains Mono,monospace" font-size="2.8" font-weight="700"
-              fill="rgba(226,248,27,0.95)" text-anchor="middle" letter-spacing=".04em">NOVO FORNECEDOR</text>
+              fill="var(--rf-highlight)" text-anchor="middle" letter-spacing=".04em">NOVO FORNECEDOR</text>
           </g>
 
           <!-- "zona de risco" label -->
           <g class="appear-2s">
             <rect x="308" y="162" width="74" height="18" rx="3"
-              fill="rgba(40,8,8,0.88)" stroke="rgba(255,87,88,0.40)" stroke-width=".6"/>
+              fill="color-mix(in srgb, rgba(255,87,88,1) 12%, transparent)" stroke="rgba(255,87,88,0.40)" stroke-width=".6"/>
             <text x="345" y="174"
               font-family="Space Grotesk,sans-serif" font-size="3" font-weight="600"
               fill="rgba(255,87,88,0.90)" text-anchor="middle">zona de risco</text>
@@ -237,7 +237,7 @@
 
       <div class="legend-horizontal r2">
         <div class="legend-item">
-          <div class="legend-dot" style="background:#63d3a1"></div>
+          <div class="legend-dot" style="background:var(--rf-primary)"></div>
           <span>Padrão</span>
         </div>
         <div class="legend-item">
@@ -362,7 +362,7 @@
 .mini-doc-line.xs { width: 50%; }
 .mini-doc-status {
   font-size: 0.42rem; font-style: italic; font-weight: 300;
-  color: #63d3a1; margin-top: 0.2rem;
+  color: var(--rf-primary); margin-top: 0.2rem;
 }
 
 .features-divider { height: 2px; width: 36px; background: var(--rf-primary); border-radius: 2px; margin-bottom: 0.15rem; }
@@ -376,8 +376,8 @@
 .feat-icon {
   width: 30px; height: 30px; flex-shrink: 0;
   border-radius: 8px;
-  background: color-mix(in srgb, var(--ic, #63d3a1) 9%, transparent);
-  border: 1px solid color-mix(in srgb, var(--ic, #63d3a1) 24%, transparent);
+  background: color-mix(in srgb, var(--ic, var(--rf-primary)) 9%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ic, var(--rf-primary)) 24%, transparent);
   display: flex; align-items: center; justify-content: center;
 }
 .feat-icon svg { width: 15px; height: 15px; }
@@ -454,7 +454,7 @@
 .result-conf { display: flex; flex-direction: column; gap: 1px; }
 .conf-pct {
   font-size: 1.1rem; font-weight: 800; letter-spacing: -0.03em;
-  color: #e2f81b; line-height: 1;
+  color: var(--rf-highlight); line-height: 1;
 }
 .conf-sub {
   font-size: 0.52rem; font-weight: 700; letter-spacing: 0.05em;
@@ -485,8 +485,8 @@
 .b-line  { opacity: 0; animation: fadeUp 0.5s ease 1.3s forwards; }
 
 @keyframes cls-pulse {
-  0%,100% { filter: drop-shadow(0 0 4px rgba(226,248,27,.5)); }
-  50%      { filter: drop-shadow(0 0 14px rgba(226,248,27,.9)); }
+  0%,100% { filter: drop-shadow(0 0 4px color-mix(in srgb, var(--rf-highlight) 50%, transparent)); }
+  50%      { filter: drop-shadow(0 0 14px color-mix(in srgb, var(--rf-highlight) 90%, transparent)); }
 }
 .new-vendor {
   opacity: 0;

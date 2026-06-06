@@ -20,7 +20,7 @@
 
       <div class="feat-list r2">
         <div class="feat-item">
-          <div class="feat-icon" style="--ic:#e2f81b">
+          <div class="feat-icon" style="--ic:var(--rf-highlight)">
             <svg viewBox="0 0 24 24" fill="none" stroke="var(--ic)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
               <polyline points="9 22 9 12 15 12 15 22"/>
@@ -45,7 +45,7 @@
           </div>
         </div>
         <div class="feat-item">
-          <div class="feat-icon" style="--ic:#63d3a1">
+          <div class="feat-icon" style="--ic:var(--rf-primary)">
             <svg viewBox="0 0 24 24" fill="none" stroke="var(--ic)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/>
             </svg>
@@ -104,14 +104,14 @@
           <!-- title -->
           <text x="245" y="15" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="3" font-weight="700"
-            fill="rgba(99,211,161,0.65)" letter-spacing=".18em">
+            fill="var(--rf-primary)" letter-spacing=".18em">
             REDE DE VÍNCULOS
           </text>
 
           <!-- radar rings from ÓRGÃO (245,72) — network atmosphere -->
-          <circle cx="245" cy="72" r="104" fill="none" stroke="rgba(226,248,27,0.05)" stroke-width=".8"/>
-          <circle cx="245" cy="72" r="208" fill="none" stroke="rgba(226,248,27,0.03)" stroke-width=".8"/>
-          <circle cx="245" cy="72" r="308" fill="none" stroke="rgba(226,248,27,0.02)" stroke-width=".8"/>
+          <circle cx="245" cy="72" r="104" fill="none" stroke="color-mix(in srgb, var(--rf-highlight) 05%, transparent)" stroke-width=".8"/>
+          <circle cx="245" cy="72" r="208" fill="none" stroke="color-mix(in srgb, var(--rf-highlight) 03%, transparent)" stroke-width=".8"/>
+          <circle cx="245" cy="72" r="308" fill="none" stroke="color-mix(in srgb, var(--rf-highlight) 02%, transparent)" stroke-width=".8"/>
 
           <!-- ── Phase 1: visible edges (draw-on) ── -->
 
@@ -161,11 +161,11 @@
           <!-- ── ÓRGÃO node ── -->
           <g class="n-orgao" filter="url(#gph-dot-glow)">
             <circle cx="245" cy="72" r="18"
-              fill="rgba(226,248,27,0.10)" stroke="rgba(226,248,27,0.70)" stroke-width="1.5"/>
+              fill="color-mix(in srgb, var(--rf-highlight) 10%, transparent)" stroke="color-mix(in srgb, var(--rf-highlight) 70%, transparent)" stroke-width="1.5"/>
           </g>
           <text x="245" y="76" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="2.8" font-weight="700"
-            fill="rgba(226,248,27,0.85)" class="n-orgao">ÓRGÃO</text>
+            fill="var(--rf-highlight)" class="n-orgao">ÓRGÃO</text>
           <text x="245" y="101" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="2.4"
             fill="rgba(255,255,255,0.38)" class="n-orgao">público</text>
@@ -204,10 +204,10 @@
           <g class="n-forns" filter="url(#gph-dot-glow)">
             <!-- FORN. A -->
             <circle cx="92" cy="278" r="15"
-              fill="rgba(99,211,161,0.12)" stroke="rgba(99,211,161,0.65)" stroke-width="1.5"/>
+              fill="color-mix(in srgb, var(--rf-primary) 12%, transparent)" stroke="color-mix(in srgb, var(--rf-primary) 65%, transparent)" stroke-width="1.5"/>
             <text x="92" y="282" text-anchor="middle"
               font-family="JetBrains Mono,monospace" font-size="2.6" font-weight="700"
-              fill="rgba(99,211,161,0.90)">A</text>
+              fill="var(--rf-primary)">A</text>
             <text x="92" y="301" text-anchor="middle"
               font-family="JetBrains Mono,monospace" font-size="2.4"
               fill="rgba(255,255,255,0.45)">FORN. A</text>
@@ -217,10 +217,10 @@
 
             <!-- FORN. B -->
             <circle cx="245" cy="278" r="15"
-              fill="rgba(99,211,161,0.12)" stroke="rgba(99,211,161,0.65)" stroke-width="1.5"/>
+              fill="color-mix(in srgb, var(--rf-primary) 12%, transparent)" stroke="color-mix(in srgb, var(--rf-primary) 65%, transparent)" stroke-width="1.5"/>
             <text x="245" y="282" text-anchor="middle"
               font-family="JetBrains Mono,monospace" font-size="2.6" font-weight="700"
-              fill="rgba(99,211,161,0.90)">B</text>
+              fill="var(--rf-primary)">B</text>
             <text x="245" y="301" text-anchor="middle"
               font-family="JetBrains Mono,monospace" font-size="2.4"
               fill="rgba(255,255,255,0.45)">FORN. B</text>
@@ -230,10 +230,10 @@
 
             <!-- FORN. C -->
             <circle cx="398" cy="278" r="15"
-              fill="rgba(99,211,161,0.12)" stroke="rgba(99,211,161,0.65)" stroke-width="1.5"/>
+              fill="color-mix(in srgb, var(--rf-primary) 12%, transparent)" stroke="color-mix(in srgb, var(--rf-primary) 65%, transparent)" stroke-width="1.5"/>
             <text x="398" y="282" text-anchor="middle"
               font-family="JetBrains Mono,monospace" font-size="2.6" font-weight="700"
-              fill="rgba(99,211,161,0.90)">C</text>
+              fill="var(--rf-primary)">C</text>
             <text x="398" y="301" text-anchor="middle"
               font-family="JetBrains Mono,monospace" font-size="2.4"
               fill="rgba(255,255,255,0.45)">FORN. C</text>
@@ -369,7 +369,7 @@
 .mini-doc-line.xs { width: 50%; }
 .mini-doc-status {
   font-size: 0.42rem; font-style: italic; font-weight: 300;
-  color: rgba(226,248,27,0.70); margin-top: 0.2rem;
+  color: var(--rf-highlight); margin-top: 0.2rem;
 }
 .features-divider { height: 2px; width: 36px; background: var(--rf-primary); border-radius: 2px; margin-bottom: 0.15rem; }
 .features-title { font-size: 1.15rem; font-weight: 800; letter-spacing: -0.03em; color: var(--rf-text-primary); line-height: 1.15; }
@@ -378,8 +378,8 @@
 .feat-icon {
   width: 30px; height: 30px; flex-shrink: 0;
   border-radius: 8px;
-  background: color-mix(in srgb, var(--ic, #63d3a1) 9%, transparent);
-  border: 1px solid color-mix(in srgb, var(--ic, #63d3a1) 24%, transparent);
+  background: color-mix(in srgb, var(--ic, var(--rf-primary)) 9%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ic, var(--rf-primary)) 24%, transparent);
   display: flex; align-items: center; justify-content: center;
 }
 .feat-icon-dashed {
@@ -436,7 +436,7 @@
 }
 .result-badge { font-size: 1.75rem; font-weight: 800; letter-spacing: -0.04em; color: #FF5758; line-height: 1; }
 .result-sub { display: flex; align-items: baseline; gap: 0.3rem; }
-.sub-val { font-size: 1.0rem; font-weight: 800; color: #e2f81b; line-height: 1; }
+.sub-val { font-size: 1.0rem; font-weight: 800; color: var(--rf-highlight); line-height: 1; }
 .sub-unit { font-size: 0.52rem; font-weight: 600; color: var(--rf-text-muted); font-family: "JetBrains Mono", monospace; }
 
 /* chain visualization */
@@ -454,9 +454,9 @@
   border-radius: 4px;
 }
 .cn-forn {
-  background: color-mix(in srgb, #63d3a1 10%, transparent);
-  border: 1px solid color-mix(in srgb, #63d3a1 35%, transparent);
-  color: #63d3a1;
+  background: color-mix(in srgb, var(--rf-primary) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--rf-primary) 35%, transparent);
+  color: var(--rf-primary);
 }
 .cn-person {
   background: color-mix(in srgb, rgba(224,73,108,1) 10%, transparent);

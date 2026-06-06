@@ -7,7 +7,7 @@
       </span>
     </div>
 
-    <h1 class="rf-hero text-white rf-reveal-2 hero-title">
+    <h1 class="rf-hero rf-reveal-2 hero-title">
       {{ title }}
     </h1>
 
@@ -40,15 +40,16 @@ defineProps({
   font-weight: 700;
   letter-spacing: 0.6em;
   text-transform: uppercase;
-  color: var(--rf-primary);
+  color: var(--rf-highlight);
   padding: 0 0 4px 0;
-  border-bottom: 2px solid var(--rf-primary);
+  border-bottom: 2px solid var(--rf-highlight);
 }
 
 .hero-title {
   margin-top: 0;
   margin-bottom: 0.5rem;
   line-height: 1;
+  color: var(--rf-text-primary);
 }
 
 .hero-subtitle {
@@ -61,8 +62,4 @@ defineProps({
   letter-spacing: 0.02em;
 }
 
-:global(html.light) .eyebrow-inner {
-  color: var(--rf-primary);
-  border-bottom-color: var(--rf-primary);
-}
 </style>

@@ -91,7 +91,7 @@
           <!-- title -->
           <text x="246" y="15" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="3" font-weight="700"
-            fill="rgba(99,211,161,0.65)" letter-spacing=".18em">
+            fill="var(--rf-primary)" letter-spacing=".18em">
             AGRUPAMENTO DE CONTRATOS
           </text>
 
@@ -122,17 +122,17 @@
           <!-- axis labels -->
           <text x="246" y="420" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="3" font-weight="700"
-            fill="rgba(99,211,161,0.60)" letter-spacing=".08em">VARIAÇÃO DE PREÇO (%)</text>
+            fill="var(--rf-primary)" letter-spacing=".08em">VARIAÇÃO DE PREÇO (%)</text>
           <text x="14" y="205" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="3" font-weight="700"
-            fill="rgba(99,211,161,0.60)" letter-spacing=".06em"
+            fill="var(--rf-primary)" letter-spacing=".06em"
             transform="rotate(-90,14,205)">Nº ADITIVOS</text>
 
           <!-- ── Cluster ellipses — grow from centroid ── -->
           <!-- A: top-left  cx=135 cy=105 -->
           <g class="ell-a" style="transform-origin:135px 105px">
             <ellipse cx="135" cy="105" rx="72" ry="55"
-              fill="rgba(99,211,161,0.07)" stroke="#63d3a1" stroke-width="1.2"
+              fill="color-mix(in srgb, var(--rf-primary) 07%, transparent)" stroke="var(--rf-primary)" stroke-width="1.2"
               stroke-dasharray="6,3" stroke-opacity="0.42"/>
           </g>
           <!-- B: bottom-center  cx=245 cy=330 -->
@@ -151,7 +151,7 @@
           <!-- group labels (inside each ellipse, low opacity) -->
           <text x="135" y="170" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="2.5" font-weight="700"
-            fill="rgba(99,211,161,0.38)" class="g-label">GRUPO A</text>
+            fill="var(--rf-primary)" class="g-label">GRUPO A</text>
           <text x="245" y="284" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="2.5" font-weight="700"
             fill="rgba(150,120,232,0.38)" class="g-label">GRUPO B</text>
@@ -163,19 +163,19 @@
 
           <!-- Cluster A (green) — high amendments, low-mid price variation -->
           <g filter="url(#cl-glow-dot)">
-            <circle cx="78"  cy="90"  r="3.5" fill="rgba(99,211,161,0.82)"/>
-            <circle cx="95"  cy="75"  r="3"   fill="rgba(99,211,161,0.75)"/>
-            <circle cx="112" cy="100" r="3.5" fill="rgba(99,211,161,0.80)"/>
-            <circle cx="130" cy="72"  r="3"   fill="rgba(99,211,161,0.70)"/>
-            <circle cx="148" cy="85"  r="3.5" fill="rgba(99,211,161,0.78)"/>
-            <circle cx="82"  cy="115" r="3"   fill="rgba(99,211,161,0.72)"/>
-            <circle cx="100" cy="132" r="3.5" fill="rgba(99,211,161,0.80)"/>
-            <circle cx="122" cy="110" r="3"   fill="rgba(99,211,161,0.68)"/>
-            <circle cx="152" cy="118" r="3.5" fill="rgba(99,211,161,0.76)"/>
-            <circle cx="168" cy="98"  r="3"   fill="rgba(99,211,161,0.72)"/>
-            <circle cx="92"  cy="148" r="3"   fill="rgba(99,211,161,0.65)"/>
-            <circle cx="135" cy="152" r="3.5" fill="rgba(99,211,161,0.74)"/>
-            <circle cx="115" cy="135" r="3"   fill="rgba(99,211,161,0.70)"/>
+            <circle cx="78"  cy="90"  r="3.5" fill="color-mix(in srgb, var(--rf-primary) 82%, transparent)"/>
+            <circle cx="95"  cy="75"  r="3"   fill="color-mix(in srgb, var(--rf-primary) 75%, transparent)"/>
+            <circle cx="112" cy="100" r="3.5" fill="color-mix(in srgb, var(--rf-primary) 80%, transparent)"/>
+            <circle cx="130" cy="72"  r="3"   fill="color-mix(in srgb, var(--rf-primary) 70%, transparent)"/>
+            <circle cx="148" cy="85"  r="3.5" fill="color-mix(in srgb, var(--rf-primary) 78%, transparent)"/>
+            <circle cx="82"  cy="115" r="3"   fill="color-mix(in srgb, var(--rf-primary) 72%, transparent)"/>
+            <circle cx="100" cy="132" r="3.5" fill="color-mix(in srgb, var(--rf-primary) 80%, transparent)"/>
+            <circle cx="122" cy="110" r="3"   fill="color-mix(in srgb, var(--rf-primary) 68%, transparent)"/>
+            <circle cx="152" cy="118" r="3.5" fill="color-mix(in srgb, var(--rf-primary) 76%, transparent)"/>
+            <circle cx="168" cy="98"  r="3"   fill="color-mix(in srgb, var(--rf-primary) 72%, transparent)"/>
+            <circle cx="92"  cy="148" r="3"   fill="color-mix(in srgb, var(--rf-primary) 65%, transparent)"/>
+            <circle cx="135" cy="152" r="3.5" fill="color-mix(in srgb, var(--rf-primary) 74%, transparent)"/>
+            <circle cx="115" cy="135" r="3"   fill="color-mix(in srgb, var(--rf-primary) 70%, transparent)"/>
           </g>
 
           <!-- Cluster B (purple) — few amendments, mid price variation -->
@@ -217,9 +217,9 @@
 
           <!-- Centroid A -->
           <g class="centroid-a">
-            <circle cx="135" cy="105" r="5" fill="rgba(99,211,161,0.18)" stroke="#63d3a1" stroke-width="1.5"/>
-            <line x1="122" y1="105" x2="148" y2="105" stroke="#63d3a1" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="135" y1="92"  x2="135" y2="118" stroke="#63d3a1" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="135" cy="105" r="5" fill="color-mix(in srgb, var(--rf-primary) 18%, transparent)" stroke="var(--rf-primary)" stroke-width="1.5"/>
+            <line x1="122" y1="105" x2="148" y2="105" stroke="var(--rf-primary)" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="135" y1="92"  x2="135" y2="118" stroke="var(--rf-primary)" stroke-width="1.5" stroke-linecap="round"/>
           </g>
 
           <!-- Centroid B -->
@@ -238,29 +238,29 @@
 
           <!-- ── New vendor (yellow) ── -->
           <g class="new-vendor" filter="url(#cl-glow-new)">
-            <circle cx="428" cy="52" r="8"  fill="rgba(226,248,27,0.90)"/>
-            <circle cx="428" cy="52" r="14" fill="rgba(226,248,27,0.15)"/>
+            <circle cx="428" cy="52" r="8"  fill="color-mix(in srgb, var(--rf-highlight) 90%, transparent)"/>
+            <circle cx="428" cy="52" r="14" fill="color-mix(in srgb, var(--rf-highlight) 15%, transparent)"/>
           </g>
 
           <!-- Distance line: new vendor → nearest centroid (C) -->
           <line class="dist-line" x1="428" y1="52" x2="360" y2="120"
-            stroke="rgba(226,248,27,0.60)" stroke-width="1.2"
+            stroke="color-mix(in srgb, var(--rf-highlight) 60%, transparent)" stroke-width="1.2"
             stroke-dasharray="4,3" stroke-linecap="round"/>
 
           <!-- distance label near midpoint -->
           <text x="406" y="78" text-anchor="middle"
             font-family="JetBrains Mono,monospace" font-size="2.5" font-weight="600"
-            fill="rgba(226,248,27,0.70)" class="appear-30s">d=88</text>
+            fill="color-mix(in srgb, var(--rf-highlight) 70%, transparent)" class="appear-30s">d=88</text>
 
           <!-- NOVO CONTRATO callout -->
           <g class="appear-24s">
             <rect x="196" y="34" width="155" height="22" rx="3"
-              fill="rgba(20,18,0,0.90)" stroke="rgba(226,248,27,0.50)" stroke-width=".6"/>
+              fill="color-mix(in srgb, var(--rf-surface-primary) 72%, transparent)" stroke="color-mix(in srgb, var(--rf-highlight) 50%, transparent)" stroke-width=".6"/>
             <text x="273" y="48"
               font-family="JetBrains Mono,monospace" font-size="2.8" font-weight="700"
-              fill="rgba(226,248,27,0.95)" text-anchor="middle" letter-spacing=".04em">NOVO CONTRATO</text>
+              fill="var(--rf-highlight)" text-anchor="middle" letter-spacing=".04em">NOVO CONTRATO</text>
             <line x1="351" y1="56" x2="416" y2="54"
-              stroke="rgba(226,248,27,0.50)" stroke-width=".6" stroke-linecap="round"/>
+              stroke="color-mix(in srgb, var(--rf-highlight) 50%, transparent)" stroke-width=".6" stroke-linecap="round"/>
           </g>
 
         </svg>
@@ -268,7 +268,7 @@
 
       <div class="legend-horizontal r2">
         <div class="legend-item">
-          <div class="legend-dot" style="background:#63d3a1"></div>
+          <div class="legend-dot" style="background:var(--rf-primary)"></div>
           <span>Grupo A</span>
         </div>
         <div class="legend-item">
@@ -397,8 +397,8 @@
 .feat-icon {
   width: 30px; height: 30px; flex-shrink: 0;
   border-radius: 8px;
-  background: color-mix(in srgb, var(--ic, #63d3a1) 9%, transparent);
-  border: 1px solid color-mix(in srgb, var(--ic, #63d3a1) 24%, transparent);
+  background: color-mix(in srgb, var(--ic, var(--rf-primary)) 9%, transparent);
+  border: 1px solid color-mix(in srgb, var(--ic, var(--rf-primary)) 24%, transparent);
   display: flex; align-items: center; justify-content: center;
 }
 .feat-icon svg { width: 15px; height: 15px; }
@@ -443,7 +443,7 @@
 }
 .result-badge { font-size: 1.8rem; font-weight: 800; letter-spacing: -0.04em; color: #FF5758; line-height: 1; }
 .result-dist { display: flex; flex-direction: column; gap: 1px; }
-.dist-val { font-size: 1.1rem; font-weight: 800; letter-spacing: -0.03em; color: #e2f81b; line-height: 1; }
+.dist-val { font-size: 1.1rem; font-weight: 800; letter-spacing: -0.03em; color: var(--rf-highlight); line-height: 1; }
 .dist-sub { font-size: 0.52rem; font-weight: 700; letter-spacing: 0.05em; color: var(--rf-text-muted); font-family: "JetBrains Mono", monospace; }
 .factors-list { display: flex; flex-direction: column; gap: 0.45rem; width: 100%; }
 .factor-item  { display: flex; flex-direction: column; gap: 0.18rem; }
@@ -472,8 +472,8 @@
 
 /* ─── New vendor pulse ────────────────────────────────── */
 @keyframes cl-pulse {
-  0%,100% { filter: drop-shadow(0 0 4px rgba(226,248,27,.5)); }
-  50%      { filter: drop-shadow(0 0 14px rgba(226,248,27,.9)); }
+  0%,100% { filter: drop-shadow(0 0 4px color-mix(in srgb, var(--rf-highlight) 50%, transparent)); }
+  50%      { filter: drop-shadow(0 0 14px color-mix(in srgb, var(--rf-highlight) 90%, transparent)); }
 }
 .new-vendor {
   opacity: 0;

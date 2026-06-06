@@ -104,7 +104,7 @@ html.light {
   --rf-bg-soft: #ffffff;
 
   --rf-glow:
-    rgba(12,99,85,0.12);
+    transparent;
 
   --rf-surface-primary:
     rgba(255,255,255,0.72);
@@ -128,10 +128,10 @@ html.light {
     rgba(17,24,39,0.52);
 
   --rf-primary:
-    #2f8d65;
-
+    #132950;
   --rf-highlight:
-    #1f6e50;
+    #004DA7;
+
 }
 
 /* ════════════════════════════════════════════
@@ -163,6 +163,10 @@ body,
       transparent 35%
     ),
     var(--rf-bg);
+}
+
+html.light .slidev-layout {
+  background: var(--rf-bg);
 }
 
 .slidev-layout h1:not(.rf-hero) {
@@ -217,6 +221,16 @@ body,
 .rf-supertitle-after {
   color: var(--rf-highlight);
   font-weight: 700;
+}
+
+.rf-orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+html.light .rf-orb {
+  display: none;
 }
 
 /* ════════════════════════════════════════════
