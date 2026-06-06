@@ -911,7 +911,7 @@ O Farol de Contratos é uma solução que resolve exatamente o que mostrei. Prim
 # Apresentamos o FAROL
 
 <ImagePanel
-  src="/farol.jpeg"
+  src="./farol.jpeg"
   alt="Farol de Contratos"
   position="center"
   width="800px"
